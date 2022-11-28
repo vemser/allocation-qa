@@ -3,4 +3,4 @@ Allocation - Sistema de Reserva e Alocação​
 
 Plano de Testes:
 
-![Imagem do plano](images/Plano de Testes.JPG)
+![Imagem do plano](images/planodetestes.JPG)
