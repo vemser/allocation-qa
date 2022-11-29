@@ -3,12 +3,12 @@ import { token } from "../../../support/commands";
 
 const API_BASE = Cypress.env('API_BASE');
 
-export default class ProgramaService{
+export default class AvaliacaoService{
 
-  listarProgramas(page, tamanho){
+  listarAvaliacoes(page, tamanho){
     return cy.request({
         method: 'GET',
-        url: `${API_BASE}/programa`,
+        url: `${API_BASE}/avaliacao`,
         headers: {
           Authorization: token,
           "Content-Type": "application/json",
@@ -21,26 +21,26 @@ export default class ProgramaService{
     }).as('response').get('@response')
   }
 
-  atualizarPrograma(situacao, idPrograma, body){
+  atualizarAvaliacao(id, body){
     return cy.request({
         method: 'PUT',
-        url: `${API_BASE}/programa/${idPrograma}`,
+        url: `${API_BASE}/avaliacao/${id}`,
         headers: {
             Authorization: token,
             "Content-Type": "application/json",
         },
-        qs: {
-          situacao: situacao,
-        },
+        // qs: {
+        //   situacao: situacao,
+        // },
         body: body,
         failOnStatusCode: false,
     }).as('response').get('@response')
   }
 
-  deletarPrograma(idPrograma){
+  deletarAvaliacao(idAvaliacao){
     return cy.request({
         method: 'DELETE',
-        url: `${API_BASE}/programa/${idPrograma}`,
+        url: `${API_BASE}/avaliacao/${idAvaliacao}`,
         headers: {
             Authorization: token,
             "Content-Type": "application/json",
@@ -49,17 +49,17 @@ export default class ProgramaService{
     }).as('response').get('@response')
   }
 
-  adicionarPrograma(situacao, body){
+  adicionarAvaliacao(body){
     return cy.request({
         method: 'POST',
-        url: `${API_BASE}/programa`,
+        url: `${API_BASE}/avaliacao`,
         headers: {
             Authorization: token,
             "Content-Type": "application/json",
         },
-        qs: {
-          situacao: situacao,
-        },
+        // qs: {
+        //   situacao: situacao,
+        // },
         body: body,
         failOnStatusCode: false,
     }).as('response').get('@response')

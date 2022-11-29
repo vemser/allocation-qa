@@ -3,41 +3,28 @@ import { token } from "../../../support/commands";
 
 const API_BASE = Cypress.env('API_BASE');
 
-export default class VagaService{
+export default class ClienteService{
 
-  
-  atualizarVaga(id, body){
+  listarClientes(page, tamanho){
     return cy.request({
-        method: 'PUT',
-        url: `${API_BASE}/vaga/${id}`,
+        method: 'GET',
+        url: `${API_BASE}/cliente`,
         headers: {
-            Authorization: token,
-            "Content-Type": "application/json",
-        },
-        body: body,
-        failOnStatusCode: false,
-    }).as('response').get('@response')
-  }
-
-  deletarVaga(id){
-    return cy.request({
-        method: 'DELETE',
-        url: `${API_BASE}/vaga/deletar`,
-        headers: {
-            Authorization: token,
-            "Content-Type": "application/json",
+          Authorization: token,
+          "Content-Type": "application/json",
         },
         qs: {
-          id: id,
+          pagina: page,
+          tamanho: tamanho,
         },
         failOnStatusCode: false,
     }).as('response').get('@response')
   }
 
-  adicionarVaga(situacao, body){
+  atualizarCliente(situacao, id, body){
     return cy.request({
-        method: 'POST',
-        url: `${API_BASE}/vaga`,
+        method: 'PUT',
+        url: `${API_BASE}/cliente/${id}`,
         headers: {
             Authorization: token,
             "Content-Type": "application/json",
@@ -50,21 +37,32 @@ export default class VagaService{
     }).as('response').get('@response')
   }
 
-  listarVagas(pagina, tamanho){
+  deletarCliente(idCliente){
     return cy.request({
-        method: 'GET',
-        url: `${API_BASE}/vaga`,
+        method: 'DELETE',
+        url: `${API_BASE}/cliente/${idCliente}`,
         headers: {
-          Authorization: token,
-          "Content-Type": "application/json",
-        },
-        qs: {
-          pagina: pagina,
-          tamanho: tamanho,
+            Authorization: token,
+            "Content-Type": "application/json",
         },
         failOnStatusCode: false,
     }).as('response').get('@response')
   }
 
-  
+  adicionarCliente(situacao, body){
+    return cy.request({
+        method: 'POST',
+        url: `${API_BASE}/cliente`,
+        headers: {
+            Authorization: token,
+            "Content-Type": "application/json",
+        },
+        qs: {
+          situacao: situacao,
+        },
+        body: body,
+        failOnStatusCode: false,
+    }).as('response').get('@response')
+  }
+
 }

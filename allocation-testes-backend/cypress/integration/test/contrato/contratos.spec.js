@@ -5,6 +5,28 @@ const contratoService = new ContratoService();
 
 context('Contratos - Cenários Positivos', () => {
 
+  it('Vaga - Validar contrato Vaga', () => {
+    cy.allure()
+    .epic('Testes de Contrato')
+    .feature('Cenários Positivos')
+    .story('GET - Validar contrato GET/vaga')
+    .severity('critical')
+    .step('Valida o contrato')
+    contratoService.contratoVagaRequest("0","10","vaga.get.contrato")
+  });
+  
+
+  it('Usuario - Validar contrato Usuario', () => {
+    cy.allure()
+    .epic('Testes de Contrato')
+    .feature('Cenários Positivos')
+    .story('GET - Validar contrato GET/usuario/listAllUsers')
+    .severity('critical')
+    .step('Valida o contrato')
+    contratoService.contratoUsuarioRequest("0","10","usuario.get.contrato")
+  });
+
+
   it('Programa - Validar contrato Programa', () => {
     cy.allure()
     .epic('Testes de Contrato')
@@ -35,15 +57,6 @@ context('Contratos - Cenários Positivos', () => {
     contratoService.contratoAvaliacaoRequest("0","10","avaliacao.get.contrato")
   });
 
-  it('Vaga - Validar contrato Vaga', () => {
-    cy.allure()
-    .epic('Testes de Contrato')
-    .feature('Cenários Positivos')
-    .story('GET - Validar contrato GET/vaga')
-    .severity('critical')
-    .step('Valida o contrato')
-    contratoService.contratoVagaRequest("0","10","vaga.get.contrato")
-  });
 
   it('Aluno - Validar contrato Aluno', () => {
     cy.allure()
@@ -54,6 +67,7 @@ context('Contratos - Cenários Positivos', () => {
     .step('Valida o contrato')
     contratoService.contratoAlunoRequest("0","10","aluno.get.contrato")
   });
+
 
 
 });

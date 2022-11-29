@@ -157,5 +157,36 @@ export default class ContratoService{
   };
 
   
+  contratoUsuarioRequest(pagina, tamanho, contrato) {
+    cy.request({
+      method: 'GET',
+      url: `${API_BASE}/usuario/listAllUsers`,
+      failOnStatusCode: false,
+      headers: {
+        authorization: token,
+        "Content-Type": "application/JSON"
+      },
+      qs: {
+        paginaQueEuQuero: pagina,
+        tamanhoDeRegistrosPorPagina: tamanho,
+      },
+    }).then((response) => {
+      // pegar o arquivo (Schema) pasta fixtures e passar como parâmetro
+      cy.fixture(contrato).then((contrato) => {
+        // compilar esase arquivo, (jsonSchema) 
+        const validate = ajv.compile(contrato)
+  
+        // response da api (validações)
+        const responseApi = validate(response.body)
+  
+        // Validação (Error)
+        if (!responseApi) cy.log(validate.errors).then(()=>{
+          throw new Error('Falha do contrato')
+        });
+      });
+    });
+  };
+
+  
   
 }

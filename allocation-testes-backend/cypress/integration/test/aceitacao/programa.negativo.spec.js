@@ -13,7 +13,7 @@ context('Programa - Cenários Negativos', () => {
   it('PUT - Tentar Editar programa com id inexistente', () => {
     cy.allure()
     .epic('Testes de endpoint - Programa')
-    .feature('Cenários Positivos')
+    .feature('Cenários Negativos')
     .story('PUT - Tentar Editar programa com id inexistente')
     .severity('critical')
     .step('Cria um Programa')
@@ -27,7 +27,7 @@ context('Programa - Cenários Negativos', () => {
     cy.get('@programa').then(programa => {
       programaService.atualizarPrograma("FECHADO", "9999", programa2Payload)
       .should((response) => {
-        expect(response.status).to.eq(404)
+        expect(response.status).to.eq(400)
       })
 
       cy.allure()
@@ -42,13 +42,13 @@ context('Programa - Cenários Negativos', () => {
   it('DELETE - Tenta Remover um programa através do id inexistente', () => {
     cy.allure()
     .epic('Testes de endpoint - Programa')
-    .feature('Cenários Positivos')
+    .feature('Cenários Negativos')
     .story('DELETE - Tenta Remover um programa através do id inexistente')
     .severity('critical')
     .step('Tenta deletar programa com id inexistente')
     programaService.deletarPrograma("9999")
       .should((response) => {
-        expect(response.status).to.eq(404)
+        expect(response.status).to.eq(400)
       });
     });
 
@@ -56,13 +56,13 @@ context('Programa - Cenários Negativos', () => {
   it('POST - Tenta Adicionar um programa na aplicação sem body', () => {
     cy.allure()
     .epic('Testes de endpoint - Programa')
-    .feature('Cenários Positivos')
+    .feature('Cenários Negativos')
     .story('POST - Adicionar um programa na aplicação')
     .severity('critical')
     .step('Cria um programa')
     programaService.adicionarPrograma("ABERTO", " ")
     .should((response) => {
-      expect(response.status).to.eq(404)
+      expect(response.status).to.eq(400)
     })
   })
 
