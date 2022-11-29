@@ -3,46 +3,56 @@ import ContratoService from '../../service/contrato/contrato.service';
 const contratoService = new ContratoService();
 
 
-context.only('Contratos - Cenários Positivos', () => {
+context('Contratos - Cenários Positivos', () => {
 
-  it('Programa - Validar contrato Get Programa', () => {
+  it('Programa - Validar contrato Programa', () => {
     cy.allure()
     .epic('Testes de Contrato')
     .feature('Cenários Positivos')
-    .story('GET - Validar contrato Get Programa')
+    .story('GET - Validar contrato GET/programa')
     .severity('critical')
     .step('Valida o contrato')
     contratoService.contratoProgramaRequest("0","10","programa.get.contrato")
   });
 
-  it('Cliente - Validar contrato Get Cliente', () => {
+  it('Cliente - Validar contrato Cliente', () => {
     cy.allure()
     .epic('Testes de Contrato')
     .feature('Cenários Positivos')
-    .story('GET - Validar contrato Get Cliente')
+    .story('GET - Validar contrato GET/cliente')
     .severity('critical')
     .step('Valida o contrato')
     contratoService.contratoClienteRequest("0","10","cliente.get.contrato")
   });
 
-  it('Avaliacao - Validar contrato Get Avaliacao', () => {
+  it('Avaliacao - Validar contrato Avaliacao', () => {
     cy.allure()
     .epic('Testes de Contrato')
     .feature('Cenários Positivos')
-    .story('GET - Validar contrato Get Avaliacao')
+    .story('GET - Validar contrato GET/avaliacao')
     .severity('critical')
     .step('Valida o contrato')
     contratoService.contratoAvaliacaoRequest("0","10","avaliacao.get.contrato")
   });
 
-  it('Vaga - Validar contrato Get Vaga', () => {
+  it('Vaga - Validar contrato Vaga', () => {
     cy.allure()
     .epic('Testes de Contrato')
     .feature('Cenários Positivos')
-    .story('GET - Validar contrato Get Vaga')
+    .story('GET - Validar contrato GET/vaga')
     .severity('critical')
     .step('Valida o contrato')
     contratoService.contratoVagaRequest("0","10","vaga.get.contrato")
+  });
+
+  it('Aluno - Validar contrato Aluno', () => {
+    cy.allure()
+    .epic('Testes de Contrato')
+    .feature('Cenários Positivos')
+    .story('GET - Validar contrato GET/aluno')
+    .severity('critical')
+    .step('Valida o contrato')
+    contratoService.contratoAlunoRequest("0","10","aluno.get.contrato")
   });
 
 
