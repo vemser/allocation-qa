@@ -1,0 +1,110 @@
+{
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "totalElementos",
+        "quantidadePaginas",
+        "pagina",
+        "tamanho",
+        "elementos"
+    ],
+    "properties": {
+        "totalElementos": {
+            "type": "integer",
+            "default": 0,
+            "title": "The totalElementos Schema",
+            "examples": [
+                0
+            ]
+        },
+        "quantidadePaginas": {
+            "type": "integer",
+            "default": 0,
+            "title": "The quantidadePaginas Schema",
+            "examples": [
+                0
+            ]
+        },
+        "pagina": {
+            "type": "integer",
+            "default": 0,
+            "title": "The pagina Schema",
+            "examples": [
+                0
+            ]
+        },
+        "tamanho": {
+            "type": "integer",
+            "default": 0,
+            "title": "The tamanho Schema",
+            "examples": [
+                0
+            ]
+        },
+        "elementos": {
+            "type": "array",
+            "default": [],
+            "title": "The elementos Schema",
+            "items": {
+                "type": "object",
+                "default": {},
+                "title": "A Schema",
+                "required": [
+                    "nome",
+                    "email",
+                    "telefone"
+                ],
+                "properties": {
+                    "nome": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The nome Schema",
+                        "examples": [
+                            "Sicred"
+                        ]
+                    },
+                    "email": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The email Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "telefone": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The telefone Schema",
+                        "examples": [
+                            "911234-9876"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "nome": "Sicred",
+                    "email": "string",
+                    "telefone": "911234-9876"
+                }]
+            },
+            "examples": [
+                [{
+                    "nome": "Sicred",
+                    "email": "string",
+                    "telefone": "911234-9876"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "totalElementos": 0,
+        "quantidadePaginas": 0,
+        "pagina": 0,
+        "tamanho": 0,
+        "elementos": [{
+            "nome": "Sicred",
+            "email": "string",
+            "telefone": "911234-9876"
+        }]
+    }]
+}
