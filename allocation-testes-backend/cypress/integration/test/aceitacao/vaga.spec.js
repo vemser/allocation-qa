@@ -37,22 +37,22 @@ context('Vaga - Cenários Positivos', () => {
     cy.allure()
     .step('Valida editar uma vaga')
     cy.get('@vaga').then(vaga => {
-      vagaService.atualizarVaga(vaga.idVaga, vaga.idPrograma)
+      vagaService.atualizarVaga(vaga.codigo, vaga.idPrograma)
       .should((response) => {
         expect(response.status).to.eq(201)
-        //expect(response.body.situacao).to.eq("FECHADO")
+        expect(response.body.situacao).to.eq("FECHADO")
       })
     })
 
     cy.allure()
-    .step('Deleta vaga criada')
+    .step('Deleta vaga criado')
     cy.get('@vaga').then(vaga => 
-      vagaService.deletarVaga(vaga.idVaga))
+      vagaService.deletarVaga(vaga.codigo))
   
     cy.allure()
     .step('Deleta programa criado')
-    cy.get('@programa').then(programa => 
-      programaService.deletarPrograma(programa.idPrograma))
+    cy.get('@vaga').then(vaga => 
+      programaService.deletarPrograma(vaga.idPrograma))
   
     });
 
@@ -94,10 +94,16 @@ context('Vaga - Cenários Positivos', () => {
     .step('valida Deletar vaga criada')
     cy.get('@vaga')
     .then(vaga => 
-      vagaService.deletarVaga(vaga.idVaga)
+      vagaService.deletarVaga(vaga.codigo)
       .should((response) => {
         expect(response.status).to.eq(204)
-      }));
+      }))
+
+    cy.allure()
+    .step('Deleta programa criado')
+    cy.get('@vaga').then(vaga => 
+      programaService.deletarPrograma(vaga.idPrograma))
+      
     });
 
   it('POST - Adicionar um vaga na aplicação', () => {
@@ -126,12 +132,12 @@ context('Vaga - Cenários Positivos', () => {
     cy.allure()
     .step('Deleta vaga criado')
     cy.get('@vaga').then(vaga => 
-      vagaService.deletarVaga(vaga.idVaga))
+      vagaService.deletarVaga(vaga.codigo))
   
     cy.allure()
     .step('Deleta programa criado')
-    cy.get('@programa').then(programa => 
-      programaService.deletarPrograma(programa.idPrograma))
+    cy.get('@vaga').then(vaga => 
+      programaService.deletarPrograma(vaga.idPrograma))
   
     })
 
