@@ -16,9 +16,9 @@ export default class VagaService{
             "Content-Type": "application/json",
         },
         body: `{
-          "nome": "Desenvolvedor(a) Java - Back-End",
-          "quantidade": 1,
-          "quantidadeAlocados": 0,
+          "nome": "QA",
+          "quantidade": 10,
+          "quantidadeAlocados": 10,
           "idPrograma": ${idPrograma},
           "situacao": "FECHADO",
           "dataAbertura": "2022-12-20",
@@ -53,7 +53,7 @@ export default class VagaService{
         },
         body: `{
           "nome": "QA",
-          "quantidade": 1,
+          "quantidade": 10,
           "quantidadeAlocados": 0,
           "idPrograma": ${idPrograma},
           "situacao": "ABERTO",

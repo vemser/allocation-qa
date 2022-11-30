@@ -53,7 +53,8 @@
                 "required": [
                     "nome",
                     "quantidade",
-                    "programa",
+                    "quantidadeAlocados",
+                    "idPrograma",
                     "situacao",
                     "dataAbertura",
                     "dataFechamento",
@@ -76,15 +77,23 @@
                         "default": 0,
                         "title": "The quantidade Schema",
                         "examples": [
+                            2
+                        ]
+                    },
+                    "quantidadeAlocados": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The quantidadeAlocados Schema",
+                        "examples": [
                             1
                         ]
                     },
-                    "programa": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The programa Schema",
+                    "idPrograma": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idPrograma Schema",
                         "examples": [
-                            "vemser 10"
+                            1
                         ]
                     },
                     "situacao": {
@@ -92,7 +101,7 @@
                         "default": "",
                         "title": "The situacao Schema",
                         "examples": [
-                            "ABERTA"
+                            "ABERTO"
                         ]
                     },
                     "dataAbertura": {
@@ -116,7 +125,7 @@
                         "default": "",
                         "title": "The dataCriacao Schema",
                         "examples": [
-                            "2022-11-29"
+                            "2022-11-30"
                         ]
                     },
                     "observacoes": {
@@ -146,12 +155,13 @@
                 },
                 "examples": [{
                     "nome": "Desenvolvedor(a) Java - Back-End",
-                    "quantidade": 1,
-                    "programa": "vemser 10",
-                    "situacao": "ABERTA",
+                    "quantidade": 2,
+                    "quantidadeAlocados": 1,
+                    "idPrograma": 1,
+                    "situacao": "ABERTO",
                     "dataAbertura": "2022-12-20",
                     "dataFechamento": "2022-12-26",
-                    "dataCriacao": "2022-11-29",
+                    "dataCriacao": "2022-11-30",
                     "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
                     "emailCliente": "sicred@dbccompany.com.br",
                     "codigo": 0
@@ -160,12 +170,13 @@
             "examples": [
                 [{
                     "nome": "Desenvolvedor(a) Java - Back-End",
-                    "quantidade": 1,
-                    "programa": "vemser 10",
-                    "situacao": "ABERTA",
+                    "quantidade": 2,
+                    "quantidadeAlocados": 1,
+                    "idPrograma": 1,
+                    "situacao": "ABERTO",
                     "dataAbertura": "2022-12-20",
                     "dataFechamento": "2022-12-26",
-                    "dataCriacao": "2022-11-29",
+                    "dataCriacao": "2022-11-30",
                     "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
                     "emailCliente": "sicred@dbccompany.com.br",
                     "codigo": 0
@@ -180,12 +191,13 @@
         "tamanho": 0,
         "elementos": [{
             "nome": "Desenvolvedor(a) Java - Back-End",
-            "quantidade": 1,
-            "programa": "vemser 10",
-            "situacao": "ABERTA",
+            "quantidade": 2,
+            "quantidadeAlocados": 1,
+            "idPrograma": 1,
+            "situacao": "ABERTO",
             "dataAbertura": "2022-12-20",
             "dataFechamento": "2022-12-26",
-            "dataCriacao": "2022-11-29",
+            "dataCriacao": "2022-11-30",
             "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
             "emailCliente": "sicred@dbccompany.com.br",
             "codigo": 0

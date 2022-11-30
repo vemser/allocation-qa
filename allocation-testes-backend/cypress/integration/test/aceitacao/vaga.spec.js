@@ -1,7 +1,10 @@
 import ProgramaService from '../../service/aceitacao/programa.service';
 import VagaService from '../../service/aceitacao/vaga.service';
+import UsuarioService from '../../service/aceitacao/usuario.service';
+
 
 const vagaService = new VagaService();
+const usuarioService = new UsuarioService();
 
 const programaService = new ProgramaService();
 const programaPayload = require('../../../fixtures/programa.payload.json')
@@ -37,7 +40,7 @@ context('Vaga - Cenários Positivos', () => {
     cy.allure()
     .step('Valida editar uma vaga')
     cy.get('@vaga').then(vaga => {
-      vagaService.atualizarVaga(vaga.codigo, vaga.idPrograma)
+      vagaService.atualizarVaga(vaga.idVaga, vaga.idPrograma)
       .should((response) => {
         expect(response.status).to.eq(201)
         expect(response.body.situacao).to.eq("FECHADO")
@@ -47,7 +50,7 @@ context('Vaga - Cenários Positivos', () => {
     cy.allure()
     .step('Deleta vaga criado')
     cy.get('@vaga').then(vaga => 
-      vagaService.deletarVaga(vaga.codigo))
+      vagaService.deletarVaga(vaga.idVaga))
   
     cy.allure()
     .step('Deleta programa criado')
@@ -94,7 +97,7 @@ context('Vaga - Cenários Positivos', () => {
     .step('valida Deletar vaga criada')
     cy.get('@vaga')
     .then(vaga => 
-      vagaService.deletarVaga(vaga.codigo)
+      vagaService.deletarVaga(vaga.idVaga)
       .should((response) => {
         expect(response.status).to.eq(204)
       }))
@@ -132,7 +135,7 @@ context('Vaga - Cenários Positivos', () => {
     cy.allure()
     .step('Deleta vaga criado')
     cy.get('@vaga').then(vaga => 
-      vagaService.deletarVaga(vaga.codigo))
+      vagaService.deletarVaga(vaga.idVaga))
   
     cy.allure()
     .step('Deleta programa criado')

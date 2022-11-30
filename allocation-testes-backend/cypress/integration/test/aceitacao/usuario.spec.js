@@ -27,7 +27,7 @@ context('Usuario - Cenários Positivos', () => {
     cy.get('@usuario').then(usuario => {
       usuarioService.atualizarUsuario("ADMINISTRADOR", usuario.idUsuario, usuario2Payload)
       .should((response) => {
-        expect(response.status).to.eq(200)
+        expect(response.status).to.eq(201)
       })
 
       cy.allure()
@@ -84,7 +84,7 @@ context('Usuario - Cenários Positivos', () => {
     .step('Cria um usuario')
     usuarioService.adicionarUsuario(usuarioPayload)
     .should((response) => {
-      expect(response.status).to.eq(200)
+      expect(response.status).to.eq(201)
     }).then(response => {
       cy.wrap(response.body).as('usuario')
     })

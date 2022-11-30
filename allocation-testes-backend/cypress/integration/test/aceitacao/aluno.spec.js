@@ -1,6 +1,7 @@
 import ProgramaService from '../../service/aceitacao/programa.service';
 import AlunoService from '../../service/aceitacao/aluno.service';
 
+
 const alunoService = new AlunoService();
 
 const programaService = new ProgramaService();
@@ -40,7 +41,6 @@ context('Aluno - Cenários Positivos', () => {
       alunoService.atualizarAluno(aluno.idAluno, aluno.idPrograma)
       .should((response) => {
         expect(response.status).to.eq(201)
-        //expect(response.body.situacao).to.eq("FECHADO")
       })
     })
 
@@ -69,7 +69,7 @@ context('Aluno - Cenários Positivos', () => {
     });
   });
 
-  it('DELETE - Remover um aluno através do id', () => {
+  it.only('DELETE - Remover um aluno através do id', () => {
     cy.allure()
     .epic('Testes de endpoint - Aluno')
     .feature('Cenários Positivos')
@@ -97,7 +97,13 @@ context('Aluno - Cenários Positivos', () => {
       alunoService.deletarAluno(aluno.idAluno)
       .should((response) => {
         expect(response.status).to.eq(204)
-      }));
+      }))
+    
+    cy.allure()
+    .step('Deleta programa criado')
+    cy.get('@aluno').then(aluno2 => 
+      programaService.deletarPrograma(aluno2.idPrograma))
+      
     });
 
   it('POST - Adicionar um aluno na aplicação', () => {
@@ -130,8 +136,8 @@ context('Aluno - Cenários Positivos', () => {
   
     cy.allure()
     .step('Deleta programa criado')
-    cy.get('@programa').then(programa => 
-      programaService.deletarPrograma(programa.idPrograma))
+    cy.get('@aluno').then(aluno2 => 
+      programaService.deletarPrograma(aluno2.idPrograma))
   
     })
 

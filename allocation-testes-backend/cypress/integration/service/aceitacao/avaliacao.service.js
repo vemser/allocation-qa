@@ -21,7 +21,7 @@ export default class AvaliacaoService{
     }).as('response').get('@response')
   }
 
-  atualizarAvaliacao(idAvaliacao, codigoVaga, emailAluno){
+  atualizarAvaliacao(idAvaliacao, idVaga, emailAluno){
     return cy.request({
         method: 'PUT',
         url: `${API_BASE}/avaliacao/${idAvaliacao}`,
@@ -30,7 +30,7 @@ export default class AvaliacaoService{
             "Content-Type": "application/json",
         },
         body: `{
-          "codigoVaga": ${codigoVaga},
+          "idVaga": ${idVaga},
           "emailAluno": ${emailAluno},
           "nota": 10,
           "descricao": "Excelente",
@@ -59,7 +59,7 @@ export default class AvaliacaoService{
     }).as('response').get('@response')
   }
 
-  adicionarAvaliacao(codigoVaga, emailAluno){
+  adicionarAvaliacao(idVaga, emailAluno){
     return cy.request({
         method: 'POST',
         url: `${API_BASE}/avaliacao`,
@@ -68,7 +68,7 @@ export default class AvaliacaoService{
             "Content-Type": "application/json",
         },
         body: `{
-          "codigoVaga": ${codigoVaga},
+          "idVaga": ${idVaga},
           "emailAluno": ${emailAluno},
           "nota": 9,
           "descricao": "Muito bom",

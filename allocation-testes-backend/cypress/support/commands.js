@@ -15,7 +15,7 @@ Cypress.Commands.add("login", () => {
       failOnStatusCode: false,
       body: {
         email: "teste@dbccompany.com.br",
-        senha: "pqasde12@",
+        senha: "testeqa12@",
       },
     });
   });

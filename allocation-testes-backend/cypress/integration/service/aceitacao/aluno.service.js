@@ -16,15 +16,15 @@ export default class AlunoService{
             "Content-Type": "application/json",
         },
         body: `{
-          "nome": "Teste Aluno da Silva",
-          "email": "teste.aluno1@dbccompany.com.br",
+          "nome": "Teste Aluno de QA",
+          "email": "teste.alunoQA3@dbccompany.com.br",
           "idPrograma": ${idPrograma},
           "area": "FRONTEND",
-          "cidade": "Pato Branco",
-          "estado": "Paraná",
+          "cidade": "John People",
+          "estado": "Paraíba",
           "telefone": "99595-1313",
           "descricao": "xxxx",
-          "statusAluno": "RESERVADO",
+          "statusAluno": "ALOCADO",
           "tecnologias": [
             "java"
           ]
@@ -54,12 +54,12 @@ export default class AlunoService{
             "Content-Type": "application/json",
         },
         body: `{
-          "nome": "Teste Aluno da Silva",
-          "email": "teste.aluno1@dbccompany.com.br",
+          "nome": "Teste Aluno de QA",
+          "email": "teste.alunoQA2@dbccompany.com.br",
           "idPrograma": ${idPrograma},
           "area": "FRONTEND",
-          "cidade": "Pato Branco",
-          "estado": "Paraná",
+          "cidade": "John People",
+          "estado": "Paraíba",
           "telefone": "99595-1313",
           "descricao": "xxxx",
           "statusAluno": "ALOCADO",

@@ -1,4 +1,6 @@
 {
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
     "type": "object",
     "default": {},
     "title": "Root Schema",
@@ -51,11 +53,20 @@
                 "default": {},
                 "title": "A Schema",
                 "required": [
+                    "idPrograma",
                     "nome",
                     "descricao",
                     "situacao"
                 ],
                 "properties": {
+                    "idPrograma": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idPrograma Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
                     "nome": {
                         "type": "string",
                         "default": "",
@@ -77,21 +88,23 @@
                         "default": "",
                         "title": "The situacao Schema",
                         "examples": [
-                            "ABERTO"
+                            "string"
                         ]
                     }
                 },
                 "examples": [{
+                    "idPrograma": 0,
                     "nome": "string",
                     "descricao": "string",
-                    "situacao": "ABERTO"
+                    "situacao": "string"
                 }]
             },
             "examples": [
                 [{
+                    "idPrograma": 0,
                     "nome": "string",
                     "descricao": "string",
-                    "situacao": "ABERTO"
+                    "situacao": "string"
                 }]
             ]
         }
@@ -102,9 +115,10 @@
         "pagina": 0,
         "tamanho": 0,
         "elementos": [{
+            "idPrograma": 0,
             "nome": "string",
             "descricao": "string",
-            "situacao": "ABERTO"
+            "situacao": "string"
         }]
     }]
 }
