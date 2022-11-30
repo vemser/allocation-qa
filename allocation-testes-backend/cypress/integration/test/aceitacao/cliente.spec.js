@@ -23,7 +23,7 @@ context('Cliente - Cenários Positivos', () => {
     })
 
     cy.allure()
-    .step('Atualiza cliente criado')
+    .step('Valida Atualizar cliente criado')
     cy.get('@cliente').then(cliente => {
       clienteService.atualizarCliente(cliente.idCliente, cliente2Payload)
       .should((response) => {
