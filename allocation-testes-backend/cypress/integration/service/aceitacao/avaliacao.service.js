@@ -5,7 +5,7 @@ const API_BASE = Cypress.env('API_BASE');
 
 export default class AvaliacaoService{
 
-  listarAvaliacoes(page, tamanho){
+  listarAvaliacoes(pagina, tamanho){
     return cy.request({
         method: 'GET',
         url: `${API_BASE}/avaliacao`,
@@ -14,28 +14,38 @@ export default class AvaliacaoService{
           "Content-Type": "application/json",
         },
         qs: {
-          pagina: page,
+          pagina: pagina,
           tamanho: tamanho,
         },
         failOnStatusCode: false,
     }).as('response').get('@response')
   }
 
-  atualizarAvaliacao(id, body){
+  atualizarAvaliacao(idAvaliacao, codigoVaga, emailAluno){
     return cy.request({
         method: 'PUT',
-        url: `${API_BASE}/avaliacao/${id}`,
+        url: `${API_BASE}/avaliacao/${idAvaliacao}`,
         headers: {
             Authorization: token,
             "Content-Type": "application/json",
         },
-        // qs: {
-        //   situacao: situacao,
-        // },
-        body: body,
+        body: `{
+          "codigoVaga": ${codigoVaga},
+          "emailAluno": ${emailAluno},
+          "nota": 10,
+          "descricao": "Excelente",
+          "dataAvaliacao": "2022-12-24",
+          "dataEntrevista": "2022-12-20",
+          "dataResposta": "2022-12-22",
+          "dataCriacao": "2022-11-30",
+          "tipoAvaliacao": "INDIVIDUAL",
+          "situacao": "AVALIADO"
+        }`,
         failOnStatusCode: false,
     }).as('response').get('@response')
   }
+
+  
 
   deletarAvaliacao(idAvaliacao){
     return cy.request({
@@ -49,7 +59,7 @@ export default class AvaliacaoService{
     }).as('response').get('@response')
   }
 
-  adicionarAvaliacao(body){
+  adicionarAvaliacao(codigoVaga, emailAluno){
     return cy.request({
         method: 'POST',
         url: `${API_BASE}/avaliacao`,
@@ -57,10 +67,18 @@ export default class AvaliacaoService{
             Authorization: token,
             "Content-Type": "application/json",
         },
-        // qs: {
-        //   situacao: situacao,
-        // },
-        body: body,
+        body: `{
+          "codigoVaga": ${codigoVaga},
+          "emailAluno": ${emailAluno},
+          "nota": 9,
+          "descricao": "Muito bom",
+          "dataAvaliacao": "2022-12-24",
+          "dataEntrevista": "2022-12-20",
+          "dataResposta": "2022-12-22",
+          "dataCriacao": "2022-11-30",
+          "tipoAvaliacao": "INDIVIDUAL",
+          "situacao": "AVALIADO"
+        }`,
         failOnStatusCode: false,
     }).as('response').get('@response')
   }

@@ -1,96 +1,96 @@
-import AvaliacaoService from '../../service/aceitacao/avaliacao.service';
+import ClienteService from '../../service/aceitacao/cliente.service';
 
-const avaliacaoService = new AvaliacaoService();
-const avaliacaoPayload = require('../../../fixtures/avaliacao.payload.json')
-const avaliacao2Payload = require('../../../fixtures/avaliacao2.payload.json')
+const clienteService = new ClienteService();
+const clientePayload = require('../../../fixtures/cliente.payload.json')
+const cliente2Payload = require('../../../fixtures/cliente2.payload.json')
 
 ////////////////////////////////////////////////////////
 /////////////////// CENÁRIOS POSITIVOS /////////////////
 ////////////////////////////////////////////////////////
 
-context('Avaliacao - Cenários Positivos', () => {
+context('Cliente - Cenários Positivos', () => {
 
-  it('PUT - Editar avaliacao', () => {
+  it('PUT - Editar cliente', () => {
     cy.allure()
-    .epic('Testes de endpoint - Avaliacao')
+    .epic('Testes de endpoint - Cliente')
     .feature('Cenários Positivos')
-    .story('PUT - Editar um avaliacao no banco de dados')
+    .story('PUT - Editar um cliente no banco de dados')
     .severity('critical')
-    .step('Cria um Avaliacao')
-    avaliacaoService.adicionarAvaliacao("ATIVO", avaliacaoPayload)
+    .step('Cria um Cliente')
+    clienteService.adicionarCliente(clientePayload)
     .then(response => {
-      cy.wrap(response.body).as('avaliacao')
+      cy.wrap(response.body).as('cliente')
     })
 
     cy.allure()
-    .step('Atualiza avaliacao criado')
-    cy.get('@avaliacao').then(avaliacao => {
-      avaliacaoService.atualizarAvaliacao("INATIVO", avaliacao.idAvaliacao, avaliacao2Payload)
+    .step('Atualiza cliente criado')
+    cy.get('@cliente').then(cliente => {
+      clienteService.atualizarCliente(cliente.idCliente, cliente2Payload)
       .should((response) => {
-        expect(response.status).to.eq(200)
+        expect(response.status).to.eq(201)
       })
 
       cy.allure()
-      .step('Deleta avaliacao criado')
-    cy.get('@avaliacao').then(avaliacao => {
-      avaliacaoService.deletarAvaliacao(avaliacao.idAvaliacao)
+      .step('Deleta cliente criado')
+    cy.get('@cliente').then(cliente => {
+      clienteService.deletarCliente(cliente.idCliente)
       });
     }); 
   });
 
-  it('GET - Listar todos avaliacoes cadastrados', () => {
+  it('GET - Listar todos clientes cadastrados', () => {
     cy.allure()
-    .epic('Testes de endpoint - Avaliacao')
+    .epic('Testes de endpoint - Cliente')
     .feature('Cenários Positivos')
-    .story('GET - Listar todos avaliacoes cadastrados')
+    .story('GET - Listar todos clientes cadastrados')
     .severity('critical')
-    .step('Lista avaliacoes')
-    avaliacaoService.listarAvaliacoes("0", "10")
+    .step('Lista clientes')
+    clienteService.listarClientes("0", "10")
     .should((response) =>{
       expect(response.status).to.eq(200)
     });
   });
 
-  it('DELETE - Remover um avaliacao através do id', () => {
+  it('DELETE - Remover um cliente através do id', () => {
     cy.allure()
-    .epic('Testes de endpoint - Avaliacao')
+    .epic('Testes de endpoint - Cliente')
     .feature('Cenários Positivos')
-    .story('DELETE - Remover um avaliacao através do id')
+    .story('DELETE - Remover um cliente através do id')
     .severity('critical')
-    .step('Cria um Avaliacao')
-    avaliacaoService.adicionarAvaliacao("ATIVO", avaliacaoPayload)
+    .step('Cria um Cliente')
+    clienteService.adicionarCliente(clientePayload)
     .then(response => {
-      cy.wrap(response.body).as('avaliacao')
+      cy.wrap(response.body).as('cliente')
     });
 
     cy.allure()
-    .step('Deleta avaliacao criado')
-    cy.get('@avaliacao')
-    .then(avaliacao => 
-      avaliacaoService.deletarAvaliacao(avaliacao.idAvaliacao)
+    .step('Deleta cliente criado')
+    cy.get('@cliente')
+    .then(cliente => 
+      clienteService.deletarCliente(cliente.idCliente)
       .should((response) => {
-        expect(response.status).to.eq(200)
+        expect(response.status).to.eq(204)
       }));
     });
 
-  it('POST - Adicionar um avaliacao na aplicação', () => {
+  it('POST - Adicionar um cliente na aplicação', () => {
     cy.allure()
-    .epic('Testes de endpoint - Avaliacao')
+    .epic('Testes de endpoint - Cliente')
     .feature('Cenários Positivos')
-    .story('POST - Adicionar um avaliacao na aplicação')
+    .story('POST - Adicionar um cliente na aplicação')
     .severity('critical')
-    .step('Cria um avaliacao')
-    avaliacaoService.adicionarAvaliacao("ATIVO", avaliacaoPayload)
+    .step('Cria um cliente')
+    clienteService.adicionarCliente(clientePayload)
     .should((response) => {
-      expect(response.status).to.eq(200)
+      expect(response.status).to.eq(201)
     }).then(response => {
-      cy.wrap(response.body).as('avaliacao')
+      cy.wrap(response.body).as('cliente')
     })
 
     cy.allure()
-    .step('Deleta avaliacao criado')
-    cy.get('@avaliacao').then(avaliacao => 
-      avaliacaoService.deletarAvaliacao(avaliacao.idAvaliacao))
+    .step('Deleta cliente criado')
+    cy.get('@cliente').then(cliente => 
+      clienteService.deletarCliente(cliente.idCliente))
   })
 
 });

@@ -17,7 +17,7 @@ context('Programa - Cenários Positivos', () => {
     .story('PUT - Editar um programa no banco de dados')
     .severity('critical')
     .step('Cria um Programa')
-    programaService.adicionarPrograma("ABERTO", programaPayload)
+    programaService.adicionarPrograma(programaPayload)
     .then(response => {
       cy.wrap(response.body).as('programa')
     })
@@ -25,9 +25,9 @@ context('Programa - Cenários Positivos', () => {
     cy.allure()
     .step('Atualiza programa criado')
     cy.get('@programa').then(programa => {
-      programaService.atualizarPrograma("FECHADO", programa.idPrograma, programa2Payload)
+      programaService.atualizarPrograma(programa.idPrograma, programa2Payload)
       .should((response) => {
-        expect(response.status).to.eq(200)
+        expect(response.status).to.eq(201)
       })
 
       cy.allure()
@@ -45,7 +45,7 @@ context('Programa - Cenários Positivos', () => {
     .story('GET - Listar todos programas cadastrados')
     .severity('critical')
     .step('Lista programas')
-    programaService.listarProgramas(0, 20)
+    programaService.listarProgramas("0", "10")
     .should((response) =>{
       expect(response.status).to.eq(200)
     });
@@ -58,7 +58,7 @@ context('Programa - Cenários Positivos', () => {
     .story('DELETE - Remover um programa através do id')
     .severity('critical')
     .step('Cria um Programa')
-    programaService.adicionarPrograma("ABERTO", programaPayload)
+    programaService.adicionarPrograma(programaPayload)
     .then(response => {
       cy.wrap(response.body).as('programa')
     });
@@ -69,7 +69,7 @@ context('Programa - Cenários Positivos', () => {
     .then(programa => 
       programaService.deletarPrograma(programa.idPrograma)
       .should((response) => {
-        expect(response.status).to.eq(200)
+        expect(response.status).to.eq(204)
       }));
     });
 
@@ -80,9 +80,9 @@ context('Programa - Cenários Positivos', () => {
     .story('POST - Adicionar um programa na aplicação')
     .severity('critical')
     .step('Cria um programa')
-    programaService.adicionarPrograma("ABERTO", programaPayload)
+    programaService.adicionarPrograma(programaPayload)
     .should((response) => {
-      expect(response.status).to.eq(200)
+      expect(response.status).to.eq(201)
     }).then(response => {
       cy.wrap(response.body).as('programa')
     })

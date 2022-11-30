@@ -1,40 +1,48 @@
 import { token } from "../../../support/commands";
 
-
 const API_BASE = Cypress.env('API_BASE');
+
+
 
 export default class VagaService{
 
   
-  atualizarVaga(id, body){
+  atualizarVaga(idVaga, idPrograma){
     return cy.request({
         method: 'PUT',
-        url: `${API_BASE}/vaga/${id}`,
+        url: `${API_BASE}/vaga/${idVaga}`,
         headers: {
             Authorization: token,
             "Content-Type": "application/json",
         },
-        body: body,
+        body: `{
+          "nome": "Desenvolvedor(a) Java - Back-End",
+          "quantidade": 1,
+          "idPrograma": ${idPrograma},
+          "situacao": "FECHADO",
+          "dataAbertura": "2022-12-20",
+          "dataFechamento": "2022-12-26",
+          "dataCriacao": "2022-11-30",
+          "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
+          "emailCliente": "sicred@dbccompany.com.br"
+        }`,
         failOnStatusCode: false,
     }).as('response').get('@response')
   }
 
-  deletarVaga(id){
+  deletarVaga(idVaga){
     return cy.request({
         method: 'DELETE',
-        url: `${API_BASE}/vaga/deletar`,
+        url: `${API_BASE}/vaga/${idVaga}`,
         headers: {
             Authorization: token,
             "Content-Type": "application/json",
-        },
-        qs: {
-          id: id,
         },
         failOnStatusCode: false,
     }).as('response').get('@response')
   }
 
-  adicionarVaga(situacao, body){
+  adicionarVaga(idPrograma){
     return cy.request({
         method: 'POST',
         url: `${API_BASE}/vaga`,
@@ -42,10 +50,17 @@ export default class VagaService{
             Authorization: token,
             "Content-Type": "application/json",
         },
-        qs: {
-          situacao: situacao,
-        },
-        body: body,
+        body: `{
+          "nome": "Desenvolvedor(a) Java - Back-End",
+          "quantidade": 1,
+          "idPrograma": ${idPrograma},
+          "situacao": "ABERTO",
+          "dataAbertura": "2022-12-20",
+          "dataFechamento": "2022-12-26",
+          "dataCriacao": "2022-11-30",
+          "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
+          "emailCliente": "sicred@dbccompany.com.br"
+        }`,
         failOnStatusCode: false,
     }).as('response').get('@response')
   }

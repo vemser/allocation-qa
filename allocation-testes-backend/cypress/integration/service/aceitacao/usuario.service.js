@@ -3,12 +3,12 @@ import { token } from "../../../support/commands";
 
 const API_BASE = Cypress.env('API_BASE');
 
-export default class ProgramaService{
+export default class UsuarioService{
 
-  listarProgramas(pagina, tamanho){
+  listarUsuarios(pagina, tamanho){
     return cy.request({
         method: 'GET',
-        url: `${API_BASE}/programa`,
+        url: `${API_BASE}/usuario/listAllUsers`,
         headers: {
           Authorization: token,
           "Content-Type": "application/json",
@@ -21,23 +21,43 @@ export default class ProgramaService{
     }).as('response').get('@response')
   }
 
-  atualizarPrograma(idPrograma, body){
+  recuperarImagemUsuarios(email){
+    return cy.request({
+        method: 'GET',
+        url: `${API_BASE}/usuario`,
+        headers: {
+          Authorization: token,
+          "Content-Type": "application/json",
+        },
+        qs: {
+          email: email,
+        },
+        failOnStatusCode: false,
+    }).as('response').get('@response')
+  }
+
+  atualizarUsuario(cargo, idUsuario, body){
     return cy.request({
         method: 'PUT',
-        url: `${API_BASE}/programa/${idPrograma}`,
+        url: `${API_BASE}/usuario/${idUsuario}`,
         headers: {
             Authorization: token,
             "Content-Type": "application/json",
+        },
+        qs: {
+          cargo: cargo,
         },
         body: body,
         failOnStatusCode: false,
     }).as('response').get('@response')
   }
 
-  deletarPrograma(idPrograma){
+  
+
+  deletarUsuario(idUsuario){
     return cy.request({
         method: 'DELETE',
-        url: `${API_BASE}/programa/${idPrograma}`,
+        url: `${API_BASE}/usuario/${idUsuario}`,
         headers: {
             Authorization: token,
             "Content-Type": "application/json",
@@ -46,10 +66,10 @@ export default class ProgramaService{
     }).as('response').get('@response')
   }
 
-  adicionarPrograma(body){
+  adicionarUsuario(body){
     return cy.request({
         method: 'POST',
-        url: `${API_BASE}/programa`,
+        url: `${API_BASE}/auth/register`,
         headers: {
             Authorization: token,
             "Content-Type": "application/json",

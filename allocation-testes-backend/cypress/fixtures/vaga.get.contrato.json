@@ -54,11 +54,13 @@
                     "nome",
                     "quantidade",
                     "programa",
+                    "situacao",
                     "dataAbertura",
                     "dataFechamento",
+                    "dataCriacao",
                     "observacoes",
                     "emailCliente",
-                    "id"
+                    "codigo"
                 ],
                 "properties": {
                     "nome": {
@@ -82,7 +84,15 @@
                         "default": "",
                         "title": "The programa Schema",
                         "examples": [
-                            "VemSer10"
+                            "vemser 10"
+                        ]
+                    },
+                    "situacao": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The situacao Schema",
+                        "examples": [
+                            "ABERTA"
                         ]
                     },
                     "dataAbertura": {
@@ -101,12 +111,20 @@
                             "2022-12-26"
                         ]
                     },
+                    "dataCriacao": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The dataCriacao Schema",
+                        "examples": [
+                            "2022-11-29"
+                        ]
+                    },
                     "observacoes": {
                         "type": "string",
                         "default": "",
                         "title": "The observacoes Schema",
                         "examples": [
-                            "O que nós buscamos\nSeguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização."
+                            "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização."
                         ]
                     },
                     "emailCliente": {
@@ -114,13 +132,13 @@
                         "default": "",
                         "title": "The emailCliente Schema",
                         "examples": [
-                            "O que nós buscamos cocacola@soucliente.com"
+                            "sicred@dbccompany.com.br"
                         ]
                     },
-                    "id": {
+                    "codigo": {
                         "type": "integer",
                         "default": 0,
-                        "title": "The id Schema",
+                        "title": "The codigo Schema",
                         "examples": [
                             0
                         ]
@@ -129,24 +147,28 @@
                 "examples": [{
                     "nome": "Desenvolvedor(a) Java - Back-End",
                     "quantidade": 1,
-                    "programa": "VemSer10",
+                    "programa": "vemser 10",
+                    "situacao": "ABERTA",
                     "dataAbertura": "2022-12-20",
                     "dataFechamento": "2022-12-26",
-                    "observacoes": "O que nós buscamos\nSeguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
-                    "emailCliente": "O que nós buscamos cocacola@soucliente.com",
-                    "id": 0
+                    "dataCriacao": "2022-11-29",
+                    "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
+                    "emailCliente": "sicred@dbccompany.com.br",
+                    "codigo": 0
                 }]
             },
             "examples": [
                 [{
                     "nome": "Desenvolvedor(a) Java - Back-End",
                     "quantidade": 1,
-                    "programa": "VemSer10",
+                    "programa": "vemser 10",
+                    "situacao": "ABERTA",
                     "dataAbertura": "2022-12-20",
                     "dataFechamento": "2022-12-26",
-                    "observacoes": "O que nós buscamos\nSeguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
-                    "emailCliente": "O que nós buscamos cocacola@soucliente.com",
-                    "id": 0
+                    "dataCriacao": "2022-11-29",
+                    "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
+                    "emailCliente": "sicred@dbccompany.com.br",
+                    "codigo": 0
                 }]
             ]
         }
@@ -159,12 +181,14 @@
         "elementos": [{
             "nome": "Desenvolvedor(a) Java - Back-End",
             "quantidade": 1,
-            "programa": "VemSer10",
+            "programa": "vemser 10",
+            "situacao": "ABERTA",
             "dataAbertura": "2022-12-20",
             "dataFechamento": "2022-12-26",
-            "observacoes": "O que nós buscamos\nSeguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
-            "emailCliente": "O que nós buscamos cocacola@soucliente.com",
-            "id": 0
+            "dataCriacao": "2022-11-29",
+            "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
+            "emailCliente": "sicred@dbccompany.com.br",
+            "codigo": 0
         }]
     }]
 }
