@@ -7,7 +7,7 @@ const API_BASE = Cypress.env('API_BASE');
 export default class VagaService{
 
   
-  atualizarVaga(idVaga, idPrograma){
+  atualizarVaga(idVaga, idPrograma, meuEmailCliente){
     return cy.request({
         method: 'PUT',
         url: `${API_BASE}/vaga/${idVaga}`,
@@ -23,9 +23,9 @@ export default class VagaService{
           "situacao": "FECHADO",
           "dataAbertura": "2022-12-20",
           "dataFechamento": "2022-12-26",
-          "dataCriacao": "2022-11-30",
+          "dataCriacao": "2022-12-01",
           "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
-          "emailCliente": "sicred@dbccompany.com.br"
+          "emailCliente": "${meuEmailCliente}"
         }`,
         failOnStatusCode: false,
     }).as('response').get('@response')
@@ -43,7 +43,7 @@ export default class VagaService{
     }).as('response').get('@response')
   }
 
-  adicionarVaga(idPrograma){
+  adicionarVaga(idPrograma, meuEmailCliente){
     return cy.request({
         method: 'POST',
         url: `${API_BASE}/vaga`,
@@ -59,9 +59,9 @@ export default class VagaService{
           "situacao": "ABERTO",
           "dataAbertura": "2022-12-20",
           "dataFechamento": "2022-12-26",
-          "dataCriacao": "2022-11-30",
+          "dataCriacao": "2022-12-01",
           "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
-          "emailCliente": "sicred@dbccompany.com.br"
+          "emailCliente": "${meuEmailCliente}"
         }`,
         failOnStatusCode: false,
     }).as('response').get('@response')

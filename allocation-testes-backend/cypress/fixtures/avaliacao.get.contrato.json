@@ -51,40 +51,33 @@
                 "default": {},
                 "title": "A Schema",
                 "required": [
-                    "codigo",
-                    "vaga",
-                    "aluno",
+                    "idVaga",
+                    "emailAluno",
                     "nota",
                     "descricao",
-                    "dataEntrevistaGP",
                     "dataAvaliacao",
                     "dataEntrevista",
                     "dataResposta",
-                    "situacao"
+                    "dataCriacao",
+                    "tipoAvaliacao",
+                    "situacao",
+                    "idAvaliacao"
                 ],
                 "properties": {
-                    "codigo": {
+                    "idVaga": {
                         "type": "integer",
                         "default": 0,
-                        "title": "The codigo Schema",
+                        "title": "The idVaga Schema",
                         "examples": [
-                            123
+                            1
                         ]
                     },
-                    "vaga": {
+                    "emailAluno": {
                         "type": "string",
                         "default": "",
-                        "title": "The vaga Schema",
+                        "title": "The emailAluno Schema",
                         "examples": [
-                            "Desenvolvedor(a) Java - Back-End"
-                        ]
-                    },
-                    "aluno": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The aluno Schema",
-                        "examples": [
-                            "Jhennyfer Sobrinho"
+                            "jhennyfer.sobrinho@dbccompany.com.br"
                         ]
                     },
                     "nota": {
@@ -101,14 +94,6 @@
                         "title": "The descricao Schema",
                         "examples": [
                             "Muito bom"
-                        ]
-                    },
-                    "dataEntrevistaGP": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The dataEntrevistaGP Schema",
-                        "examples": [
-                            "2022-12-19"
                         ]
                     },
                     "dataAvaliacao": {
@@ -135,40 +120,66 @@
                             "2022-12-22"
                         ]
                     },
+                    "dataCriacao": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The dataCriacao Schema",
+                        "examples": [
+                            "2022-12-01"
+                        ]
+                    },
+                    "tipoAvaliacao": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The tipoAvaliacao Schema",
+                        "examples": [
+                            "INDIVIDUAL"
+                        ]
+                    },
                     "situacao": {
                         "type": "string",
                         "default": "",
                         "title": "The situacao Schema",
                         "examples": [
-                            "avaliado"
+                            "AVALIADO"
+                        ]
+                    },
+                    "idAvaliacao": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idAvaliacao Schema",
+                        "examples": [
+                            0
                         ]
                     }
                 },
                 "examples": [{
-                    "codigo": 123,
-                    "vaga": "Desenvolvedor(a) Java - Back-End",
-                    "aluno": "Jhennyfer Sobrinho",
+                    "idVaga": 1,
+                    "emailAluno": "jhennyfer.sobrinho@dbccompany.com.br",
                     "nota": 10,
                     "descricao": "Muito bom",
-                    "dataEntrevistaGP": "2022-12-19",
                     "dataAvaliacao": "2022-12-24",
                     "dataEntrevista": "2022-12-20",
                     "dataResposta": "2022-12-22",
-                    "situacao": "avaliado"
+                    "dataCriacao": "2022-12-01",
+                    "tipoAvaliacao": "INDIVIDUAL",
+                    "situacao": "AVALIADO",
+                    "idAvaliacao": 0
                 }]
             },
             "examples": [
                 [{
-                    "codigo": 123,
-                    "vaga": "Desenvolvedor(a) Java - Back-End",
-                    "aluno": "Jhennyfer Sobrinho",
+                    "idVaga": 1,
+                    "emailAluno": "jhennyfer.sobrinho@dbccompany.com.br",
                     "nota": 10,
                     "descricao": "Muito bom",
-                    "dataEntrevistaGP": "2022-12-19",
                     "dataAvaliacao": "2022-12-24",
                     "dataEntrevista": "2022-12-20",
                     "dataResposta": "2022-12-22",
-                    "situacao": "avaliado"
+                    "dataCriacao": "2022-12-01",
+                    "tipoAvaliacao": "INDIVIDUAL",
+                    "situacao": "AVALIADO",
+                    "idAvaliacao": 0
                 }]
             ]
         }
@@ -179,16 +190,17 @@
         "pagina": 0,
         "tamanho": 0,
         "elementos": [{
-            "codigo": 123,
-            "vaga": "Desenvolvedor(a) Java - Back-End",
-            "aluno": "Jhennyfer Sobrinho",
+            "idVaga": 1,
+            "emailAluno": "jhennyfer.sobrinho@dbccompany.com.br",
             "nota": 10,
             "descricao": "Muito bom",
-            "dataEntrevistaGP": "2022-12-19",
             "dataAvaliacao": "2022-12-24",
             "dataEntrevista": "2022-12-20",
             "dataResposta": "2022-12-22",
-            "situacao": "avaliado"
+            "dataCriacao": "2022-12-01",
+            "tipoAvaliacao": "INDIVIDUAL",
+            "situacao": "AVALIADO",
+            "idAvaliacao": 0
         }]
     }]
 }

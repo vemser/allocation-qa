@@ -51,20 +51,9 @@
                 "default": {},
                 "title": "A Schema",
                 "required": [
-                    "idPrograma",
-                    "nome",
-                    "descricao",
-                    "situacao"
+                    "nome"
                 ],
                 "properties": {
-                    "idPrograma": {
-                        "type": "integer",
-                        "default": 0,
-                        "title": "The idPrograma Schema",
-                        "examples": [
-                            0
-                        ]
-                    },
                     "nome": {
                         "type": "string",
                         "default": "",
@@ -72,37 +61,15 @@
                         "examples": [
                             "string"
                         ]
-                    },
-                    "descricao": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The descricao Schema",
-                        "examples": [
-                            "string"
-                        ]
-                    },
-                    "situacao": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The situacao Schema",
-                        "examples": [
-                            "string"
-                        ]
                     }
                 },
                 "examples": [{
-                    "idPrograma": 0,
-                    "nome": "string",
-                    "descricao": "string",
-                    "situacao": "string"
+                    "nome": "string"
                 }]
             },
             "examples": [
                 [{
-                    "idPrograma": 0,
-                    "nome": "string",
-                    "descricao": "string",
-                    "situacao": "string"
+                    "nome": "string"
                 }]
             ]
         }
@@ -113,10 +80,7 @@
         "pagina": 0,
         "tamanho": 0,
         "elementos": [{
-            "idPrograma": 0,
-            "nome": "string",
-            "descricao": "string",
-            "situacao": "string"
+            "nome": "string"
         }]
     }]
 }

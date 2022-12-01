@@ -51,6 +51,7 @@
                 "default": {},
                 "title": "A Schema",
                 "required": [
+                    "idVaga",
                     "nome",
                     "quantidade",
                     "quantidadeAlocados",
@@ -59,17 +60,23 @@
                     "dataAbertura",
                     "dataFechamento",
                     "dataCriacao",
-                    "observacoes",
-                    "emailCliente",
-                    "codigo"
+                    "clienteDTO"
                 ],
                 "properties": {
+                    "idVaga": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idVaga Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
                     "nome": {
                         "type": "string",
                         "default": "",
                         "title": "The nome Schema",
                         "examples": [
-                            "Desenvolvedor(a) Java - Back-End"
+                            "string"
                         ]
                     },
                     "quantidade": {
@@ -77,7 +84,7 @@
                         "default": 0,
                         "title": "The quantidade Schema",
                         "examples": [
-                            2
+                            0
                         ]
                     },
                     "quantidadeAlocados": {
@@ -85,7 +92,7 @@
                         "default": 0,
                         "title": "The quantidadeAlocados Schema",
                         "examples": [
-                            1
+                            0
                         ]
                     },
                     "idPrograma": {
@@ -93,7 +100,7 @@
                         "default": 0,
                         "title": "The idPrograma Schema",
                         "examples": [
-                            1
+                            0
                         ]
                     },
                     "situacao": {
@@ -101,7 +108,7 @@
                         "default": "",
                         "title": "The situacao Schema",
                         "examples": [
-                            "ABERTO"
+                            "ATIVO"
                         ]
                     },
                     "dataAbertura": {
@@ -109,7 +116,7 @@
                         "default": "",
                         "title": "The dataAbertura Schema",
                         "examples": [
-                            "2022-12-20"
+                            "2022-12-01"
                         ]
                     },
                     "dataFechamento": {
@@ -117,7 +124,7 @@
                         "default": "",
                         "title": "The dataFechamento Schema",
                         "examples": [
-                            "2022-12-26"
+                            "2022-12-01"
                         ]
                     },
                     "dataCriacao": {
@@ -125,61 +132,108 @@
                         "default": "",
                         "title": "The dataCriacao Schema",
                         "examples": [
-                            "2022-11-30"
+                            "2022-12-01"
                         ]
                     },
-                    "observacoes": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The observacoes Schema",
-                        "examples": [
-                            "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização."
-                        ]
-                    },
-                    "emailCliente": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The emailCliente Schema",
-                        "examples": [
-                            "sicred@dbccompany.com.br"
-                        ]
-                    },
-                    "codigo": {
-                        "type": "integer",
-                        "default": 0,
-                        "title": "The codigo Schema",
-                        "examples": [
-                            0
-                        ]
+                    "clienteDTO": {
+                        "type": "object",
+                        "default": {},
+                        "title": "The clienteDTO Schema",
+                        "required": [
+                            "idCliente",
+                            "nome",
+                            "email",
+                            "telefone",
+                            "situacao"
+                        ],
+                        "properties": {
+                            "idCliente": {
+                                "type": "integer",
+                                "default": 0,
+                                "title": "The idCliente Schema",
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "nome": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The nome Schema",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "email": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The email Schema",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "telefone": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The telefone Schema",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "situacao": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The situacao Schema",
+                                "examples": [
+                                    "ATIVO"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "idCliente": 0,
+                            "nome": "string",
+                            "email": "string",
+                            "telefone": "string",
+                            "situacao": "ATIVO"
+                        }]
                     }
                 },
                 "examples": [{
-                    "nome": "Desenvolvedor(a) Java - Back-End",
-                    "quantidade": 2,
-                    "quantidadeAlocados": 1,
-                    "idPrograma": 1,
-                    "situacao": "ABERTO",
-                    "dataAbertura": "2022-12-20",
-                    "dataFechamento": "2022-12-26",
-                    "dataCriacao": "2022-11-30",
-                    "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
-                    "emailCliente": "sicred@dbccompany.com.br",
-                    "codigo": 0
+                    "idVaga": 0,
+                    "nome": "string",
+                    "quantidade": 0,
+                    "quantidadeAlocados": 0,
+                    "idPrograma": 0,
+                    "situacao": "ATIVO",
+                    "dataAbertura": "2022-12-01",
+                    "dataFechamento": "2022-12-01",
+                    "dataCriacao": "2022-12-01",
+                    "clienteDTO": {
+                        "idCliente": 0,
+                        "nome": "string",
+                        "email": "string",
+                        "telefone": "string",
+                        "situacao": "ATIVO"
+                    }
                 }]
             },
             "examples": [
                 [{
-                    "nome": "Desenvolvedor(a) Java - Back-End",
-                    "quantidade": 2,
-                    "quantidadeAlocados": 1,
-                    "idPrograma": 1,
-                    "situacao": "ABERTO",
-                    "dataAbertura": "2022-12-20",
-                    "dataFechamento": "2022-12-26",
-                    "dataCriacao": "2022-11-30",
-                    "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
-                    "emailCliente": "sicred@dbccompany.com.br",
-                    "codigo": 0
+                    "idVaga": 0,
+                    "nome": "string",
+                    "quantidade": 0,
+                    "quantidadeAlocados": 0,
+                    "idPrograma": 0,
+                    "situacao": "ATIVO",
+                    "dataAbertura": "2022-12-01",
+                    "dataFechamento": "2022-12-01",
+                    "dataCriacao": "2022-12-01",
+                    "clienteDTO": {
+                        "idCliente": 0,
+                        "nome": "string",
+                        "email": "string",
+                        "telefone": "string",
+                        "situacao": "ATIVO"
+                    }
                 }]
             ]
         }
@@ -190,17 +244,22 @@
         "pagina": 0,
         "tamanho": 0,
         "elementos": [{
-            "nome": "Desenvolvedor(a) Java - Back-End",
-            "quantidade": 2,
-            "quantidadeAlocados": 1,
-            "idPrograma": 1,
-            "situacao": "ABERTO",
-            "dataAbertura": "2022-12-20",
-            "dataFechamento": "2022-12-26",
-            "dataCriacao": "2022-11-30",
-            "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
-            "emailCliente": "sicred@dbccompany.com.br",
-            "codigo": 0
+            "idVaga": 0,
+            "nome": "string",
+            "quantidade": 0,
+            "quantidadeAlocados": 0,
+            "idPrograma": 0,
+            "situacao": "ATIVO",
+            "dataAbertura": "2022-12-01",
+            "dataFechamento": "2022-12-01",
+            "dataCriacao": "2022-12-01",
+            "clienteDTO": {
+                "idCliente": 0,
+                "nome": "string",
+                "email": "string",
+                "telefone": "string",
+                "situacao": "ATIVO"
+            }
         }]
     }]
 }

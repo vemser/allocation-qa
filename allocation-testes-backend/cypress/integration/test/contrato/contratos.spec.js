@@ -68,6 +68,26 @@ context('Contratos - Cenários Positivos', () => {
     contratoService.contratoAlunoRequest("0","10","aluno.get.contrato")
   });
 
+  it('Aluno - Validar contrato Alunos disponiveis', () => {
+    cy.allure()
+    .epic('Testes de Contrato')
+    .feature('Cenários Positivos')
+    .story('GET - Validar contrato GET/aluno/disponiveis')
+    .severity('critical')
+    .step('Valida o contrato')
+    contratoService.contratoAlunosDisponiveisRequest("alunosDisponiveis.get.contrato")
+  });
+
+  it('Tecnologia - Validar contrato Tecnologia', () => {
+    cy.allure()
+    .epic('Testes de Contrato')
+    .feature('Cenários Positivos')
+    .story('GET - Validar contrato GET/tecnologia/tecnologia-busca')
+    .severity('critical')
+    .step('Valida o contrato')
+    contratoService.contratoTecnologiaRequest("java", "0", "10", "tecnologiaTecnologiaBusca.get.contrato")
+  });
+
 
 
 });

@@ -51,18 +51,36 @@
                 "default": {},
                 "title": "A Schema",
                 "required": [
+                    "idAluno",
                     "nome",
+                    "email",
                     "area",
                     "tecnologias",
-                    "programa",
+                    "idPrograma",
                     "emProcesso",
-                    "alocado"
+                    "statusAluno"
                 ],
                 "properties": {
+                    "idAluno": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idAluno Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
                     "nome": {
                         "type": "string",
                         "default": "",
                         "title": "The nome Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "email": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The email Schema",
                         "examples": [
                             "string"
                         ]
@@ -72,7 +90,7 @@
                         "default": "",
                         "title": "The area Schema",
                         "examples": [
-                            "FRONT"
+                            "FRONTEND"
                         ]
                     },
                     "tecnologias": {
@@ -106,12 +124,12 @@
                             }]
                         ]
                     },
-                    "programa": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The programa Schema",
+                    "idPrograma": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idPrograma Schema",
                         "examples": [
-                            "string"
+                            0
                         ]
                     },
                     "emProcesso": {
@@ -122,36 +140,40 @@
                             "string"
                         ]
                     },
-                    "alocado": {
+                    "statusAluno": {
                         "type": "string",
                         "default": "",
-                        "title": "The alocado Schema",
+                        "title": "The statusAluno Schema",
                         "examples": [
                             "ALOCADO"
                         ]
                     }
                 },
                 "examples": [{
+                    "idAluno": 0,
                     "nome": "string",
-                    "area": "FRONT",
+                    "email": "string",
+                    "area": "FRONTEND",
                     "tecnologias": [{
                         "nome": "string"
                     }],
-                    "programa": "string",
+                    "idPrograma": 0,
                     "emProcesso": "string",
-                    "alocado": "ALOCADO"
+                    "statusAluno": "ALOCADO"
                 }]
             },
             "examples": [
                 [{
+                    "idAluno": 0,
                     "nome": "string",
-                    "area": "FRONT",
+                    "email": "string",
+                    "area": "FRONTEND",
                     "tecnologias": [{
                         "nome": "string"
                     }],
-                    "programa": "string",
+                    "idPrograma": 0,
                     "emProcesso": "string",
-                    "alocado": "ALOCADO"
+                    "statusAluno": "ALOCADO"
                 }]
             ]
         }
@@ -162,14 +184,16 @@
         "pagina": 0,
         "tamanho": 0,
         "elementos": [{
+            "idAluno": 0,
             "nome": "string",
-            "area": "FRONT",
+            "email": "string",
+            "area": "FRONTEND",
             "tecnologias": [{
                 "nome": "string"
             }],
-            "programa": "string",
+            "idPrograma": 0,
             "emProcesso": "string",
-            "alocado": "ALOCADO"
+            "statusAluno": "ALOCADO"
         }]
     }]
 }

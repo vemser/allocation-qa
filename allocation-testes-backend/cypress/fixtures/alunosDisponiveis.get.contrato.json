@@ -1,0 +1,135 @@
+{
+    "type": "array",
+    "default": [],
+    "title": "Root Schema",
+    "items": {
+        "type": "object",
+        "default": {},
+        "title": "A Schema",
+        "required": [
+            "idAluno",
+            "nome",
+            "email",
+            "area",
+            "tecnologias",
+            "idPrograma",
+            "emProcesso",
+            "statusAluno"
+        ],
+        "properties": {
+            "idAluno": {
+                "type": "integer",
+                "default": 0,
+                "title": "The idAluno Schema",
+                "examples": [
+                    0
+                ]
+            },
+            "nome": {
+                "type": "string",
+                "default": "",
+                "title": "The nome Schema",
+                "examples": [
+                    "string"
+                ]
+            },
+            "email": {
+                "type": "string",
+                "default": "",
+                "title": "The email Schema",
+                "examples": [
+                    "string"
+                ]
+            },
+            "area": {
+                "type": "string",
+                "default": "",
+                "title": "The area Schema",
+                "examples": [
+                    "FRONTEND"
+                ]
+            },
+            "tecnologias": {
+                "type": "array",
+                "default": [],
+                "title": "The tecnologias Schema",
+                "items": {
+                    "type": "object",
+                    "default": {},
+                    "title": "A Schema",
+                    "required": [
+                        "nome"
+                    ],
+                    "properties": {
+                        "nome": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The nome Schema",
+                            "examples": [
+                                "string"
+                            ]
+                        }
+                    },
+                    "examples": [{
+                        "nome": "string"
+                    }]
+                },
+                "examples": [
+                    [{
+                        "nome": "string"
+                    }]
+                ]
+            },
+            "idPrograma": {
+                "type": "integer",
+                "default": 0,
+                "title": "The idPrograma Schema",
+                "examples": [
+                    0
+                ]
+            },
+            "emProcesso": {
+                "type": "string",
+                "default": "",
+                "title": "The emProcesso Schema",
+                "examples": [
+                    "string"
+                ]
+            },
+            "statusAluno": {
+                "type": "string",
+                "default": "",
+                "title": "The statusAluno Schema",
+                "examples": [
+                    "ALOCADO"
+                ]
+            }
+        },
+        "examples": [{
+            "idAluno": 0,
+            "nome": "string",
+            "email": "string",
+            "area": "FRONTEND",
+            "tecnologias": [{
+                "nome": "string"
+            }],
+            "idPrograma": 0,
+            "emProcesso": "string",
+            "statusAluno": "ALOCADO"
+        }]
+    },
+    "examples": [
+        [{
+            "idAluno": 0,
+            "nome": "string",
+            "email": "string",
+            "area": "FRONTEND",
+            "tecnologias": [{
+                "nome": "string"
+            }],
+            "idPrograma": 0,
+            "emProcesso": "string",
+            "statusAluno": "ALOCADO"
+        }]
+    ]
+}

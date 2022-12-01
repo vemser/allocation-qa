@@ -93,4 +93,13 @@ context('Programa - Cenários Positivos', () => {
       programaService.deletarPrograma(programa.idPrograma))
   })
 
+
+  // it.only('Limpa programa', () => {
+  //   cy.allure()
+  //   .step('limpa')
+  //   for (let i = 5; i < 220; i++){
+  //     programaService.deletarPrograma(i)
+  //   }
+  //   });
+
 });

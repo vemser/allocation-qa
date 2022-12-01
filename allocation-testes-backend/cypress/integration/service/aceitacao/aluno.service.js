@@ -17,13 +17,13 @@ export default class AlunoService{
         },
         body: `{
           "nome": "Teste Aluno de QA",
-          "email": "teste.alunoQA3@dbccompany.com.br",
+          "email": "teste.alunoQA@dbccompany.com.br",
           "idPrograma": ${idPrograma},
           "area": "FRONTEND",
           "cidade": "John People",
           "estado": "Paraíba",
-          "telefone": "99595-1313",
-          "descricao": "xxxx",
+          "telefone": "91313-1313",
+          "descricao": "agora tenho descrição",
           "statusAluno": "ALOCADO",
           "tecnologias": [
             "java"
@@ -55,7 +55,7 @@ export default class AlunoService{
         },
         body: `{
           "nome": "Teste Aluno de QA",
-          "email": "teste.alunoQA2@dbccompany.com.br",
+          "email": "teste.alunoQA@dbccompany.com.br",
           "idPrograma": ${idPrograma},
           "area": "FRONTEND",
           "cidade": "John People",

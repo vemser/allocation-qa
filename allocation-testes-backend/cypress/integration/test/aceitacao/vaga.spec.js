@@ -1,14 +1,15 @@
 import ProgramaService from '../../service/aceitacao/programa.service';
 import VagaService from '../../service/aceitacao/vaga.service';
-import UsuarioService from '../../service/aceitacao/usuario.service';
+import ClienteService from '../../service/aceitacao/cliente.service';
 
 
 const vagaService = new VagaService();
-const usuarioService = new UsuarioService();
+const clienteService = new ClienteService();
 
 const programaService = new ProgramaService();
 const programaPayload = require('../../../fixtures/programa.payload.json')
-
+const clientePayload = require('../../../fixtures/cliente.payload.json')
+let meuEmailCliente;
 
 ////////////////////////////////////////////////////////
 /////////////////// CENÁRIOS POSITIVOS /////////////////
@@ -22,42 +23,65 @@ context('Vaga - Cenários Positivos', () => {
     .feature('Cenários Positivos')
     .story('PUT - Editar um vaga no banco de dados')
     .severity('critical')
+    // cria um cliente
+    .step('Cria um Cliente')
+    clienteService.adicionarCliente(clientePayload)
+    .then(response => {
+      cy.wrap(response.body).as('cliente')
+      cy.get('@cliente').then(cliente => 
+        meuEmailCliente = cliente.email
+        )
+    })
+
+    // cria um programa
+    cy.allure()
     .step('Cria um Programa')
     programaService.adicionarPrograma(programaPayload)
     .then(response => {
       cy.wrap(response.body).as('programa')
     })
 
+    // cria uma vaga
     cy.allure()
-    .step('Criar uma Vaga')
+    .step('Cria uma Vaga')
     cy.get('@programa').then(programa => {
-    vagaService.adicionarVaga(programa.idPrograma)
+    vagaService.adicionarVaga(programa.idPrograma, meuEmailCliente)
     .then(response => {
       cy.wrap(response.body).as('vaga')
     })
       })
 
     cy.allure()
-    .step('Valida editar uma vaga')
+    .step('valida Edita uma Vaga')
     cy.get('@vaga').then(vaga => {
-      vagaService.atualizarVaga(vaga.idVaga, vaga.idPrograma)
-      .should((response) => {
-        expect(response.status).to.eq(201)
-        expect(response.body.situacao).to.eq("FECHADO")
-      })
+    vagaService.atualizarVaga(vaga.idVaga, vaga.idPrograma, meuEmailCliente)
+    .should((response) => {
+      expect(response.status).to.eq(201)
     })
+      })
+  
+        
 
+    // deleta vaga
     cy.allure()
     .step('Deleta vaga criado')
     cy.get('@vaga').then(vaga => 
       vagaService.deletarVaga(vaga.idVaga))
-  
+    
+    // deleta programa
     cy.allure()
     .step('Deleta programa criado')
     cy.get('@vaga').then(vaga => 
       programaService.deletarPrograma(vaga.idPrograma))
+
+    // deleta cliente
+    cy.allure()
+    .step('Deleta cliente criado')
+    cy.get('@cliente').then(cliente => 
+      clienteService.deletarCliente(cliente.idCliente))
   
-    });
+    })
+    
 
   it('GET - Listar todos vagas cadastrados', () => {
     cy.allure()
@@ -78,6 +102,18 @@ context('Vaga - Cenários Positivos', () => {
     .feature('Cenários Positivos')
     .story('DELETE - Remover um vaga através do id')
     .severity('critical')
+    // cria um cliente
+    .step('Cria um Cliente')
+    clienteService.adicionarCliente(clientePayload)
+    .then(response => {
+      cy.wrap(response.body).as('cliente')
+      cy.get('@cliente').then(cliente => 
+        meuEmailCliente = cliente.email
+        )
+    })
+
+    // cria um programa
+    cy.allure()
     .step('Cria um Programa')
     programaService.adicionarPrograma(programaPayload)
     .then(response => {
@@ -85,29 +121,36 @@ context('Vaga - Cenários Positivos', () => {
     })
 
     cy.allure()
-    .step('Criar uma Vaga')
+    .step('Cria uma Vaga')
     cy.get('@programa').then(programa => {
-    vagaService.adicionarVaga(programa.idPrograma)
+    vagaService.adicionarVaga(programa.idPrograma, meuEmailCliente)
     .then(response => {
       cy.wrap(response.body).as('vaga')
     })
       })
 
+    // deleta vaga
     cy.allure()
-    .step('valida Deletar vaga criada')
-    cy.get('@vaga')
-    .then(vaga => 
+    .step('Valida deletar vaga criado')
+    cy.get('@vaga').then(vaga => 
       vagaService.deletarVaga(vaga.idVaga)
       .should((response) => {
         expect(response.status).to.eq(204)
       }))
-
+    
+    // deleta programa
     cy.allure()
     .step('Deleta programa criado')
     cy.get('@vaga').then(vaga => 
       programaService.deletarPrograma(vaga.idPrograma))
-      
-    });
+
+    // deleta cliente
+    cy.allure()
+    .step('Deleta cliente criado')
+    cy.get('@cliente').then(cliente => 
+      clienteService.deletarCliente(cliente.idCliente))
+  
+    })
 
   it('POST - Adicionar um vaga na aplicação', () => {
     cy.allure()
@@ -115,6 +158,18 @@ context('Vaga - Cenários Positivos', () => {
     .feature('Cenários Positivos')
     .story('POST - Adicionar um vaga na aplicação')
     .severity('critical')
+    // cria um cliente
+    .step('Cria um Cliente')
+    clienteService.adicionarCliente(clientePayload)
+    .then(response => {
+      cy.wrap(response.body).as('cliente')
+      cy.get('@cliente').then(cliente => 
+        meuEmailCliente = cliente.email
+        )
+    })
+
+    // cria um programa
+    cy.allure()
     .step('Cria um Programa')
     programaService.adicionarPrograma(programaPayload)
     .then(response => {
@@ -124,7 +179,7 @@ context('Vaga - Cenários Positivos', () => {
     cy.allure()
     .step('Valida Criar uma Vaga')
     cy.get('@programa').then(programa => {
-    vagaService.adicionarVaga(programa.idPrograma)
+    vagaService.adicionarVaga(programa.idPrograma, meuEmailCliente)
     .should((response) => {
       expect(response.status).to.eq(201)
     }).then(response => {
@@ -132,15 +187,23 @@ context('Vaga - Cenários Positivos', () => {
     })
       })
 
+    // deleta vaga
     cy.allure()
     .step('Deleta vaga criado')
     cy.get('@vaga').then(vaga => 
       vagaService.deletarVaga(vaga.idVaga))
-  
+    
+    // deleta programa
     cy.allure()
     .step('Deleta programa criado')
     cy.get('@vaga').then(vaga => 
       programaService.deletarPrograma(vaga.idPrograma))
+
+    // deleta cliente
+    cy.allure()
+    .step('Deleta cliente criado')
+    cy.get('@cliente').then(cliente => 
+      clienteService.deletarCliente(cliente.idCliente))
   
     })
 

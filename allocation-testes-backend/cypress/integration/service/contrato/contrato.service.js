@@ -157,6 +157,64 @@ export default class ContratoService{
   };
 
   
+  contratoAlunosDisponiveisRequest(contrato) {
+    cy.request({
+      method: 'GET',
+      url: `${API_BASE}/aluno/disponiveis`,
+      failOnStatusCode: false,
+      headers: {
+        authorization: token,
+        "Content-Type": "application/JSON"
+      },
+    }).then((response) => {
+      // pegar o arquivo (Schema) pasta fixtures e passar como parâmetro
+      cy.fixture(contrato).then((contrato) => {
+        // compilar esase arquivo, (jsonSchema) 
+        const validate = ajv.compile(contrato)
+  
+        // response da api (validações)
+        const responseApi = validate(response.body)
+  
+        // Validação (Error)
+        if (!responseApi) cy.log(validate.errors).then(()=>{
+          throw new Error('Falha do contrato')
+        });
+      });
+    });
+  };
+
+  contratoTecnologiaRequest(nomeTecnologia, page, size, contrato) {
+    cy.request({
+      method: 'GET',
+      url: `${API_BASE}/tecnologia/tecnologia-busca`,
+      failOnStatusCode: false,
+      headers: {
+        authorization: token,
+        "Content-Type": "application/JSON"
+      },
+      qs: {
+        nomeTecnologia: nomeTecnologia,
+        page: page,
+        size: size,
+      },
+    }).then((response) => {
+      // pegar o arquivo (Schema) pasta fixtures e passar como parâmetro
+      cy.fixture(contrato).then((contrato) => {
+        // compilar esase arquivo, (jsonSchema) 
+        const validate = ajv.compile(contrato)
+  
+        // response da api (validações)
+        const responseApi = validate(response.body)
+  
+        // Validação (Error)
+        if (!responseApi) cy.log(validate.errors).then(()=>{
+          throw new Error('Falha do contrato')
+        });
+      });
+    });
+  };
+
+  
   contratoUsuarioRequest(pagina, tamanho, contrato) {
     cy.request({
       method: 'GET',
@@ -167,8 +225,8 @@ export default class ContratoService{
         "Content-Type": "application/JSON"
       },
       qs: {
-        paginaQueEuQuero: pagina,
-        tamanhoDeRegistrosPorPagina: tamanho,
+        pagina: pagina,
+        tamanho: tamanho,
       },
     }).then((response) => {
       // pegar o arquivo (Schema) pasta fixtures e passar como parâmetro

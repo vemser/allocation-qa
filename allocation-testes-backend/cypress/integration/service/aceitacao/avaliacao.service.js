@@ -31,7 +31,7 @@ export default class AvaliacaoService{
         },
         body: `{
           "idVaga": ${idVaga},
-          "emailAluno": ${emailAluno},
+          "emailAluno": "${emailAluno}",
           "nota": 10,
           "descricao": "Excelente",
           "dataAvaliacao": "2022-12-24",
@@ -69,7 +69,7 @@ export default class AvaliacaoService{
         },
         body: `{
           "idVaga": ${idVaga},
-          "emailAluno": ${emailAluno},
+          "emailAluno": "${emailAluno}",
           "nota": 9,
           "descricao": "Muito bom",
           "dataAvaliacao": "2022-12-24",
