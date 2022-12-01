@@ -15,6 +15,7 @@ const programaPayload = require('../../../fixtures/programa.payload.json')
 const clientePayload = require('../../../fixtures/cliente.payload.json')
 let meuEmailCliente;
 let meuIdVaga;
+let meuIdAvaliacao;
 
 ////////////////////////////////////////////////////////
 /////////////////// CENÁRIOS POSITIVOS /////////////////
@@ -69,15 +70,26 @@ context('Avaliacao - Cenários Positivos', () => {
     })
       })
     
-    // valida criar uma avaliacao
+    // cria uma avaliacao
     cy.allure()
     .step('Valida Criar uma avaliacao')
     cy.get('@aluno').then(aluno => {
       avaliacaoService.adicionarAvaliacao(meuIdVaga, aluno.email)
-      .should((response) => {
-        expect(response.status).to.eq(201)
-      }).then(response => {
+      .then(response => {
         cy.wrap(response.body).as('avaliacao')
+        cy.get('@avaliacao').then(avaliacao => 
+          meuIdAvaliacao = avaliacao.idAvaliacao
+          )
+      })
+    })
+
+    // Valida editar uma avaliacao
+    cy.allure()
+    .step('Valida editar uma avaliacao')
+    cy.get('@aluno').then(aluno => {
+      avaliacaoService.atualizarAvaliacao(meuIdAvaliacao, meuIdVaga, aluno.email) // idAvaliacao, idVaga, emailAluno
+      .should((response) =>{
+        expect(response.status).to.eq(201)
       })
     })
     
@@ -113,20 +125,20 @@ context('Avaliacao - Cenários Positivos', () => {
 
   })
 
-  it('GET - Listar todos avaliacaos cadastrados', () => {
+  it.only('GET - Listar todos avaliacaos cadastrados', () => {
     cy.allure()
     .epic('Testes de endpoint - Avaliacao')
     .feature('Cenários Positivos')
     .story('GET - Listar todos avaliacaos cadastrados')
     .severity('critical')
     .step('Lista avaliacaos')
-    avaliacaoService.listarAvaliacaos("0", "10")
+    avaliacaoService.listarAvaliacoes("0", "10")
     .should((response) =>{
       expect(response.status).to.eq(200)
     });
   });
 
-  it('DELETE - Remover um avaliacao através do id', () => {
+  it.only('DELETE - Remover um avaliacao através do id', () => {
     cy.allure()
     .epic('Testes de endpoint - Avaliacao')
     .feature('Cenários Positivos')
@@ -183,9 +195,9 @@ context('Avaliacao - Cenários Positivos', () => {
       })
     })
     
-    // deleta avaliacao
+    // valida deleta avaliacao
     cy.allure()
-    .step('Deleta avaliacao criado')
+    .step('Valida deletar avaliacao criada')
     cy.get('@avaliacao').then(avaliacao => 
       avaliacaoService.deletarAvaliacao(avaliacao.idAvaliacao)
       .should((response) => {

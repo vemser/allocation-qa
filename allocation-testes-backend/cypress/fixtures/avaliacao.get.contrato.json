@@ -89,7 +89,7 @@
                         ]
                     },
                     "descricao": {
-                        "type": "string",
+                        "type": ["string", "null"],
                         "default": "",
                         "title": "The descricao Schema",
                         "examples": [
@@ -97,7 +97,7 @@
                         ]
                     },
                     "dataAvaliacao": {
-                        "type": "string",
+                        "type": ["string", "null"],
                         "default": "",
                         "title": "The dataAvaliacao Schema",
                         "examples": [
@@ -105,7 +105,7 @@
                         ]
                     },
                     "dataEntrevista": {
-                        "type": "string",
+                        "type": ["string", "null"],
                         "default": "",
                         "title": "The dataEntrevista Schema",
                         "examples": [
@@ -113,7 +113,7 @@
                         ]
                     },
                     "dataResposta": {
-                        "type": "string",
+                        "type": ["string", "null"],
                         "default": "",
                         "title": "The dataResposta Schema",
                         "examples": [
@@ -121,7 +121,7 @@
                         ]
                     },
                     "dataCriacao": {
-                        "type": "string",
+                        "type": ["string", "null"],
                         "default": "",
                         "title": "The dataCriacao Schema",
                         "examples": [
@@ -141,7 +141,7 @@
                         "default": "",
                         "title": "The situacao Schema",
                         "examples": [
-                            "AVALIADO"
+                            "AVALIACAO1"
                         ]
                     },
                     "idAvaliacao": {
@@ -163,7 +163,7 @@
                     "dataResposta": "2022-12-22",
                     "dataCriacao": "2022-12-01",
                     "tipoAvaliacao": "INDIVIDUAL",
-                    "situacao": "AVALIADO",
+                    "situacao": "AVALIACAO1",
                     "idAvaliacao": 0
                 }]
             },
@@ -178,7 +178,7 @@
                     "dataResposta": "2022-12-22",
                     "dataCriacao": "2022-12-01",
                     "tipoAvaliacao": "INDIVIDUAL",
-                    "situacao": "AVALIADO",
+                    "situacao": "AVALIACAO1",
                     "idAvaliacao": 0
                 }]
             ]
@@ -199,7 +199,7 @@
             "dataResposta": "2022-12-22",
             "dataCriacao": "2022-12-01",
             "tipoAvaliacao": "INDIVIDUAL",
-            "situacao": "AVALIADO",
+            "situacao": "AVALIACAO1",
             "idAvaliacao": 0
         }]
     }]
