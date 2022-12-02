@@ -96,6 +96,74 @@ context('Vaga - Cenários Positivos', () => {
     });
   });
 
+  it.only('GET - Listar vagas cadastradas por idVaga', () => {
+    cy.allure()
+    .epic('Testes de endpoint - Vaga')
+    .feature('Cenários Positivos')
+    .story('GET - Listar todos vagas cadastrados')
+    .severity('critical')
+    .step('Lista vagas')
+    // cria um cliente
+    .step('Cria um Cliente')
+    clienteService.adicionarCliente(clientePayload)
+    .then(response => {
+      cy.wrap(response.body).as('cliente')
+      cy.get('@cliente').then(cliente => 
+        meuEmailCliente = cliente.email
+        )
+    })
+
+    // cria um programa
+    cy.allure()
+    .step('Cria um Programa')
+    programaService.adicionarPrograma(programaPayload)
+    .then(response => {
+      cy.wrap(response.body).as('programa')
+    })
+
+    // cria uma vaga
+    cy.allure()
+    .step('Cria uma Vaga')
+    cy.get('@programa').then(programa => {
+    vagaService.adicionarVaga(programa.idPrograma, meuEmailCliente)
+    .then(response => {
+      cy.wrap(response.body).as('vaga')
+    })
+      })
+
+    // valida get idVaga uma vaga
+    cy.allure()
+    .step('Lista vaga por idVaga')
+    cy.get('@vaga').then(vaga => {
+    vagaService.listarVagasPorIdVaga(vaga.idVaga)
+    .should((response) =>{
+      expect(response.status).to.eq(200)
+    })
+  })
+
+    // deleta vaga
+    cy.allure()
+    .step('Valida deletar vaga criado')
+    cy.get('@vaga').then(vaga => 
+      vagaService.deletarVaga(vaga.idVaga))
+
+    
+    // deleta programa
+    cy.allure()
+    .step('Deleta programa criado')
+    cy.get('@vaga').then(vaga => 
+      programaService.deletarPrograma(vaga.idPrograma))
+
+    // deleta cliente
+    cy.allure()
+    .step('Deleta cliente criado')
+    cy.get('@cliente').then(cliente => 
+      clienteService.deletarCliente(cliente.idCliente))
+  
+    })
+
+  // listarVagasPorIdVaga
+
   it('DELETE - Remover um vaga através do id', () => {
     cy.allure()
     .epic('Testes de endpoint - Vaga')

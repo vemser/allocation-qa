@@ -83,5 +83,17 @@ export default class VagaService{
     }).as('response').get('@response')
   }
 
+  listarVagasPorIdVaga(idVaga){
+    return cy.request({
+        method: 'GET',
+        url: `${API_BASE}/vaga/${idVaga}`,
+        headers: {
+          Authorization: token,
+          "Content-Type": "application/json",
+        },
+        failOnStatusCode: false,
+    }).as('response').get('@response')
+  }
+
   
 }

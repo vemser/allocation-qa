@@ -1,0 +1,8 @@
+{
+  "name": "Gaby e Pedro",
+  "type": "jenkins",
+  "url": "http://amazon.com/",
+  "buildOrder": 1,
+  "buildName": "Amazon Test E2E #1",
+  "buildUrl": "http://amazon.com/"
+}
