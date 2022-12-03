@@ -125,7 +125,7 @@ context('Avaliacao - Cenários Positivos', () => {
 
   })
 
-  it.only('GET - Listar todos avaliacaos cadastrados', () => {
+  it('GET - Listar todos avaliacaos cadastrados', () => {
     cy.allure()
     .epic('Testes de endpoint - Avaliacao')
     .feature('Cenários Positivos')
@@ -138,7 +138,7 @@ context('Avaliacao - Cenários Positivos', () => {
     });
   });
 
-  it.only('DELETE - Remover um avaliacao através do id', () => {
+  it('DELETE - Remover um avaliacao através do id', () => {
     cy.allure()
     .epic('Testes de endpoint - Avaliacao')
     .feature('Cenários Positivos')
@@ -230,7 +230,7 @@ context('Avaliacao - Cenários Positivos', () => {
 
   })
 
-  it.only('POST - Adicionar um avaliacao na aplicação', () => {
+  it('POST - Adicionar um avaliacao na aplicação', () => {
     cy.allure()
     .epic('Testes de endpoint - Avaliacao')
     .feature('Cenários Positivos')

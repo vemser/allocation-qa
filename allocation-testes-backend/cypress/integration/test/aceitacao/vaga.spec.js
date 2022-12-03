@@ -96,7 +96,7 @@ context('Vaga - Cenários Positivos', () => {
     });
   });
 
-  it.only('GET - Listar vagas cadastradas por idVaga', () => {
+  it('GET - Listar vagas cadastradas por idVaga', () => {
     cy.allure()
     .epic('Testes de endpoint - Vaga')
     .feature('Cenários Positivos')

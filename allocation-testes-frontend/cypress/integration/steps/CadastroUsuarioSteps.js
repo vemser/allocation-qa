@@ -10,7 +10,7 @@ import UsuariosPage from "../pages/UsuariosPage";
 const mainPage = new MainPage;
 const basePage = new BasePage;
 const loginPage = new LoginPage;
-const cadastrousuarioPage = new CadastroUsuarioPage;
+const cadastroUsuarioPage = new CadastroUsuarioPage;
 const usuariosPage = new UsuariosPage;
 
 const randomFirstName = faker.name.firstName();
@@ -55,23 +55,23 @@ And(/^clico no link "Crie uma conta"$/, () => {
 });
 
 And(/^preencho o campo "Nome completo" com um nome válido$/, () => {
-    cadastrousuarioPage.preencherCampoNomeCompleto(randomNomeCompleto)
+    cadastroUsuarioPage.preencherCampoNomeCompleto(randomNomeCompleto)
 });
 
 And(/^preencho o campo "Email" com um email válido$/, () => {
-	cadastrousuarioPage.preencherCampoEmail(randomEmail);
+	cadastroUsuarioPage.preencherCampoEmail(randomEmail);
 });
 
 And(/^preencho o campo "Senha" com uma senha válida$/, () => {
-	cadastrousuarioPage.preencherCampoSenha(randomPassword);
+	cadastroUsuarioPage.preencherCampoSenha(randomPassword);
 });
 
 And(/^preencho o campo "Confirme a senha" com a mesma senha do campo anterior$/, () => {
-	cadastrousuarioPage.preencherCampoSenhaIgual(randomPassword);
+	cadastroUsuarioPage.preencherCampoSenhaIgual(randomPassword);
 });
 
 When(/^clico em salvar$/, () => {
-	cadastrousuarioPage.clicarNoBtnSalvar()
+	cadastroUsuarioPage.clicarNoBtnSalvar()
 });
 
 Then(/^devo receber uma confirmação de que o usuário foi criado com sucesso$/, () => {
@@ -104,36 +104,36 @@ And(/^clico no botão Cadastrar Usuário$/, () => {
 });
 
 And(/^preencho o campo Nome completo com um nome válido$/, () => {
-    cadastrousuarioPage.preencherCampoNomeCompleto(randomNomeCompleto2)
+    cadastroUsuarioPage.preencherCampoNomeCompleto(randomNomeCompleto2)
 });
 
 And(/^preencho o campo Email com um email válido$/, () => {
-	cadastrousuarioPage.preencherCampoEmail(randomEmail2);
+	cadastroUsuarioPage.preencherCampoEmail(randomEmail2);
 });
 
 And(/^preencho o campo Senha com uma senha válida$/, () => {
-	cadastrousuarioPage.preencherCampoSenha(randomPassword2);
+	cadastroUsuarioPage.preencherCampoSenha(randomPassword2);
 });
 
 And(/^preencho o campo Confirme a senha com a mesma senha do campo anterior$/, () => {
-	cadastrousuarioPage.preencherCampoSenhaIgual(randomPassword2);
+	cadastroUsuarioPage.preencherCampoSenhaIgual(randomPassword2);
 });
 
 And(/^seleciono o Tipo de Usuario Administrador$/, () => {
-	cadastrousuarioPage.selecionarTipoUsuarioAdm();
+	cadastroUsuarioPage.selecionarTipoUsuarioAdm();
 });
 
 When(/^clico em salvar$/, () => {
-	cadastrousuarioPage.clicarNoBtnSalvar();
+	cadastroUsuarioPage.clicarNoBtnSalvar();
 });
 
-Then(/^devo receber uma confirmação de que o usuário foi criado com sucesso$/, () => {
-	cadastrousuarioPage.validarMensagemUsuarioCriado();
+Then(/^devo receber uma confirmação de que o usuário adm foi criado com sucesso$/, () => {
+	usuariosPage.validarToastConfirmacaoNovoUsuarioCriado();
 });
 
 And(/^busco e deleto o usuario criado para limpar o banco de dados$/, () => {
-	usuariosPage.preencherCampoPesquisar(randomNomeCompleto2);
-	usuariosPage.clicarBtnFiltrar();
+	usuariosPage.preencherCampoPesquisar(randomEmail2);
+	usuariosPage.clicarBtnBuscar();
 	usuariosPage.clicarDeletarUsuario();
 })
 

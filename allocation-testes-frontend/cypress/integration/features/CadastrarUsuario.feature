@@ -27,5 +27,5 @@ Feature: Cadastrar Usuario
       And preencho o campo Confirme a senha com a mesma senha do campo anterior
       And seleciono o Tipo de Usuario Administrador
       When clico em salvar
-      Then devo receber uma confirmação de que o usuário foi criado com sucesso
+      Then devo receber uma confirmação de que o usuário adm foi criado com sucesso
       And busco e deleto o usuario criado para limpar o banco de dados
