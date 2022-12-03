@@ -11,10 +11,10 @@ let campoSenhaIgual = "#senhaIgual";
 let btnEnviarFoto = "label.MuiButtonBase-root";
 let btnVoltarPagina = "button.MuiButtonBase-root:nth-child(1)";
 let btnSalvar = "button.MuiButtonBase-root:nth-child(2)";
-let selectAdministrador = "#menu-cargo > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-1bepd21 > ul > li:nth-child(1)"
-let selectUsuario = "#tipo-usuario"
 
-export default class CadastroUsuarioPage{
+
+
+export default class CadastroVagaPage{
     
     preencherCampoNomeCompleto(randomNomeCompleto){
         basePage.preencherCampo(campoNomeCompleto, randomNomeCompleto)
@@ -34,11 +34,6 @@ export default class CadastroUsuarioPage{
 
     clicarNoBtnSalvar(){
         basePage.click(btnSalvar)
-    }
-
-    selecionarTipoUsuarioAdm(){
-        basePage.click(selectUsuario);
-        basePage.click(selectAdministrador);
     }
 }
 

@@ -14,6 +14,16 @@ context('Contratos - Cenários Positivos', () => {
     .step('Valida o contrato')
     contratoService.contratoVagaRequest("0","10","vaga.get.contrato")
   });
+
+  it('Vaga - Validar contrato Vaga por idVaga', () => {
+    cy.allure()
+    .epic('Testes de Contrato')
+    .feature('Cenários Positivos')
+    .story('GET - Validar contrato GET/vaga/{idVaga}')
+    .severity('critical')
+    .step('Valida o contrato')
+    contratoService.contratoVagaPorIdVagaRequest("26","vaga.get.contrato")
+  });
   
 
   it('Usuario - Validar contrato Usuario', () => {
@@ -24,6 +34,26 @@ context('Contratos - Cenários Positivos', () => {
     .severity('critical')
     .step('Valida o contrato')
     contratoService.contratoUsuarioRequest("0","10","usuario.get.contrato")
+  });
+
+  it('Usuario - Validar contrato Usuario por Nome', () => {
+    cy.allure()
+    .epic('Testes de Contrato')
+    .feature('Cenários Positivos')
+    .story('GET - Validar contrato GET/usuario/listarPorNome')
+    .severity('normal')
+    .step('Valida o contrato')
+    contratoService.contratoUsuarioPorNomeRequest("0","10","teste", "usuarioPorNome.get.contrato")
+  });
+
+  it('Usuario - Validar contrato Usuario por Email', () => {
+    cy.allure()
+    .epic('Testes de Contrato')
+    .feature('Cenários Positivos')
+    .story('GET - Validar contrato GET/usuario/listarPorEmail')
+    .severity('normal')
+    .step('Valida o contrato')
+    contratoService.contratoUsuarioPorEmailRequest("0","10","teste@dbccompany.com.br", "usuarioPorEmail.get.contrato")
   });
 
 
@@ -58,6 +88,16 @@ context('Contratos - Cenários Positivos', () => {
   });
 
 
+  it('Avaliacao - Validar contrato Avaliacao por IdAvaliação', () => {
+    cy.allure()
+    .epic('Testes de Contrato')
+    .feature('Cenários Positivos')
+    .story('GET - Validar contrato GET/avaliacao/{idAvaliacao}')
+    .severity('normal')
+    .step('Valida o contrato')
+    contratoService.contratoAvaliacaoPorIdAvaliacaoRequest("27", "avaliacaoPorIdAvaliacao.get.contrato")
+  });
+
   it('Aluno - Validar contrato Aluno', () => {
     cy.allure()
     .epic('Testes de Contrato')
@@ -75,7 +115,27 @@ context('Contratos - Cenários Positivos', () => {
     .story('GET - Validar contrato GET/aluno/disponiveis')
     .severity('critical')
     .step('Valida o contrato')
-    contratoService.contratoAlunosDisponiveisRequest("alunosDisponiveis.get.contrato")
+    contratoService.contratoAlunosDisponiveisRequest("0", "10","alunosDisponiveis.get.contrato")
+  });
+
+  it('Aluno - Validar contrato Alunos por nome', () => {
+    cy.allure()
+    .epic('Testes de Contrato')
+    .feature('Cenários Positivos')
+    .story('GET - Validar contrato GET/aluno/nome')
+    .severity('critical')
+    .step('Valida o contrato')
+    contratoService.contratoAlunosPorNomeRequest("0", "10", "teste","alunosPorNome.get.contrato")
+  });
+
+  it('Aluno - Validar contrato Alunos por email', () => {
+    cy.allure()
+    .epic('Testes de Contrato')
+    .feature('Cenários Positivos')
+    .story('GET - Validar contrato GET/aluno/email')
+    .severity('critical')
+    .step('Valida o contrato')
+    contratoService.contratoAlunosPorEmailRequest("0", "10", "teste","alunosPorEmail.get.contrato")
   });
 
   it('Tecnologia - Validar contrato Tecnologia', () => {

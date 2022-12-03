@@ -47,7 +47,7 @@
             "default": [],
             "title": "The elementos Schema",
             "items": {
-                "type": "object",
+                "type": ["object", "null"],
                 "default": {},
                 "title": "A Schema",
                 "required": [

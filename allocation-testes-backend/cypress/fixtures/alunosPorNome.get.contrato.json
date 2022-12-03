@@ -47,7 +47,7 @@
             "default": [],
             "title": "The elementos Schema",
             "items": {
-                "type": ["object", "null"],
+                "type": "object",
                 "default": {},
                 "title": "A Schema",
                 "required": [
@@ -94,7 +94,7 @@
                         ]
                     },
                     "tecnologias": {
-                        "type": ["array", "null"],
+                        "type": "array",
                         "default": [],
                         "title": "The tecnologias Schema",
                         "items": {

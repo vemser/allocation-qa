@@ -10,6 +10,10 @@ export default class BasePage {
       cy.get(elemet).click({force:true}) 
    }
 
+   clickComEnter(element){
+      cy.get(element).click().type("{enter}")
+   }
+
    preencherCampo(element, text){ 
       cy.get(element).type(text)
    }

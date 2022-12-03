@@ -81,7 +81,7 @@
                         ]
                     },
                     "nota": {
-                        "type": "integer",
+                        "type": ["integer", "null"],
                         "default": 0,
                         "title": "The nota Schema",
                         "examples": [
@@ -129,7 +129,7 @@
                         ]
                     },
                     "tipoAvaliacao": {
-                        "type": "string",
+                        "type": ["string", "null"],
                         "default": "",
                         "title": "The tipoAvaliacao Schema",
                         "examples": [
@@ -137,7 +137,7 @@
                         ]
                     },
                     "situacao": {
-                        "type": "string",
+                        "type": ["string", "null"],
                         "default": "",
                         "title": "The situacao Schema",
                         "examples": [
