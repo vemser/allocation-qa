@@ -1,4 +1,4 @@
-Feature: Cadastrar Cliente
+Feature: Clientes
    
 
    Scenario: Validar Administrador cadastrar cliente com sucesso.

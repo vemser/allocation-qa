@@ -46,10 +46,6 @@ Then(/^devo validar redirecionamento para página de cadastro de usuário$/, () 
 
 
 //Teste cadastro de usuario com sucesso 
-Given(/^que estou na página inicial$/, () => {
-	cy.visit("https://allocation-front.vercel.app/")
-});
-
 And(/^clico no link "Crie uma conta"$/, () => {
 	loginPage.clicarCrieUmaConta()
 });
@@ -74,7 +70,7 @@ When(/^clico em salvar$/, () => {
 	cadastroUsuarioPage.clicarNoBtnSalvar()
 });
 
-Then(/^devo receber uma confirmação de que o usuário foi criado com sucesso$/, () => {
+Then(/^devo receber uma confirmação de que o novo usuário foi criado com sucesso$/, () => {
 	loginPage.validarMensagemUsuarioCriado();
 });
 
@@ -82,10 +78,6 @@ Then(/^devo receber uma confirmação de que o usuário foi criado com sucesso$/
 
 
 /////////////////////////////////////////
-
-Given(/^que estou na página inicial$/, () => {
-    cy.visit("https://allocation-front.vercel.app/")
-});
 
 And(/^que estou logado como Administrador$/, () => {
 	loginPage.fazerLoginComAdm();
@@ -127,13 +119,65 @@ When(/^clico em salvar$/, () => {
 	cadastroUsuarioPage.clicarNoBtnSalvar();
 });
 
-Then(/^devo receber uma confirmação de que o usuário adm foi criado com sucesso$/, () => {
+Then(/^devo receber uma confirmação de que o usuário foi criado com sucesso$/, () => {
 	usuariosPage.validarToastConfirmacaoNovoUsuarioCriado();
+	
 });
 
 And(/^busco e deleto o usuario criado para limpar o banco de dados$/, () => {
 	usuariosPage.preencherCampoPesquisar(randomEmail2);
 	usuariosPage.clicarBtnBuscar();
+	basePage.tempo(2000)
 	usuariosPage.clicarDeletarUsuario();
+	basePage.tempo(2000)
 })
+
+
+And(/^seleciono o Tipo de Usuario Instrutor$/, () => {
+	cadastroUsuarioPage.selecionarTipoUsuarioInstrutor();
+});
+
+And(/^seleciono o Tipo de Usuario Gestão de Pessoas$/, () => {
+	cadastroUsuarioPage.selecionarTipoUsuarioGestaoDePessoas();
+});
+
+And(/^seleciono o Tipo de Usuario Gestor$/, () => {
+	cadastroUsuarioPage.selecionarTipoUsuarioGestor();
+});
+
+
+
+
+And(/^busco um usuário pelo email "([^"]*)"$/, (args1) => {
+	usuariosPage.preencherCampoPesquisar(args1);
+	usuariosPage.clicarBtnBuscar()
+	basePage.tempo(2000)
+});
+
+And(/^clico no botão editar$/, () => {
+	usuariosPage.clicarBtnEditar()
+});
+
+And(/^mudo seu nome para "([^"]*)"$/, (args1) => {
+	cadastroUsuarioPage.limparInputCampoNome()
+	cadastroUsuarioPage.preencherCampoNomeCompleto(args1);
+});
+
+And(/^preencho e confirmo a senha deste usuário$/, () => {
+	cadastroUsuarioPage.limparInputCampoSenha()
+	cadastroUsuarioPage.preencherCampoSenha("testeqa12@")
+	cadastroUsuarioPage.limparInputCampoSenhaIgual()
+	cadastroUsuarioPage.preencherCampoSenhaIgual("testeqa12@")
+});
+
+When(/^clico no botão salvar$/, () => {
+	cadastroUsuarioPage.clicarNoBtnSalvar()
+});
+
+Then(/^valido se houve a mudança de nome do usuário$/, () => {
+	usuariosPage.preencherCampoPesquisar("teste2@dbccompany.com.br");
+	usuariosPage.clicarBtnBuscar()
+	basePage.tempo(3000)
+	usuariosPage.validarEdicaoNomeUsuario()
+});
 

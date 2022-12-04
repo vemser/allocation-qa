@@ -4,6 +4,7 @@
 import BasePage from "./BasePage";
 const basePage = new BasePage();
 
+// MAPEAMENTO DE ELEMENTOS
 let campoNomeCompleto = "#nomeCompleto";
 let campoEmail = "#email";
 let campoSenha = "#senha";

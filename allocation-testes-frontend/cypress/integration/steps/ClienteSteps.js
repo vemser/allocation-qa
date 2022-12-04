@@ -88,7 +88,9 @@ Then(/^devo receber uma confirmação de que o cliente foi criado com sucesso$/,
 And(/^busco e deleto o cliente criado para limpar o banco de dados$/, () => {
 	clientesPage.preencherCampoPesquisar(randomEmail);
 	clientesPage.clicarBtnFiltrar();
+	basePage.tempo(5000)
 	clientesPage.clicarDeletarCliente();
+	basePage.tempo(5000)
 });
 
 

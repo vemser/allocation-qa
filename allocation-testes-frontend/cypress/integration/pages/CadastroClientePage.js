@@ -4,16 +4,13 @@
 import BasePage from "./BasePage";
 const basePage = new BasePage();
 
+// MAPEAMENTO DE ELEMENTOS
 let campoNome = "#nome";
 let campoEmail = "#email";
 let campoTelefone = "#telefone"
-
 let selectSituacao = "#situacao"
-
 let selectAtivo = "#menu-situacao > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-1bepd21 > ul > li.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.Mui-selected.MuiMenuItem-root.MuiMenuItem-gutters.Mui-selected.css-30mtm9"
-
-let btnSalvar = "button.MuiButtonBase-root:nth-child(2)";
-
+let btnSalvar = "#form > div.MuiBox-root.css-7eri5g > button";
 let textInformeNomeCliente = "#nome-helper-text";
 let textInformeTelefoneCliente = "#telefone-helper-text";
 let textInformeEmailCliente = "#email-helper-text"
