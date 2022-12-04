@@ -9,7 +9,7 @@ const clienteService = new ClienteService();
 const programaService = new ProgramaService();
 const programaPayload = require('../../../fixtures/programa.payload.json')
 const clientePayload = require('../../../fixtures/cliente.payload.json')
-let meuEmailCliente;
+let meuIdCliente;
 
 ////////////////////////////////////////////////////////
 /////////////////// CENÁRIOS POSITIVOS /////////////////
@@ -29,7 +29,7 @@ context('Vaga - Cenários Positivos', () => {
     .then(response => {
       cy.wrap(response.body).as('cliente')
       cy.get('@cliente').then(cliente => 
-        meuEmailCliente = cliente.email
+        meuIdCliente = cliente.idCliente
         )
     })
 
@@ -45,7 +45,7 @@ context('Vaga - Cenários Positivos', () => {
     cy.allure()
     .step('Cria uma Vaga')
     cy.get('@programa').then(programa => {
-    vagaService.adicionarVaga(programa.idPrograma, meuEmailCliente)
+    vagaService.adicionarVaga(programa.idPrograma, meuIdCliente)
     .then(response => {
       cy.wrap(response.body).as('vaga')
     })
@@ -54,7 +54,7 @@ context('Vaga - Cenários Positivos', () => {
     cy.allure()
     .step('valida Edita uma Vaga')
     cy.get('@vaga').then(vaga => {
-    vagaService.atualizarVaga(vaga.idVaga, vaga.idPrograma, meuEmailCliente)
+    vagaService.atualizarVaga(vaga.idVaga, vaga.idPrograma, meuIdCliente)
     .should((response) => {
       expect(response.status).to.eq(201)
     })
@@ -109,7 +109,7 @@ context('Vaga - Cenários Positivos', () => {
     .then(response => {
       cy.wrap(response.body).as('cliente')
       cy.get('@cliente').then(cliente => 
-        meuEmailCliente = cliente.email
+        meuIdCliente = cliente.idCliente
         )
     })
 
@@ -125,7 +125,7 @@ context('Vaga - Cenários Positivos', () => {
     cy.allure()
     .step('Cria uma Vaga')
     cy.get('@programa').then(programa => {
-    vagaService.adicionarVaga(programa.idPrograma, meuEmailCliente)
+    vagaService.adicionarVaga(programa.idPrograma, meuIdCliente)
     .then(response => {
       cy.wrap(response.body).as('vaga')
     })
@@ -176,7 +176,7 @@ context('Vaga - Cenários Positivos', () => {
     .then(response => {
       cy.wrap(response.body).as('cliente')
       cy.get('@cliente').then(cliente => 
-        meuEmailCliente = cliente.email
+        meuIdCliente = cliente.idCliente
         )
     })
 
@@ -191,7 +191,7 @@ context('Vaga - Cenários Positivos', () => {
     cy.allure()
     .step('Cria uma Vaga')
     cy.get('@programa').then(programa => {
-    vagaService.adicionarVaga(programa.idPrograma, meuEmailCliente)
+    vagaService.adicionarVaga(programa.idPrograma, meuIdCliente)
     .then(response => {
       cy.wrap(response.body).as('vaga')
     })
@@ -232,7 +232,7 @@ context('Vaga - Cenários Positivos', () => {
     .then(response => {
       cy.wrap(response.body).as('cliente')
       cy.get('@cliente').then(cliente => 
-        meuEmailCliente = cliente.email
+        meuIdCliente = cliente.idCliente
         )
     })
 
@@ -247,7 +247,7 @@ context('Vaga - Cenários Positivos', () => {
     cy.allure()
     .step('Valida Criar uma Vaga')
     cy.get('@programa').then(programa => {
-    vagaService.adicionarVaga(programa.idPrograma, meuEmailCliente)
+    vagaService.adicionarVaga(programa.idPrograma, meuIdCliente)
     .should((response) => {
       expect(response.status).to.eq(201)
     }).then(response => {

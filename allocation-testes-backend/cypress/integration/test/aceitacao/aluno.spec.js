@@ -12,6 +12,7 @@ const programaPayload = require('../../../fixtures/programa.payload.json')
 const clientePayload = require('../../../fixtures/cliente.payload.json')
 
 let meuEmailCliente;
+let meuIdCliente;
 
 ////////////////////////////////////////////////////////
 /////////////////// CENÁRIOS POSITIVOS /////////////////
@@ -30,9 +31,10 @@ context('Aluno - Cenários Positivos', () => {
     clienteService.adicionarCliente(clientePayload)
     .then(response => {
       cy.wrap(response.body).as('cliente')
-      cy.get('@cliente').then(cliente => 
-        meuEmailCliente = cliente.email
-        )
+      cy.get('@cliente').then(cliente =>{ 
+        meuEmailCliente = cliente.email;
+        meuIdCliente = cliente.idCliente;
+        })
     })
 
     // cria um programa
@@ -47,7 +49,7 @@ context('Aluno - Cenários Positivos', () => {
     cy.allure()
     .step('Criar uma Vaga')
     cy.get('@programa').then(programa => {
-    vagaService.adicionarVaga(programa.idPrograma, meuEmailCliente)
+    vagaService.adicionarVaga(programa.idPrograma, meuIdCliente)
     .then(response => {
       cy.wrap(response.body).as('vaga')
     })
@@ -127,9 +129,10 @@ context('Aluno - Cenários Positivos', () => {
     clienteService.adicionarCliente(clientePayload)
     .then(response => {
       cy.wrap(response.body).as('cliente')
-      cy.get('@cliente').then(cliente => 
-        meuEmailCliente = cliente.email
-        )
+      cy.get('@cliente').then(cliente =>{ 
+        meuEmailCliente = cliente.email;
+        meuIdCliente = cliente.idCliente;
+        })
     })
 
     // cria um programa
@@ -144,7 +147,7 @@ context('Aluno - Cenários Positivos', () => {
     cy.allure()
     .step('Criar uma Vaga')
     cy.get('@programa').then(programa => {
-    vagaService.adicionarVaga(programa.idPrograma, meuEmailCliente)
+    vagaService.adicionarVaga(programa.idPrograma, meuIdCliente)
     .then(response => {
       cy.wrap(response.body).as('vaga')
     })
@@ -201,9 +204,10 @@ context('Aluno - Cenários Positivos', () => {
     clienteService.adicionarCliente(clientePayload)
     .then(response => {
       cy.wrap(response.body).as('cliente')
-      cy.get('@cliente').then(cliente => 
-        meuEmailCliente = cliente.email
-        )
+      cy.get('@cliente').then(cliente =>{ 
+        meuEmailCliente = cliente.email;
+        meuIdCliente = cliente.idCliente;
+        })
     })
 
     // cria um programa
@@ -218,7 +222,7 @@ context('Aluno - Cenários Positivos', () => {
     cy.allure()
     .step('Criar uma Vaga')
     cy.get('@programa').then(programa => {
-    vagaService.adicionarVaga(programa.idPrograma, meuEmailCliente)
+    vagaService.adicionarVaga(programa.idPrograma, meuIdCliente)
     .then(response => {
       cy.wrap(response.body).as('vaga')
     })

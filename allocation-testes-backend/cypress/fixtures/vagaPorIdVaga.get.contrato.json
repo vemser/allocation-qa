@@ -56,7 +56,7 @@
                     "quantidade",
                     "quantidadeAlocados",
                     "idPrograma",
-                    "situacao",
+                    "situacaoCliente",
                     "dataAbertura",
                     "dataFechamento",
                     "dataCriacao",
@@ -103,20 +103,20 @@
                             0
                         ]
                     },
-                    "situacao": {
+                    "situacaoCliente": {
                         "type": ["string", "null"],
                         "default": "",
-                        "title": "The situacao Schema",
+                        "title": "The situacaoCliente Schema",
                         "examples": [
                             "ATIVO"
                         ]
                     },
                     "dataAbertura": {
-                        "type": ["string", "null"],
+                        "type": "string",
                         "default": "",
                         "title": "The dataAbertura Schema",
                         "examples": [
-                            "2022-12-03"
+                            "2022-12-04"
                         ]
                     },
                     "dataFechamento": {
@@ -124,7 +124,7 @@
                         "default": "",
                         "title": "The dataFechamento Schema",
                         "examples": [
-                            "2022-12-03"
+                            "2022-12-04"
                         ]
                     },
                     "dataCriacao": {
@@ -132,11 +132,11 @@
                         "default": "",
                         "title": "The dataCriacao Schema",
                         "examples": [
-                            "2022-12-03"
+                            "2022-12-04"
                         ]
                     },
                     "clienteDTO": {
-                        "type": ["object", "null"],
+                        "type": "object",
                         "default": {},
                         "title": "The clienteDTO Schema",
                         "required": [
@@ -144,7 +144,7 @@
                             "nome",
                             "email",
                             "telefone",
-                            "situacao"
+                            "situacaoCliente"
                         ],
                         "properties": {
                             "idCliente": {
@@ -179,10 +179,10 @@
                                     "string"
                                 ]
                             },
-                            "situacao": {
-                                "type": ["string", "null"],
+                            "situacaoCliente": {
+                                "type": "string",
                                 "default": "",
-                                "title": "The situacao Schema",
+                                "title": "The situacaoCliente Schema",
                                 "examples": [
                                     "ATIVO"
                                 ]
@@ -193,7 +193,7 @@
                             "nome": "string",
                             "email": "string",
                             "telefone": "string",
-                            "situacao": "ATIVO"
+                            "situacaoCliente": "ATIVO"
                         }]
                     }
                 },
@@ -203,16 +203,16 @@
                     "quantidade": 0,
                     "quantidadeAlocados": 0,
                     "idPrograma": 0,
-                    "situacao": "ATIVO",
-                    "dataAbertura": "2022-12-03",
-                    "dataFechamento": "2022-12-03",
-                    "dataCriacao": "2022-12-03",
+                    "situacaoCliente": "ATIVO",
+                    "dataAbertura": "2022-12-04",
+                    "dataFechamento": "2022-12-04",
+                    "dataCriacao": "2022-12-04",
                     "clienteDTO": {
                         "idCliente": 0,
                         "nome": "string",
                         "email": "string",
                         "telefone": "string",
-                        "situacao": "ATIVO"
+                        "situacaoCliente": "ATIVO"
                     }
                 }]
             },
@@ -223,16 +223,16 @@
                     "quantidade": 0,
                     "quantidadeAlocados": 0,
                     "idPrograma": 0,
-                    "situacao": "ATIVO",
-                    "dataAbertura": "2022-12-03",
-                    "dataFechamento": "2022-12-03",
-                    "dataCriacao": "2022-12-03",
+                    "situacaoCliente": "ATIVO",
+                    "dataAbertura": "2022-12-04",
+                    "dataFechamento": "2022-12-04",
+                    "dataCriacao": "2022-12-04",
                     "clienteDTO": {
                         "idCliente": 0,
                         "nome": "string",
                         "email": "string",
                         "telefone": "string",
-                        "situacao": "ATIVO"
+                        "situacaoCliente": "ATIVO"
                     }
                 }]
             ]
@@ -249,16 +249,16 @@
             "quantidade": 0,
             "quantidadeAlocados": 0,
             "idPrograma": 0,
-            "situacao": "ATIVO",
-            "dataAbertura": "2022-12-03",
-            "dataFechamento": "2022-12-03",
-            "dataCriacao": "2022-12-03",
+            "situacaoCliente": "ATIVO",
+            "dataAbertura": "2022-12-04",
+            "dataFechamento": "2022-12-04",
+            "dataCriacao": "2022-12-04",
             "clienteDTO": {
                 "idCliente": 0,
                 "nome": "string",
                 "email": "string",
                 "telefone": "string",
-                "situacao": "ATIVO"
+                "situacaoCliente": "ATIVO"
             }
         }]
     }]

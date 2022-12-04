@@ -108,7 +108,7 @@
                         "default": "",
                         "title": "The situacao Schema",
                         "examples": [
-                            "ATIVO"
+                            "ALOCADO"
                         ]
                     },
                     "dataAbertura": {
@@ -116,7 +116,7 @@
                         "default": "",
                         "title": "The dataAbertura Schema",
                         "examples": [
-                            "2022-12-01"
+                            "2022-12-04"
                         ]
                     },
                     "dataFechamento": {
@@ -124,7 +124,7 @@
                         "default": "",
                         "title": "The dataFechamento Schema",
                         "examples": [
-                            "2022-12-01"
+                            "2022-12-04"
                         ]
                     },
                     "dataCriacao": {
@@ -132,7 +132,7 @@
                         "default": "",
                         "title": "The dataCriacao Schema",
                         "examples": [
-                            "2022-12-01"
+                            "2022-12-04"
                         ]
                     },
                     "clienteDTO": {
@@ -184,7 +184,7 @@
                                 "default": "",
                                 "title": "The situacao Schema",
                                 "examples": [
-                                    "ATIVO"
+                                    "ALOCADO"
                                 ]
                             }
                         },
@@ -193,7 +193,7 @@
                             "nome": "string",
                             "email": "string",
                             "telefone": "string",
-                            "situacao": "ATIVO"
+                            "situacao": "ALOCADO"
                         }]
                     }
                 },
@@ -203,16 +203,16 @@
                     "quantidade": 0,
                     "quantidadeAlocados": 0,
                     "idPrograma": 0,
-                    "situacao": "ATIVO",
-                    "dataAbertura": "2022-12-01",
-                    "dataFechamento": "2022-12-01",
-                    "dataCriacao": "2022-12-01",
+                    "situacao": "ALOCADO",
+                    "dataAbertura": "2022-12-04",
+                    "dataFechamento": "2022-12-04",
+                    "dataCriacao": "2022-12-04",
                     "clienteDTO": {
                         "idCliente": 0,
                         "nome": "string",
                         "email": "string",
                         "telefone": "string",
-                        "situacao": "ATIVO"
+                        "situacao": "ALOCADO"
                     }
                 }]
             },
@@ -223,16 +223,16 @@
                     "quantidade": 0,
                     "quantidadeAlocados": 0,
                     "idPrograma": 0,
-                    "situacao": "ATIVO",
-                    "dataAbertura": "2022-12-01",
-                    "dataFechamento": "2022-12-01",
-                    "dataCriacao": "2022-12-01",
+                    "situacao": "ALOCADO",
+                    "dataAbertura": "2022-12-04",
+                    "dataFechamento": "2022-12-04",
+                    "dataCriacao": "2022-12-04",
                     "clienteDTO": {
                         "idCliente": 0,
                         "nome": "string",
                         "email": "string",
                         "telefone": "string",
-                        "situacao": "ATIVO"
+                        "situacao": "ALOCADO"
                     }
                 }]
             ]
@@ -249,16 +249,16 @@
             "quantidade": 0,
             "quantidadeAlocados": 0,
             "idPrograma": 0,
-            "situacao": "ATIVO",
-            "dataAbertura": "2022-12-01",
-            "dataFechamento": "2022-12-01",
-            "dataCriacao": "2022-12-01",
+            "situacao": "ALOCADO",
+            "dataAbertura": "2022-12-04",
+            "dataFechamento": "2022-12-04",
+            "dataCriacao": "2022-12-04",
             "clienteDTO": {
                 "idCliente": 0,
                 "nome": "string",
                 "email": "string",
                 "telefone": "string",
-                "situacao": "ATIVO"
+                "situacao": "ALOCADO"
             }
         }]
     }]

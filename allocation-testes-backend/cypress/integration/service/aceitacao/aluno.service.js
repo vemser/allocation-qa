@@ -24,7 +24,7 @@ export default class AlunoService{
           "estado": "Paraíba",
           "telefone": "91313-1313",
           "descricao": "agora tenho descrição",
-          "statusAluno": "ALOCADO",
+          "situacao": "ALOCADO",
           "tecnologias": [
             "java"
           ]
@@ -62,7 +62,7 @@ export default class AlunoService{
           "estado": "Paraíba",
           "telefone": "99595-1313",
           "descricao": "xxxx",
-          "statusAluno": "ALOCADO",
+          "situacao": "ALOCADO",
           "tecnologias": [
             "java"
           ]
@@ -87,7 +87,7 @@ export default class AlunoService{
           "estado": "Paraíba",
           "telefone": "99595-1313",
           "descricao": "xxxx",
-          "statusAluno": "ALOCADO",
+          "situacao": "ALOCADO",
           "tecnologias": [
             "java"
           ]

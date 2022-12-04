@@ -51,45 +51,13 @@
                 "default": {},
                 "title": "A Schema",
                 "required": [
+                    "idCliente",
                     "nome",
                     "email",
                     "telefone",
-                    "situacao",
-                    "idCliente"
+                    "situacao"
                 ],
                 "properties": {
-                    "nome": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The nome Schema",
-                        "examples": [
-                            "Sicred"
-                        ]
-                    },
-                    "email": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The email Schema",
-                        "examples": [
-                            "sicred@dbccompany.com.br"
-                        ]
-                    },
-                    "telefone": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The telefone Schema",
-                        "examples": [
-                            "911234-9876"
-                        ]
-                    },
-                    "situacao": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The situacao Schema",
-                        "examples": [
-                            "ATIVO"
-                        ]
-                    },
                     "idCliente": {
                         "type": "integer",
                         "default": 0,
@@ -97,23 +65,55 @@
                         "examples": [
                             0
                         ]
+                    },
+                    "nome": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The nome Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "email": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The email Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "telefone": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The telefone Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "situacao": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The situacao Schema",
+                        "examples": [
+                            "ALOCADO"
+                        ]
                     }
                 },
                 "examples": [{
-                    "nome": "Sicred",
-                    "email": "sicred@dbccompany.com.br",
-                    "telefone": "911234-9876",
-                    "situacao": "ATIVO",
-                    "idCliente": 0
+                    "idCliente": 0,
+                    "nome": "string",
+                    "email": "string",
+                    "telefone": "string",
+                    "situacao": "ALOCADO"
                 }]
             },
             "examples": [
                 [{
-                    "nome": "Sicred",
-                    "email": "sicred@dbccompany.com.br",
-                    "telefone": "911234-9876",
-                    "situacao": "ATIVO",
-                    "idCliente": 0
+                    "idCliente": 0,
+                    "nome": "string",
+                    "email": "string",
+                    "telefone": "string",
+                    "situacao": "ALOCADO"
                 }]
             ]
         }
@@ -124,11 +124,11 @@
         "pagina": 0,
         "tamanho": 0,
         "elementos": [{
-            "nome": "Sicred",
-            "email": "sicred@dbccompany.com.br",
-            "telefone": "911234-9876",
-            "situacao": "ATIVO",
-            "idCliente": 0
+            "idCliente": 0,
+            "nome": "string",
+            "email": "string",
+            "telefone": "string",
+            "situacao": "ALOCADO"
         }]
     }]
 }

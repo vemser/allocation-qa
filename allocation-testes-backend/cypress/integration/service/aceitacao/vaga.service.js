@@ -7,7 +7,7 @@ const API_BASE = Cypress.env('API_BASE');
 export default class VagaService{
 
   
-  atualizarVaga(idVaga, idPrograma, meuEmailCliente){
+  atualizarVaga(idVaga, idPrograma, idCliente){
     return cy.request({
         method: 'PUT',
         url: `${API_BASE}/vaga/${idVaga}`,
@@ -25,7 +25,7 @@ export default class VagaService{
           "dataFechamento": "2022-12-26",
           "dataCriacao": "2022-12-01",
           "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
-          "emailCliente": "${meuEmailCliente}"
+          "idCliente": "${idCliente}"
         }`,
         failOnStatusCode: false,
     }).as('response').get('@response')
@@ -43,7 +43,7 @@ export default class VagaService{
     }).as('response').get('@response')
   }
 
-  adicionarVaga(idPrograma, meuEmailCliente){
+  adicionarVaga(idPrograma, idCliente){
     return cy.request({
         method: 'POST',
         url: `${API_BASE}/vaga`,
@@ -61,7 +61,7 @@ export default class VagaService{
           "dataFechamento": "2022-12-26",
           "dataCriacao": "2022-12-01",
           "observacoes": "Seguir conceitos de programação como: Alta coesão, Baixo acoplamento, e componentização.",
-          "emailCliente": "${meuEmailCliente}"
+          "idCliente": "${idCliente}"
         }`,
         failOnStatusCode: false,
     }).as('response').get('@response')

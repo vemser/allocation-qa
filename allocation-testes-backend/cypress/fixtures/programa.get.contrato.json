@@ -74,7 +74,7 @@
                         ]
                     },
                     "descricao": {
-                        "type": "string",
+                        "type": ["string", "null"],
                         "default": "",
                         "title": "The descricao Schema",
                         "examples": [
@@ -82,7 +82,7 @@
                         ]
                     },
                     "situacao": {
-                        "type": "string",
+                        "type": ["string", "null"],
                         "default": "",
                         "title": "The situacao Schema",
                         "examples": [
