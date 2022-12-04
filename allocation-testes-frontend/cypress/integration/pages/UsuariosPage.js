@@ -18,7 +18,7 @@ let btnEditar = "#root > div.MuiGrid-root.css-ncd5iv > div.MuiBox-root.css-1v0fr
 let campoCodigoUsuario = "#root > div.MuiGrid-root.css-ncd5iv > div.MuiBox-root.css-1v0frl8 > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiTableContainer-root.css-1aj1g2c > table > tbody > tr > th";
 let campoNomeUsuario = "#root > div.MuiGrid-root.css-ncd5iv > div.MuiBox-root.css-1v0frl8 > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiTableContainer-root.css-1aj1g2c > table > tbody > tr > td:nth-child(2)";
 let campoEmailUsuario = "#root > div.MuiGrid-root.css-ncd5iv > div.MuiBox-root.css-1v0frl8 > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiTableContainer-root.css-1aj1g2c > table > tbody > tr > td:nth-child(3)";
-
+let campoTipoUsuario = "#root > div.MuiGrid-root.css-ncd5iv > div.MuiBox-root.css-1v0frl8 > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1.MuiTableContainer-root.css-1aj1g2c > table > tbody > tr > td:nth-child(4)"
 
 
 
@@ -55,6 +55,11 @@ export default class UsuariosPage{
         basePage.validarText(campoCodigoUsuario, "226");
         basePage.validarText(campoNomeUsuario, "Teste QA B MUDADO");
         basePage.validarText(campoEmailUsuario, "teste2@dbccompany.com.br");
+    }
+
+    validarEdicaoTipoUsuario(){
+        basePage.validarText(toastDeConfirmacaoUsuarioCriado, "Usuário editado com sucesso!")
+        basePage.validarText(campoTipoUsuario, "Gestor")
     }
 
 

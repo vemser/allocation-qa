@@ -51,115 +51,135 @@
                 "default": {},
                 "title": "A Schema",
                 "required": [
-                    "idAluno",
-                    "nome",
-                    "email",
-                    "area",
-                    "tecnologias",
-                    "idPrograma",
-                    "emProcesso",
-                    "statusAluno"
+                    "idVaga",
+                    "emailAluno",
+                    "nota",
+                    "descricao",
+                    "dataAvaliacao",
+                    "dataEntrevista",
+                    "dataResposta",
+                    "dataCriacao",
+                    "tipoAvaliacao",
+                    "situacao",
+                    "idAvaliacao"
                 ],
                 "properties": {
-                    "idAluno": {
+                    "idVaga": {
                         "type": "integer",
                         "default": 0,
-                        "title": "The idAluno Schema",
+                        "title": "The idVaga Schema",
                         "examples": [
-                            0
+                            1
                         ]
                     },
-                    "nome": {
+                    "emailAluno": {
                         "type": "string",
                         "default": "",
-                        "title": "The nome Schema",
+                        "title": "The emailAluno Schema",
                         "examples": [
-                            "string"
+                            "jhennyfer.sobrinho@dbccompany.com.br"
                         ]
                     },
-                    "email": {
-                        "type": "string",
-                        "default": "",
-                        "title": "The email Schema",
-                        "examples": [
-                            "string"
-                        ]
-                    },
-                    "area": {
-                        "type": ["string", "null"],
-                        "default": "",
-                        "title": "The area Schema",
-                        "examples": [
-                            "FRONTEND"
-                        ]
-                    },
-                    "tecnologias": {
-                        "type": "array",
-                        "default": [],
-                        "title": "The tecnologias Schema",
-                        "items": {
-                            "type": "string",
-                            "default": "",
-                            "title": "A Schema",
-                            "examples": [
-                                "string"
-                            ]
-                        },
-                        "examples": [
-                            [
-                                "string"]
-                        ]
-                    },
-                    "idPrograma": {
+                    "nota": {
                         "type": "integer",
                         "default": 0,
-                        "title": "The idPrograma Schema",
+                        "title": "The nota Schema",
+                        "examples": [
+                            10
+                        ]
+                    },
+                    "descricao": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The descricao Schema",
+                        "examples": [
+                            "Muito bom"
+                        ]
+                    },
+                    "dataAvaliacao": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The dataAvaliacao Schema",
+                        "examples": [
+                            "2022-12-24"
+                        ]
+                    },
+                    "dataEntrevista": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The dataEntrevista Schema",
+                        "examples": [
+                            "2022-12-20"
+                        ]
+                    },
+                    "dataResposta": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The dataResposta Schema",
+                        "examples": [
+                            "2022-12-22"
+                        ]
+                    },
+                    "dataCriacao": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The dataCriacao Schema",
+                        "examples": [
+                            "2022-12-04"
+                        ]
+                    },
+                    "tipoAvaliacao": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The tipoAvaliacao Schema",
+                        "examples": [
+                            "INDIVIDUAL"
+                        ]
+                    },
+                    "situacao": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The situacao Schema",
+                        "examples": [
+                            "AVALIADO"
+                        ]
+                    },
+                    "idAvaliacao": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idAvaliacao Schema",
                         "examples": [
                             0
-                        ]
-                    },
-                    "emProcesso": {
-                        "type": ["string", "null"],
-                        "default": "",
-                        "title": "The emProcesso Schema",
-                        "examples": [
-                            "string"
-                        ]
-                    },
-                    "statusAluno": {
-                        "type": ["string", "null"],
-                        "default": "",
-                        "title": "The statusAluno Schema",
-                        "examples": [
-                            "ALOCADO"
                         ]
                     }
                 },
                 "examples": [{
-                    "idAluno": 0,
-                    "nome": "string",
-                    "email": "string",
-                    "area": "FRONTEND",
-                    "tecnologias": [
-                        "string"
-                    ],
-                    "idPrograma": 0,
-                    "emProcesso": "string",
-                    "statusAluno": "ALOCADO"
+                    "idVaga": 1,
+                    "emailAluno": "jhennyfer.sobrinho@dbccompany.com.br",
+                    "nota": 10,
+                    "descricao": "Muito bom",
+                    "dataAvaliacao": "2022-12-24",
+                    "dataEntrevista": "2022-12-20",
+                    "dataResposta": "2022-12-22",
+                    "dataCriacao": "2022-12-04",
+                    "tipoAvaliacao": "INDIVIDUAL",
+                    "situacao": "AVALIADO",
+                    "idAvaliacao": 0
                 }]
             },
             "examples": [
                 [{
-                    "idAluno": 0,
-                    "nome": "string",
-                    "email": "string",
-                    "area": "FRONTEND",
-                    "tecnologias": [
-                        "string"
-                    ],
-                    "idPrograma": 0,
-                    "emProcesso": "string",
-                    "statusAluno": "ALOCADO"
+                    "idVaga": 1,
+                    "emailAluno": "jhennyfer.sobrinho@dbccompany.com.br",
+                    "nota": 10,
+                    "descricao": "Muito bom",
+                    "dataAvaliacao": "2022-12-24",
+                    "dataEntrevista": "2022-12-20",
+                    "dataResposta": "2022-12-22",
+                    "dataCriacao": "2022-12-04",
+                    "tipoAvaliacao": "INDIVIDUAL",
+                    "situacao": "AVALIADO",
+                    "idAvaliacao": 0
                 }]
             ]
         }
@@ -170,16 +190,17 @@
         "pagina": 0,
         "tamanho": 0,
         "elementos": [{
-            "idAluno": 0,
-            "nome": "string",
-            "email": "string",
-            "area": "FRONTEND",
-            "tecnologias": [
-                "string"
-            ],
-            "idPrograma": 0,
-            "emProcesso": "string",
-            "statusAluno": "ALOCADO"
+            "idVaga": 1,
+            "emailAluno": "jhennyfer.sobrinho@dbccompany.com.br",
+            "nota": 10,
+            "descricao": "Muito bom",
+            "dataAvaliacao": "2022-12-24",
+            "dataEntrevista": "2022-12-20",
+            "dataResposta": "2022-12-22",
+            "dataCriacao": "2022-12-04",
+            "tipoAvaliacao": "INDIVIDUAL",
+            "situacao": "AVALIADO",
+            "idAvaliacao": 0
         }]
     }]
 }

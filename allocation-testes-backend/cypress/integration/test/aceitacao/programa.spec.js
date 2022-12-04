@@ -94,12 +94,5 @@ context('Programa - Cenários Positivos', () => {
   })
 
 
-  // it.only('Limpa programa', () => {
-  //   cy.allure()
-  //   .step('limpa')
-  //   for (let i = 5; i < 220; i++){
-  //     programaService.deletarPrograma(i)
-  //   }
-  //   });
 
 });

@@ -87,4 +87,16 @@ Feature: Usuarios
       When clico no botão salvar
       Then valido se houve a mudança de nome do usuário
 
+   Scenario: Validar Administrador editar Tipo de usuario com sucesso.
+      Given que estou na página inicial
+      And que estou logado como Administrador
+      And clico no Menu
+      And clico na opção Usuários
+      And busco um usuário pelo email "teste2@dbccompany.com.br"
+      And clico no botão editar
+      And mudo o tipo de usuário para Gestor
+      And preencho e confirmo a senha deste usuário
+      When clico no botão salvar
+      Then valido se houve a mudança de tipo do usuário
+
 

@@ -71,6 +71,31 @@ export default class AlunoService{
     }).as('response').get('@response')
   }
 
+  adicionarAlunoSemNome(idPrograma){
+    return cy.request({
+        method: 'POST',
+        url: `${API_BASE}/aluno`,
+        headers: {
+            Authorization: token,
+            "Content-Type": "application/json",
+        },
+        body: `{
+          "email": "teste.alunoQA@dbccompany.com.br",
+          "idPrograma": ${idPrograma},
+          "area": "FRONTEND",
+          "cidade": "John People",
+          "estado": "Paraíba",
+          "telefone": "99595-1313",
+          "descricao": "xxxx",
+          "statusAluno": "ALOCADO",
+          "tecnologias": [
+            "java"
+          ]
+        }`,
+        failOnStatusCode: false,
+    }).as('response').get('@response')
+  }
+
   listarAlunos(pagina, tamanho){
     return cy.request({
         method: 'GET',

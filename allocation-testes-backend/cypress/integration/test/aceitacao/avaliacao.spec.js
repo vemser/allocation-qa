@@ -1,8 +1,8 @@
+import AlunoService from '../../service/aceitacao/aluno.service';
 import AvaliacaoService from '../../service/aceitacao/avaliacao.service';
 import ClienteService from '../../service/aceitacao/cliente.service';
 import ProgramaService from '../../service/aceitacao/programa.service';
 import VagaService from '../../service/aceitacao/vaga.service';
-import AlunoService from '../../service/aceitacao/aluno.service';
 
 
 const clienteService = new ClienteService();
@@ -204,7 +204,7 @@ context('Avaliacao - Cenários Positivos', () => {
         expect(response.status).to.eq(204)
       }))
 
-    // valida deletar aluno
+    // deletar aluno
     cy.allure()
     .step('Deleta aluno criado')
     cy.get('@aluno').then(aluno => 

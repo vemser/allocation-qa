@@ -181,3 +181,18 @@ Then(/^valido se houve a mudança de nome do usuário$/, () => {
 	usuariosPage.validarEdicaoNomeUsuario()
 });
 
+
+
+And(/^mudo o tipo de usuário para Gestor$/, () => {
+	cadastroUsuarioPage.selecionarTipoUsuarioGestor()
+});
+
+
+Then(/^valido se houve a mudança de tipo do usuário$/, () => {
+	usuariosPage.preencherCampoPesquisar("teste2@dbccompany.com.br");
+	usuariosPage.clicarBtnBuscar()
+	basePage.tempo(3000)
+	usuariosPage.validarEdicaoTipoUsuario()
+});
+
+
