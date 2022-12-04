@@ -1,0 +1,265 @@
+{
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "totalElementos",
+        "quantidadePaginas",
+        "pagina",
+        "tamanho",
+        "elementos"
+    ],
+    "properties": {
+        "totalElementos": {
+            "type": "integer",
+            "default": 0,
+            "title": "The totalElementos Schema",
+            "examples": [
+                0
+            ]
+        },
+        "quantidadePaginas": {
+            "type": "integer",
+            "default": 0,
+            "title": "The quantidadePaginas Schema",
+            "examples": [
+                0
+            ]
+        },
+        "pagina": {
+            "type": "integer",
+            "default": 0,
+            "title": "The pagina Schema",
+            "examples": [
+                0
+            ]
+        },
+        "tamanho": {
+            "type": "integer",
+            "default": 0,
+            "title": "The tamanho Schema",
+            "examples": [
+                0
+            ]
+        },
+        "elementos": {
+            "type": "array",
+            "default": [],
+            "title": "The elementos Schema",
+            "items": {
+                "type": "object",
+                "default": {},
+                "title": "A Schema",
+                "required": [
+                    "idVaga",
+                    "nome",
+                    "quantidade",
+                    "quantidadeAlocados",
+                    "idPrograma",
+                    "situacaoCliente",
+                    "dataAbertura",
+                    "dataFechamento",
+                    "dataCriacao",
+                    "clienteDTO"
+                ],
+                "properties": {
+                    "idVaga": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idVaga Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "nome": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The nome Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "quantidade": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The quantidade Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "quantidadeAlocados": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The quantidadeAlocados Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "idPrograma": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idPrograma Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "situacaoCliente": {
+                        "type": ["string", "null"],
+                        "default": "",
+                        "title": "The situacaoCliente Schema",
+                        "examples": [
+                            "ATIVO"
+                        ]
+                    },
+                    "dataAbertura": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The dataAbertura Schema",
+                        "examples": [
+                            "2022-12-04"
+                        ]
+                    },
+                    "dataFechamento": {
+                        "type": ["string", "null"],
+                        "default": "",
+                        "title": "The dataFechamento Schema",
+                        "examples": [
+                            "2022-12-04"
+                        ]
+                    },
+                    "dataCriacao": {
+                        "type": ["string", "null"],
+                        "default": "",
+                        "title": "The dataCriacao Schema",
+                        "examples": [
+                            "2022-12-04"
+                        ]
+                    },
+                    "clienteDTO": {
+                        "type": "object",
+                        "default": {},
+                        "title": "The clienteDTO Schema",
+                        "required": [
+                            "idCliente",
+                            "nome",
+                            "email",
+                            "telefone",
+                            "situacaoCliente"
+                        ],
+                        "properties": {
+                            "idCliente": {
+                                "type": "integer",
+                                "default": 0,
+                                "title": "The idCliente Schema",
+                                "examples": [
+                                    0
+                                ]
+                            },
+                            "nome": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The nome Schema",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "email": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The email Schema",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "telefone": {
+                                "type": ["string", "null"],
+                                "default": "",
+                                "title": "The telefone Schema",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "situacaoCliente": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The situacaoCliente Schema",
+                                "examples": [
+                                    "ATIVO"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "idCliente": 0,
+                            "nome": "string",
+                            "email": "string",
+                            "telefone": "string",
+                            "situacaoCliente": "ATIVO"
+                        }]
+                    }
+                },
+                "examples": [{
+                    "idVaga": 0,
+                    "nome": "string",
+                    "quantidade": 0,
+                    "quantidadeAlocados": 0,
+                    "idPrograma": 0,
+                    "situacaoCliente": "ATIVO",
+                    "dataAbertura": "2022-12-04",
+                    "dataFechamento": "2022-12-04",
+                    "dataCriacao": "2022-12-04",
+                    "clienteDTO": {
+                        "idCliente": 0,
+                        "nome": "string",
+                        "email": "string",
+                        "telefone": "string",
+                        "situacaoCliente": "ATIVO"
+                    }
+                }]
+            },
+            "examples": [
+                [{
+                    "idVaga": 0,
+                    "nome": "string",
+                    "quantidade": 0,
+                    "quantidadeAlocados": 0,
+                    "idPrograma": 0,
+                    "situacaoCliente": "ATIVO",
+                    "dataAbertura": "2022-12-04",
+                    "dataFechamento": "2022-12-04",
+                    "dataCriacao": "2022-12-04",
+                    "clienteDTO": {
+                        "idCliente": 0,
+                        "nome": "string",
+                        "email": "string",
+                        "telefone": "string",
+                        "situacaoCliente": "ATIVO"
+                    }
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "totalElementos": 0,
+        "quantidadePaginas": 0,
+        "pagina": 0,
+        "tamanho": 0,
+        "elementos": [{
+            "idVaga": 0,
+            "nome": "string",
+            "quantidade": 0,
+            "quantidadeAlocados": 0,
+            "idPrograma": 0,
+            "situacaoCliente": "ATIVO",
+            "dataAbertura": "2022-12-04",
+            "dataFechamento": "2022-12-04",
+            "dataCriacao": "2022-12-04",
+            "clienteDTO": {
+                "idCliente": 0,
+                "nome": "string",
+                "email": "string",
+                "telefone": "string",
+                "situacaoCliente": "ATIVO"
+            }
+        }]
+    }]
+}

@@ -1,0 +1,185 @@
+{
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "totalElementos",
+        "quantidadePaginas",
+        "pagina",
+        "tamanho",
+        "elementos"
+    ],
+    "properties": {
+        "totalElementos": {
+            "type": "integer",
+            "default": 0,
+            "title": "The totalElementos Schema",
+            "examples": [
+                0
+            ]
+        },
+        "quantidadePaginas": {
+            "type": "integer",
+            "default": 0,
+            "title": "The quantidadePaginas Schema",
+            "examples": [
+                0
+            ]
+        },
+        "pagina": {
+            "type": "integer",
+            "default": 0,
+            "title": "The pagina Schema",
+            "examples": [
+                0
+            ]
+        },
+        "tamanho": {
+            "type": "integer",
+            "default": 0,
+            "title": "The tamanho Schema",
+            "examples": [
+                0
+            ]
+        },
+        "elementos": {
+            "type": "array",
+            "default": [],
+            "title": "The elementos Schema",
+            "items": {
+                "type": "object",
+                "default": {},
+                "title": "A Schema",
+                "required": [
+                    "idAluno",
+                    "nome",
+                    "email",
+                    "area",
+                    "tecnologias",
+                    "idPrograma",
+                    "emProcesso",
+                    "statusAluno"
+                ],
+                "properties": {
+                    "idAluno": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idAluno Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "nome": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The nome Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "email": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The email Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "area": {
+                        "type": ["string", "null"],
+                        "default": "",
+                        "title": "The area Schema",
+                        "examples": [
+                            "FRONTEND"
+                        ]
+                    },
+                    "tecnologias": {
+                        "type": ["array", "null"],
+                        "default": [],
+                        "title": "The tecnologias Schema",
+                        "items": {
+                            "type": ["string", "null"],
+                            "default": "",
+                            "title": "A Schema",
+                            "examples": [
+                                "string"
+                            ]
+                        },
+                        "examples": [
+                            [
+                                "string"]
+                        ]
+                    },
+                    "idPrograma": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idPrograma Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "emProcesso": {
+                        "type": ["string", "null"],
+                        "default": "",
+                        "title": "The emProcesso Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "statusAluno": {
+                        "type": ["string", "null"],
+                        "default": "",
+                        "title": "The statusAluno Schema",
+                        "examples": [
+                            "ALOCADO"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "idAluno": 0,
+                    "nome": "string",
+                    "email": "string",
+                    "area": "FRONTEND",
+                    "tecnologias": [
+                        "string"
+                    ],
+                    "idPrograma": 0,
+                    "emProcesso": "string",
+                    "statusAluno": "ALOCADO"
+                }]
+            },
+            "examples": [
+                [{
+                    "idAluno": 0,
+                    "nome": "string",
+                    "email": "string",
+                    "area": "FRONTEND",
+                    "tecnologias": [
+                        "string"
+                    ],
+                    "idPrograma": 0,
+                    "emProcesso": "string",
+                    "statusAluno": "ALOCADO"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "totalElementos": 0,
+        "quantidadePaginas": 0,
+        "pagina": 0,
+        "tamanho": 0,
+        "elementos": [{
+            "idAluno": 0,
+            "nome": "string",
+            "email": "string",
+            "area": "FRONTEND",
+            "tecnologias": [
+                "string"
+            ],
+            "idPrograma": 0,
+            "emProcesso": "string",
+            "statusAluno": "ALOCADO"
+        }]
+    }]
+}

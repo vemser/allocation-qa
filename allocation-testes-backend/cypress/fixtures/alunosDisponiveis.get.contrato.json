@@ -1,0 +1,233 @@
+{
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "totalElementos",
+        "quantidadePaginas",
+        "pagina",
+        "tamanho",
+        "elementos"
+    ],
+    "properties": {
+        "totalElementos": {
+            "type": "integer",
+            "default": 0,
+            "title": "The totalElementos Schema",
+            "examples": [
+                0
+            ]
+        },
+        "quantidadePaginas": {
+            "type": "integer",
+            "default": 0,
+            "title": "The quantidadePaginas Schema",
+            "examples": [
+                0
+            ]
+        },
+        "pagina": {
+            "type": "integer",
+            "default": 0,
+            "title": "The pagina Schema",
+            "examples": [
+                0
+            ]
+        },
+        "tamanho": {
+            "type": "integer",
+            "default": 0,
+            "title": "The tamanho Schema",
+            "examples": [
+                0
+            ]
+        },
+        "elementos": {
+            "type": "array",
+            "default": [],
+            "title": "The elementos Schema",
+            "items": {
+                "type": "object",
+                "default": {},
+                "title": "A Schema",
+                "required": [
+                    "nome",
+                    "email",
+                    "idPrograma",
+                    "area",
+                    "cidade",
+                    "estado",
+                    "telefone",
+                    "descricao",
+                    "situacao",
+                    "tecnologias",
+                    "idAluno",
+                    "emProcesso"
+                ],
+                "properties": {
+                    "nome": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The nome Schema",
+                        "examples": [
+                            "Gustavo Lucena"
+                        ]
+                    },
+                    "email": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The email Schema",
+                        "examples": [
+                            "jhennyfer.sobrinho@dbccompany.com.br"
+                        ]
+                    },
+                    "idPrograma": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idPrograma Schema",
+                        "examples": [
+                            1
+                        ]
+                    },
+                    "area": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The area Schema",
+                        "examples": [
+                            "FRONTEND"
+                        ]
+                    },
+                    "cidade": {
+                        "type": ["string", "null"],
+                        "default": "",
+                        "title": "The cidade Schema",
+                        "examples": [
+                            "Pato Branco"
+                        ]
+                    },
+                    "estado": {
+                        "type": ["string", "null"],
+                        "default": "",
+                        "title": "The estado Schema",
+                        "examples": [
+                            "Paraná"
+                        ]
+                    },
+                    "telefone": {
+                        "type": ["string", "null"],
+                        "default": "",
+                        "title": "The telefone Schema",
+                        "examples": [
+                            "99595-1313"
+                        ]
+                    },
+                    "descricao": {
+                        "type": ["string", "null"],
+                        "default": "",
+                        "title": "The descricao Schema",
+                        "examples": [
+                            "xxxx"
+                        ]
+                    },
+                    "situacao": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The situacao Schema",
+                        "examples": [
+                            "ALOCADO"
+                        ]
+                    },
+                    "tecnologias": {
+                        "type": ["array", "null"],
+                        "default": [],
+                        "title": "The tecnologias Schema",
+                        "items": {
+                            "type": ["string", "null"],
+                            "default": "",
+                            "title": "A Schema",
+                            "examples": [
+                                "string"
+                            ]
+                        },
+                        "examples": [
+                            [
+                                "string"]
+                        ]
+                    },
+                    "idAluno": {
+                        "type": "integer",
+                        "default": 0,
+                        "title": "The idAluno Schema",
+                        "examples": [
+                            0
+                        ]
+                    },
+                    "emProcesso": {
+                        "type": "string",
+                        "default": "",
+                        "title": "The emProcesso Schema",
+                        "examples": [
+                            "string"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "nome": "Gustavo Lucena",
+                    "email": "jhennyfer.sobrinho@dbccompany.com.br",
+                    "idPrograma": 1,
+                    "area": "FRONTEND",
+                    "cidade": "Pato Branco",
+                    "estado": "Paraná",
+                    "telefone": "99595-1313",
+                    "descricao": "xxxx",
+                    "situacao": "ALOCADO",
+                    "tecnologias": [
+                        "string"
+                    ],
+                    "idAluno": 0,
+                    "emProcesso": "string"
+                }]
+            },
+            "examples": [
+                [{
+                    "nome": "Gustavo Lucena",
+                    "email": "jhennyfer.sobrinho@dbccompany.com.br",
+                    "idPrograma": 1,
+                    "area": "FRONTEND",
+                    "cidade": "Pato Branco",
+                    "estado": "Paraná",
+                    "telefone": "99595-1313",
+                    "descricao": "xxxx",
+                    "situacao": "ALOCADO",
+                    "tecnologias": [
+                        "string"
+                    ],
+                    "idAluno": 0,
+                    "emProcesso": "string"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "totalElementos": 0,
+        "quantidadePaginas": 0,
+        "pagina": 0,
+        "tamanho": 0,
+        "elementos": [{
+            "nome": "Gustavo Lucena",
+            "email": "jhennyfer.sobrinho@dbccompany.com.br",
+            "idPrograma": 1,
+            "area": "FRONTEND",
+            "cidade": "Pato Branco",
+            "estado": "Paraná",
+            "telefone": "99595-1313",
+            "descricao": "xxxx",
+            "situacao": "ALOCADO",
+            "tecnologias": [
+                "string"
+            ],
+            "idAluno": 0,
+            "emProcesso": "string"
+        }]
+    }]
+}
