@@ -4,6 +4,26 @@
     "failed" : 0,
     "broken" : 0,
     "skipped" : 0,
+    "passed" : 18,
+    "unknown" : 0,
+    "total" : 18
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 18,
+    "unknown" : 0,
+    "total" : 18
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
     "passed" : 17,
     "unknown" : 0,
     "total" : 17

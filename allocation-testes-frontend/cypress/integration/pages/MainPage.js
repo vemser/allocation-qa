@@ -28,6 +28,10 @@ let campoNomeVagaBuscada = "#root > div.MuiGrid-root.css-ncd5iv > div.MuiBox-roo
 
 export default class MainPage{
 
+    clicarBtnAlunos(){
+        basePage.click(btnAlunos)
+    }
+
     clicarBtnMenu(){
         basePage.click(btnMenu)
     }

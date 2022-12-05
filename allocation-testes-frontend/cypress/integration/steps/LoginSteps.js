@@ -6,10 +6,10 @@ import LoginPage from "../pages/LoginPage";
 const basePage = new BasePage;
 const loginPage = new LoginPage;
 
-/// TESTES - Login //
 
-//Teste redirecionamento tela Login 
-
+  ///////////////////////////////
+ /// TESTES - Endpoint Login ///
+///////////////////////////////
 
 Given(/^que estou na página inicial$/, () => {
 	cy.visit("https://allocation-front.vercel.app/")

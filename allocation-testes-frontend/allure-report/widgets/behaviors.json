@@ -1,5 +1,5 @@
 {
-  "total" : 5,
+  "total" : 6,
   "items" : [ {
     "uid" : "ce2f04f10264d7d7465f968446f95ff0",
     "name" : "Usuarios",
@@ -54,6 +54,17 @@
       "passed" : 2,
       "unknown" : 0,
       "total" : 2
+    }
+  }, {
+    "uid" : "dce487fd19daec0edad9bfe3715f605b",
+    "name" : "Alunos",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
     }
   } ]
 }

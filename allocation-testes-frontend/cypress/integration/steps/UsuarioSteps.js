@@ -28,9 +28,10 @@ const randomPassword2 = faker.internet.password(20, true, /[A-Z]/, '@!18');
 
 
 
-/// TESTES - Cadastro Usuario //
+  /////////////////////////////////
+ /// TESTES - Endpoint Usuario ///
+/////////////////////////////////
 
-//Teste redirecionamento tela cadastro usuario 
 
 Given(/^que estou na página inicial$/, () => {
     cy.visit("https://allocation-front.vercel.app/")

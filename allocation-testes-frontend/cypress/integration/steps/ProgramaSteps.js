@@ -42,8 +42,9 @@ const randomPassword2 = faker.internet.password(20, true, /[A-Z]/, '@!18');
 
 
 
-/// TESTES - Cadastro Programa //
-
+  //////////////////////////////////
+ /// TESTES - Endpoint Programa ///
+//////////////////////////////////
 
 Given(/^que estou na página inicial$/, () => {
 	cy.visit("https://allocation-front.vercel.app/")
