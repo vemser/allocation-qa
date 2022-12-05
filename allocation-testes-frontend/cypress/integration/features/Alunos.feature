@@ -18,6 +18,18 @@ Feature: Alunos
       And devo buscar o aluno criado e deletar para limpar o banco
 
 
+   Scenario: Validar Editar um aluno com sucesso.
+      Given que estou na página inicial
+      And que estou logado como Administrador
+      And clico no Menu
+      And clico na opção Alunos
+      And clico no botão Cadastrar Aluno
+      And crio um aluno completo
+      When busco e edito a area do aluno para QA 
+      Then devo receber uma confirmação que o aluno foi editado
+      And devo buscar o aluno editado e deletar para limpar o banco
+
+
 
 
 

@@ -34,7 +34,6 @@ const randomFirstName = faker.name.firstName();
 const randomLastName = faker.name.lastName();
 const randomNomeCompleto = randomFirstName+" "+randomLastName;
 const randomEmail = randomFirstName + "." + randomLastName + "@dbccompany.com.br";
-const randomTelefone = "123456789"
 const randomDescricao = "Descrição do Aluno aqui";
 const randomCidade = faker.address.city();
 const randomEstado = faker.address.state();
@@ -106,9 +105,40 @@ Then(/^devo receber uma confirmação que o aluno foi criado$/, () => {
 
 And(/^devo buscar o aluno criado e deletar para limpar o banco$/, () => {
 	basePage.tempo(2000)
-	alunosPage.preencherCampoPesquisar(randomNomeCompleto);
+	alunosPage.preencherCampoPesquisarDashAlunos(randomNomeCompleto);
 	alunosPage.clicarBtnBuscar();
 	basePage.tempo(2000)
 	alunosPage.clicarDeletarAluno()
 });
 
+////////////////////////////////////////////
+
+
+
+And(/^crio um aluno completo$/, () => {
+	cadastroAlunoPage.criarUmAlunoCompleto(randomNomeCompleto, "83999887766", randomCidade, randomEstado, randomEmail, "420", randomDescricao)
+});
+
+When(/^busco e edito a area do aluno para QA$/, () => {
+	basePage.tempo(2000)
+	alunosPage.preencherCampoPesquisarDashAlunos(randomNomeCompleto);
+	alunosPage.clicarBtnBuscar();
+	basePage.tempo(2000)
+	alunosPage.clicarBtnEditar();
+	cadastroAlunoPage.clicarBtnAreaAluno()
+	cadastroAlunoPage.clicarBtnAreaQa()
+	cadastroAlunoPage.clicarBtnSalvarAluno()
+});
+
+
+Then(/^devo receber uma confirmação que o aluno foi editado$/, () => {
+	alunosPage.validarToastConfirmacaoAlunoEditado()
+});
+
+And(/^devo buscar o aluno editado e deletar para limpar o banco$/, () => {
+	basePage.tempo(2000)
+	alunosPage.preencherCampoPesquisarAlunos(randomNomeCompleto);
+	alunosPage.clicarBtnBuscarAlunosPage();
+	basePage.tempo(2000)
+	alunosPage.clicarDeletarAlunoPage()
+});

@@ -22,6 +22,14 @@ let btnSalvarAluno = "#form > div.MuiBox-root.css-7eri5g > button"
 
 export default class CadastroAlunoPage{
     
+    clicarBtnAreaAluno(){
+        basePage.click(btnAreaAluno)
+    }
+
+    clicarBtnAreaQa(){
+        basePage.click(btnAreaQa)
+    }
+
     preencherCampoNomeDoAluno(randomNomeAluno){
         basePage.preencherCampo(campoNomeAluno, randomNomeAluno)
     }
@@ -30,10 +38,6 @@ export default class CadastroAlunoPage{
         basePage.preencherCampo(campoTelefoneAluno, randomTelefoneAluno)
     }
 
-
-    preencherCampoCidadeAluno(randomCidadeAluno){
-        basePage.preencherCampo(campoCidadeAluno, randomCidadeAluno)
-    }
 
     preencherCampoCidadeAluno(randomCidadeAluno){
         basePage.preencherCampo(campoCidadeAluno, randomCidadeAluno)
@@ -60,7 +64,16 @@ export default class CadastroAlunoPage{
     }
    
 
-
+    criarUmAlunoCompleto(randomNomeAluno, randomTelefoneAluno, randomCidadeAluno, randomEstadoAluno, randomEmailAluno, randomIdProgramaAluno,randomDescricaoAluno){
+        this.preencherCampoNomeDoAluno(randomNomeAluno);
+        this.preencherCampoTelefoneAluno(randomTelefoneAluno);
+        this.preencherCampoCidadeAluno(randomCidadeAluno);
+        this.preencherCampoEstadoAluno(randomEstadoAluno);
+        this.preencherCampoEmailAluno(randomEmailAluno);
+        this.preencherCampoIdProgramaAluno(randomIdProgramaAluno);
+        this.preencherCampoDescricaoAluno(randomDescricaoAluno);
+        this.clicarBtnSalvarAluno();
+    }
     
 
 

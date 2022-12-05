@@ -1,180 +1,200 @@
 [ {
-  "uid" : "4f052bc23f3de4f0",
-  "name" : "Validar Administrador cadastrar usuario do tipo Gestor com sucesso.",
-  "time" : {
-    "start" : 1670217980335,
-    "stop" : 1670217990556,
-    "duration" : 10221
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e27eb78eeb1cf47",
-  "name" : "Validar Administrador cadastrar vaga com sucesso.",
-  "time" : {
-    "start" : 1670218038222,
-    "stop" : 1670218043032,
-    "duration" : 4810
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "49fce1d6f13c4e56",
-  "name" : "Validar cadastrar aluno com sucesso.",
-  "time" : {
-    "start" : 1670217809755,
-    "stop" : 1670217822490,
-    "duration" : 12735
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2e2824a4d859b724",
-  "name" : "Validar Administrador cadastrar usuario do tipo Instrutor com sucesso.",
-  "time" : {
-    "start" : 1670217959760,
-    "stop" : 1670217970073,
-    "duration" : 10313
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "897ca84044ecc598",
-  "name" : "Validar cadastrar usuario com sucesso.",
-  "time" : {
-    "start" : 1670217946712,
-    "stop" : 1670217949758,
-    "duration" : 3046
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4235e9c0e24c5133",
-  "name" : "Validar Administrador cadastrar usuario do tipo Gestão de Pessoas com sucesso.",
-  "time" : {
-    "start" : 1670217970105,
-    "stop" : 1670217980311,
-    "duration" : 10206
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "394a41cf81e69e06",
+  "uid" : "dc72b59c9f19293f",
   "name" : "Validar fazer login com sucesso.",
   "time" : {
-    "start" : 1670217884713,
-    "stop" : 1670217887266,
-    "duration" : 2553
+    "start" : 1670226158905,
+    "stop" : 1670226161149,
+    "duration" : 2244
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5adfc7ce7285a394",
-  "name" : "Validar Administrador tentar cadastrar programa com dados em branco.",
-  "time" : {
-    "start" : 1670217921737,
-    "stop" : 1670217924072,
-    "duration" : 2335
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d3a52fc6c987cb28",
-  "name" : "Validar tentar fazer login com email e senha em branco.",
-  "time" : {
-    "start" : 1670217889117,
-    "stop" : 1670217889596,
-    "duration" : 479
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f89b390971a5aa57",
-  "name" : "Validar tentar fazer login com senha inválida.",
-  "time" : {
-    "start" : 1670217887281,
-    "stop" : 1670217889106,
-    "duration" : 1825
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "98c8d9a57cd2c19",
-  "name" : "Validar redirecionamento para página de cadastrar usuario com sucesso.",
-  "time" : {
-    "start" : 1670217945406,
-    "stop" : 1670217946706,
-    "duration" : 1300
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "12065f8b82c63abc",
-  "name" : "Validar Administrador tentar cadastrar cliente com dados em branco.",
-  "time" : {
-    "start" : 1670217860359,
-    "stop" : 1670217862773,
-    "duration" : 2414
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "317c0668e9a44ce6",
-  "name" : "Validar Administrador editar nome de usuario com sucesso.",
-  "time" : {
-    "start" : 1670217990585,
-    "stop" : 1670218001035,
-    "duration" : 10450
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bafedaadf89e22a8",
-  "name" : "Validar buscar vaga com sucesso.",
-  "time" : {
-    "start" : 1670218043046,
-    "stop" : 1670218045519,
-    "duration" : 2473
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ada522efa4444685",
-  "name" : "Validar Administrador cadastrar programa com sucesso.",
-  "time" : {
-    "start" : 1670217909304,
-    "stop" : 1670217921704,
-    "duration" : 12400
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ddab21705f13645d",
+  "uid" : "b1701d7d318e8171",
   "name" : "Validar Administrador cadastrar cliente com sucesso.",
   "time" : {
-    "start" : 1670217844208,
-    "stop" : 1670217860325,
-    "duration" : 16117
+    "start" : 1670226118166,
+    "stop" : 1670226134481,
+    "duration" : 16315
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c77e0f091f9bf511",
+  "uid" : "d691dd553c086d1e",
   "name" : "Validar Administrador cadastrar usuario do tipo Administrador com sucesso.",
   "time" : {
-    "start" : 1670217949770,
-    "stop" : 1670217959720,
-    "duration" : 9950
+    "start" : 1670226224878,
+    "stop" : 1670226235051,
+    "duration" : 10173
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8d2031c75c8fc07a",
+  "uid" : "b06e7825b17b8bb7",
+  "name" : "Validar buscar vaga com sucesso.",
+  "time" : {
+    "start" : 1670226318900,
+    "stop" : 1670226320730,
+    "duration" : 1830
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ded288db3a0652f6",
+  "name" : "Validar Administrador cadastrar programa com sucesso.",
+  "time" : {
+    "start" : 1670226183643,
+    "stop" : 1670226195772,
+    "duration" : 12129
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2c13393766db852",
+  "name" : "Validar Administrador tentar cadastrar cliente com dados em branco.",
+  "time" : {
+    "start" : 1670226134515,
+    "stop" : 1670226136825,
+    "duration" : 2310
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34848ad2a995af",
+  "name" : "Validar tentar fazer login com email e senha em branco.",
+  "time" : {
+    "start" : 1670226163249,
+    "stop" : 1670226163603,
+    "duration" : 354
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc8c9f1fe00f5319",
+  "name" : "Validar tentar fazer login com senha inválida.",
+  "time" : {
+    "start" : 1670226161163,
+    "stop" : 1670226163238,
+    "duration" : 2075
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9d620cb67c29ea95",
+  "name" : "Validar Administrador editar nome de usuario com sucesso.",
+  "time" : {
+    "start" : 1670226265746,
+    "stop" : 1670226275855,
+    "duration" : 10109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe4349624ca99aba",
+  "name" : "Validar Administrador cadastrar usuario do tipo Gestão de Pessoas com sucesso.",
+  "time" : {
+    "start" : 1670226245392,
+    "stop" : 1670226255669,
+    "duration" : 10277
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "762053faf20ad727",
+  "name" : "Validar Editar um aluno com sucesso.",
+  "time" : {
+    "start" : 1670226051331,
+    "stop" : 1670226066392,
+    "duration" : 15061
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2faa524a6dc1e379",
   "name" : "Validar Administrador editar Tipo de usuario com sucesso.",
   "time" : {
-    "start" : 1670218001082,
-    "stop" : 1670218011365,
-    "duration" : 10283
+    "start" : 1670226275904,
+    "stop" : 1670226286550,
+    "duration" : 10646
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9bef3e889416b36d",
+  "name" : "Validar cadastrar aluno com sucesso.",
+  "time" : {
+    "start" : 1670226039130,
+    "stop" : 1670226051299,
+    "duration" : 12169
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be31b1d04d8a83bb",
+  "name" : "Validar cadastrar usuario com sucesso.",
+  "time" : {
+    "start" : 1670226221793,
+    "stop" : 1670226224863,
+    "duration" : 3070
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71cbf0108c48243",
+  "name" : "Validar Administrador cadastrar usuario do tipo Gestor com sucesso.",
+  "time" : {
+    "start" : 1670226255702,
+    "stop" : 1670226265716,
+    "duration" : 10014
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5758fa9fb64e4594",
+  "name" : "Validar redirecionamento para página de cadastrar usuario com sucesso.",
+  "time" : {
+    "start" : 1670226220466,
+    "stop" : 1670226221759,
+    "duration" : 1293
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f548fdf104011b58",
+  "name" : "Validar Administrador cadastrar vaga com sucesso.",
+  "time" : {
+    "start" : 1670226313104,
+    "stop" : 1670226318858,
+    "duration" : 5754
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "87957be5d4c6398a",
+  "name" : "Validar Administrador cadastrar usuario do tipo Instrutor com sucesso.",
+  "time" : {
+    "start" : 1670226235092,
+    "stop" : 1670226245362,
+    "duration" : 10270
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "825991d4bcafbb40",
+  "name" : "Validar reservar aluno em uma vaga com sucesso.",
+  "time" : {
+    "start" : 1670226089264,
+    "stop" : 1670226096707,
+    "duration" : 7443
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e6992ff37c7a884",
+  "name" : "Validar Administrador tentar cadastrar programa com dados em branco.",
+  "time" : {
+    "start" : 1670226195804,
+    "stop" : 1670226198163,
+    "duration" : 2359
   },
   "status" : "passed",
   "severity" : "normal"

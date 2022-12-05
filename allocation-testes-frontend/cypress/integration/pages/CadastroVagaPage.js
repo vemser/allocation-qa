@@ -60,7 +60,7 @@ export default class CadastroVagaPage{
     
 
 
-    preencherVaga(){
+    preencherVagaCompleta(){
         basePage.preencherCampo(campoNomeVaga, "Nome de Vaga Exemplo")
         basePage.preencherCampo(campoIdCliente, 307)
         basePage.preencherCampo(campoIdPrograma, 421)

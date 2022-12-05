@@ -22,11 +22,19 @@ let campoPesquisarVaga = "#pesquisa"
 let btnBuscarVaga = "#form > div.MuiBox-root.css-18bbsnd > button:nth-child(1)"
 let campoIdVagaBuscada = "#root > div.MuiGrid-root.css-ncd5iv > div.MuiBox-root.css-ygck11 > div.MuiBox-root.css-1x2w3xw > div > div > div.MuiBox-root.css-q0h9ri > div.MuiBox-root.css-0 > p > strong"
 let campoNomeVagaBuscada = "#root > div.MuiGrid-root.css-ncd5iv > div.MuiBox-root.css-ygck11 > div.MuiBox-root.css-1x2w3xw > div > div > div.MuiBox-root.css-tdqk15 > p:nth-child(1)"
-
+let btnAvaliacaoSimples = "#root > div.MuiGrid-root.css-ncd5iv > div.MuiBox-root.css-1fg8fmc > div.MuiBox-root.css-enr2q3 > a:nth-child(1) > button";
 
 
 
 export default class MainPage{
+    
+    clicarBtnAvaliacaoSimples(){
+        basePage.click(btnAvaliacaoSimples)
+    }
+
+    clicarBtnAvaliacoes(){
+        basePage.click(btnAvaliacoes)
+    }
 
     clicarBtnAlunos(){
         basePage.click(btnAlunos)
@@ -73,6 +81,11 @@ export default class MainPage{
     validarVagaBuscada(){
         basePage.validarText(campoIdVagaBuscada, "283")
         basePage.validarText(campoNomeVagaBuscada, "Vaga QA Senior")
+    }
+
+    validarToastConfirmacaoReservaAluno(){
+        basePage.validarVisibilidade(toastDeConfirmacaoVagaCriada)
+        basePage.validarText(toastDeConfirmacaoVagaCriada, "Reserva/alocação cadastrada com sucesso!")
     }
 
 

@@ -6,234 +6,260 @@
     "children" : [ {
       "children" : [ {
         "name" : "Validar cadastrar aluno com sucesso.",
-        "uid" : "49fce1d6f13c4e56",
+        "uid" : "9bef3e889416b36d",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217809755,
-          "stop" : 1670217822490,
-          "duration" : 12735
+          "start" : 1670226039130,
+          "stop" : 1670226051299,
+          "duration" : 12169
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Validar Editar um aluno com sucesso.",
+        "uid" : "762053faf20ad727",
+        "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670226051331,
+          "stop" : 1670226066392,
+          "duration" : 15061
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Validar reservar aluno em uma vaga com sucesso.",
+        "uid" : "825991d4bcafbb40",
+        "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670226089264,
+          "stop" : 1670226096707,
+          "duration" : 7443
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar Administrador cadastrar cliente com sucesso.",
-        "uid" : "ddab21705f13645d",
+        "uid" : "b1701d7d318e8171",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217844208,
-          "stop" : 1670217860325,
-          "duration" : 16117
+          "start" : 1670226118166,
+          "stop" : 1670226134481,
+          "duration" : 16315
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar Administrador tentar cadastrar cliente com dados em branco.",
-        "uid" : "12065f8b82c63abc",
+        "uid" : "b2c13393766db852",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217860359,
-          "stop" : 1670217862773,
-          "duration" : 2414
+          "start" : 1670226134515,
+          "stop" : 1670226136825,
+          "duration" : 2310
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar fazer login com sucesso.",
-        "uid" : "394a41cf81e69e06",
+        "uid" : "dc72b59c9f19293f",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217884713,
-          "stop" : 1670217887266,
-          "duration" : 2553
+          "start" : 1670226158905,
+          "stop" : 1670226161149,
+          "duration" : 2244
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar tentar fazer login com senha inválida.",
-        "uid" : "f89b390971a5aa57",
+        "uid" : "cc8c9f1fe00f5319",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217887281,
-          "stop" : 1670217889106,
-          "duration" : 1825
+          "start" : 1670226161163,
+          "stop" : 1670226163238,
+          "duration" : 2075
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar tentar fazer login com email e senha em branco.",
-        "uid" : "d3a52fc6c987cb28",
+        "uid" : "34848ad2a995af",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217889117,
-          "stop" : 1670217889596,
-          "duration" : 479
+          "start" : 1670226163249,
+          "stop" : 1670226163603,
+          "duration" : 354
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar Administrador cadastrar programa com sucesso.",
-        "uid" : "ada522efa4444685",
+        "uid" : "ded288db3a0652f6",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217909304,
-          "stop" : 1670217921704,
-          "duration" : 12400
+          "start" : 1670226183643,
+          "stop" : 1670226195772,
+          "duration" : 12129
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar Administrador tentar cadastrar programa com dados em branco.",
-        "uid" : "5adfc7ce7285a394",
+        "uid" : "5e6992ff37c7a884",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217921737,
-          "stop" : 1670217924072,
-          "duration" : 2335
+          "start" : 1670226195804,
+          "stop" : 1670226198163,
+          "duration" : 2359
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar redirecionamento para página de cadastrar usuario com sucesso.",
-        "uid" : "98c8d9a57cd2c19",
+        "uid" : "5758fa9fb64e4594",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217945406,
-          "stop" : 1670217946706,
-          "duration" : 1300
+          "start" : 1670226220466,
+          "stop" : 1670226221759,
+          "duration" : 1293
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar cadastrar usuario com sucesso.",
-        "uid" : "897ca84044ecc598",
+        "uid" : "be31b1d04d8a83bb",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217946712,
-          "stop" : 1670217949758,
-          "duration" : 3046
+          "start" : 1670226221793,
+          "stop" : 1670226224863,
+          "duration" : 3070
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar Administrador cadastrar usuario do tipo Administrador com sucesso.",
-        "uid" : "c77e0f091f9bf511",
+        "uid" : "d691dd553c086d1e",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217949770,
-          "stop" : 1670217959720,
-          "duration" : 9950
+          "start" : 1670226224878,
+          "stop" : 1670226235051,
+          "duration" : 10173
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar Administrador cadastrar usuario do tipo Instrutor com sucesso.",
-        "uid" : "2e2824a4d859b724",
+        "uid" : "87957be5d4c6398a",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217959760,
-          "stop" : 1670217970073,
-          "duration" : 10313
+          "start" : 1670226235092,
+          "stop" : 1670226245362,
+          "duration" : 10270
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar Administrador cadastrar usuario do tipo Gestão de Pessoas com sucesso.",
-        "uid" : "4235e9c0e24c5133",
+        "uid" : "fe4349624ca99aba",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217970105,
-          "stop" : 1670217980311,
-          "duration" : 10206
+          "start" : 1670226245392,
+          "stop" : 1670226255669,
+          "duration" : 10277
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar Administrador cadastrar usuario do tipo Gestor com sucesso.",
-        "uid" : "4f052bc23f3de4f0",
+        "uid" : "71cbf0108c48243",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217980335,
-          "stop" : 1670217990556,
-          "duration" : 10221
+          "start" : 1670226255702,
+          "stop" : 1670226265716,
+          "duration" : 10014
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar Administrador editar nome de usuario com sucesso.",
-        "uid" : "317c0668e9a44ce6",
+        "uid" : "9d620cb67c29ea95",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670217990585,
-          "stop" : 1670218001035,
-          "duration" : 10450
+          "start" : 1670226265746,
+          "stop" : 1670226275855,
+          "duration" : 10109
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar Administrador editar Tipo de usuario com sucesso.",
-        "uid" : "8d2031c75c8fc07a",
+        "uid" : "2faa524a6dc1e379",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670218001082,
-          "stop" : 1670218011365,
-          "duration" : 10283
+          "start" : 1670226275904,
+          "stop" : 1670226286550,
+          "duration" : 10646
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar Administrador cadastrar vaga com sucesso.",
-        "uid" : "e27eb78eeb1cf47",
+        "uid" : "f548fdf104011b58",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670218038222,
-          "stop" : 1670218043032,
-          "duration" : 4810
+          "start" : 1670226313104,
+          "stop" : 1670226318858,
+          "duration" : 5754
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Validar buscar vaga com sucesso.",
-        "uid" : "bafedaadf89e22a8",
+        "uid" : "b06e7825b17b8bb7",
         "parentUid" : "9c3b5bbf2e0a9a9eb5860e5891c88395",
         "status" : "passed",
         "time" : {
-          "start" : 1670218043046,
-          "stop" : 1670218045519,
-          "duration" : 2473
+          "start" : 1670226318900,
+          "stop" : 1670226320730,
+          "duration" : 1830
         },
         "flaky" : false,
         "newFailed" : false,
