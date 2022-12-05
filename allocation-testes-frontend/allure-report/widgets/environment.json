@@ -1,0 +1,7 @@
+[ {
+  "values" : [ "107.0.5304.107" ],
+  "name" : "Browser.version"
+}, {
+  "values" : [ "Chrome" ],
+  "name" : "Browser"
+} ]

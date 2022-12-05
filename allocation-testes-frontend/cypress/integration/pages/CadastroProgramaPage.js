@@ -45,6 +45,14 @@ export default class CadastroProgramaPage{
         basePage.validarText(textInformeDataTermino, "Por favor, informe a data de término");
     }
 
+    cadastrarUmProgramaCompleto(){
+        this.preencherCampoNome("Nome do meu Programa");
+        this.preencherCampoDescricao("Descrição do meu Programa");
+        this.preencherCampoData();
+        this.selecionarSituacaoAberto();
+        this.clicarBtnSalvar()
+    }
+
     
 
 

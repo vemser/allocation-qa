@@ -1,0 +1,239 @@
+{
+  "uid" : "a86d7612a787c858",
+  "name" : "Vaga - Validar contrato Vaga",
+  "fullName" : "Vaga - Validar contrato Vaga",
+  "historyId" : "425c6a0deabea86c0dacb984369847d4",
+  "time" : {
+    "start" : 1670185975687,
+    "stop" : 1670185975854,
+    "duration" : 167
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185975081,
+        "stop" : 1670185975467,
+        "duration" : 386
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185975083,
+          "stop" : 1670185975467,
+          "duration" : 384
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185975472,
+        "stop" : 1670185975684,
+        "duration" : 212
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185975473,
+          "stop" : 1670185975684,
+          "duration" : 211
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Valida o contrato",
+      "time" : {
+        "start" : 1670185975693,
+        "stop" : 1670185975853,
+        "duration" : 160
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/vaga",
+        "time" : {
+          "start" : 1670185975694,
+          "stop" : 1670185975805,
+          "duration" : 111
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "fixture (\"vaga.get.contrato\")",
+        "time" : {
+          "start" : 1670185975806,
+          "stop" : 1670185975822,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 2,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Contratos - Cenários Positivos"
+  }, {
+    "name" : "epic",
+    "value" : "Testes de Contrato"
+  }, {
+    "name" : "feature",
+    "value" : "Cenários Positivos"
+  }, {
+    "name" : "story",
+    "value" : "GET - Validar contrato GET/vaga"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 7,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 11,
+        "unknown" : 0,
+        "total" : 18
+      },
+      "items" : [ {
+        "uid" : "75b46ca0e2948e39",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185790759,
+          "stop" : 1670185790923,
+          "duration" : 164
+        }
+      }, {
+        "uid" : "ec7ec6b8f7c2acb2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185341144,
+          "stop" : 1670185341300,
+          "duration" : 156
+        }
+      }, {
+        "uid" : "f78ab0b53f62785c",
+        "status" : "failed",
+        "statusDetails" : "Falha do contrato",
+        "time" : {
+          "start" : 1670177531689,
+          "stop" : 1670177532056,
+          "duration" : 367
+        }
+      }, {
+        "uid" : "a6e2f852ee9611bf",
+        "status" : "failed",
+        "statusDetails" : "Falha do contrato",
+        "time" : {
+          "start" : 1670167069461,
+          "stop" : 1670167069782,
+          "duration" : 321
+        }
+      }, {
+        "uid" : "a5e0b6d9b0bd1b10",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670141093594,
+          "stop" : 1670141093736,
+          "duration" : 142
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a86d7612a787c858.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,439 @@
+{
+  "uid" : "a7dd7434a032da37",
+  "name" : "Validar fazer login com sucesso.",
+  "fullName" : "Validar fazer login com sucesso.",
+  "historyId" : "cfe17664a6719f513ea7db2da3210447",
+  "time" : {
+    "start" : 1670207382366,
+    "stop" : 1670207384232,
+    "duration" : 1866
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1670207382368,
+        "stop" : 1670207382376,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "clearCookies",
+        "time" : {
+          "start" : 1670207382369,
+          "stop" : 1670207382375,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "clearLocalStorage",
+        "time" : {
+          "start" : 1670207382375,
+          "stop" : 1670207382376,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Given que estou na página inicial",
+      "time" : {
+        "start" : 1670207382387,
+        "stop" : 1670207383017,
+        "duration" : 630
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit https://allocation-front.vercel.app/",
+        "time" : {
+          "start" : 1670207382387,
+          "stop" : 1670207383015,
+          "duration" : 628
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "And preencho o campo de login de Email com um email válido",
+      "time" : {
+        "start" : 1670207383017,
+        "stop" : 1670207383469,
+        "duration" : 452
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get #email",
+        "time" : {
+          "start" : 1670207383018,
+          "stop" : 1670207383036,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "type teste@dbccompany.com.br",
+        "time" : {
+          "start" : 1670207383036,
+          "stop" : 1670207383467,
+          "duration" : 431
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "And preencho o campo de login de Senha com uma senha válida",
+      "time" : {
+        "start" : 1670207383469,
+        "stop" : 1670207383739,
+        "duration" : 270
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get #senha",
+        "time" : {
+          "start" : 1670207383469,
+          "stop" : 1670207383474,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "type testeqa12@",
+        "time" : {
+          "start" : 1670207383474,
+          "stop" : 1670207383738,
+          "duration" : 264
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "When clico no botão Login",
+      "time" : {
+        "start" : 1670207383739,
+        "stop" : 1670207383830,
+        "duration" : 91
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get #button-login",
+        "time" : {
+          "start" : 1670207383740,
+          "stop" : 1670207383743,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "click",
+        "time" : {
+          "start" : 1670207383743,
+          "stop" : 1670207383829,
+          "duration" : 86
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "POST http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670207383829,
+          "stop" : 1670207383829,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "Then devo validar redirecionamento para página principal",
+      "time" : {
+        "start" : 1670207383830,
+        "stop" : 1670207384232,
+        "duration" : 402
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "url",
+        "time" : {
+          "start" : 1670207383831,
+          "stop" : 1670207384231,
+          "duration" : 400
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "assert expected **https://allocation-front.vercel.app/painel-vagas** to equal **https://allocation-front.vercel.app/painel-vagas**",
+        "time" : {
+          "start" : 1670207384230,
+          "stop" : 1670207384230,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "https://allocation-front.vercel.app/painel-vagas"
+        }, {
+          "name" : "expected",
+          "value" : "https://allocation-front.vercel.app/painel-vagas"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth/logged",
+        "time" : {
+          "start" : 1670207384230,
+          "stop" : 1670207384230,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "GET 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/usuario?email=teste@dbccompany.com.br",
+        "time" : {
+          "start" : 1670207384230,
+          "stop" : 1670207384230,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "new url https://allocation-front.vercel.app/painel-vagas",
+        "time" : {
+          "start" : 1670207384230,
+          "stop" : 1670207384230,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "GET http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/vaga?pagina=0&tamanho=8",
+        "time" : {
+          "start" : 1670207384231,
+          "stop" : 1670207384231,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 6
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 22
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Login"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "34bab276dbc2bfb2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670189536821,
+          "stop" : 1670189538758,
+          "duration" : 1937
+        }
+      }, {
+        "uid" : "3e965d11da9dc64d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670187068124,
+          "stop" : 1670187072072,
+          "duration" : 3948
+        }
+      }, {
+        "uid" : "fc2917bfd22887fb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670135657193,
+          "stop" : 1670135659625,
+          "duration" : 2432
+        }
+      }, {
+        "uid" : "f87ab367d387f2b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670106925227,
+          "stop" : 1670106927686,
+          "duration" : 2459
+        }
+      }, {
+        "uid" : "c4cdffa9bde0c06",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670097592936,
+          "stop" : 1670097595347,
+          "duration" : 2411
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a7dd7434a032da37.json",
+  "parameterValues" : [ ]
+}

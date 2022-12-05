@@ -1,0 +1,126 @@
+[ {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 55
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 55
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 55
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 34,
+    "Teste falhado" : 21
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Product defects" : 1,
+    "Teste executado com sucesso" : 33,
+    "Teste falhado" : 21
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 55
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 38,
+    "Teste falhado" : 1
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 38,
+    "Teste falhado" : 1
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 33,
+    "Teste falhado" : 1
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Product defects" : 8,
+    "Teste executado com sucesso" : 24,
+    "Teste falhado" : 2
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Product defects" : 1,
+    "Teste executado com sucesso" : 29,
+    "Teste falhado" : 1
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 25,
+    "Teste falhado" : 1
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 16,
+    "Teste falhado" : 7,
+    "Test defects" : 1
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 12,
+    "Teste falhado" : 11,
+    "Test defects" : 1
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 13,
+    "Teste falhado" : 13,
+    "Test defects" : 1
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 9,
+    "Teste falhado" : 8
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 6,
+    "Teste falhado" : 11
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 9,
+    "Teste falhado" : 15,
+    "Test defects" : 1
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 3,
+    "Teste falhado" : 11,
+    "Test defects" : 1
+  }
+}, {
+  "buildOrder" : 1,
+  "data" : {
+    "Teste executado com sucesso" : 3,
+    "Teste falhado" : 11,
+    "Test defects" : 1
+  }
+} ]

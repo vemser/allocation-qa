@@ -1,0 +1,294 @@
+{
+  "uid" : "2ea4d4b3fa5bf634",
+  "name" : "POST - Tenta Adicionar um avaliacao na aplicação com idVaga inexistente",
+  "fullName" : "POST - Tenta Adicionar um avaliacao na aplicação com idVaga inexistente",
+  "historyId" : "980dadc13b6e4192ddf8c2e163dd9776",
+  "time" : {
+    "start" : 1670185946824,
+    "stop" : 1670185947055,
+    "duration" : 231
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185944853,
+        "stop" : 1670185945061,
+        "duration" : 208
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185944855,
+          "stop" : 1670185945061,
+          "duration" : 206
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185945067,
+        "stop" : 1670185945767,
+        "duration" : 700
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185945067,
+          "stop" : 1670185945767,
+          "duration" : 700
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Tenta Adicionar um avaliacao na aplicação com idVaga inexistente",
+      "time" : {
+        "start" : 1670185946832,
+        "stop" : 1670185947055,
+        "duration" : 223
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/avaliacao",
+        "time" : {
+          "start" : 1670185946833,
+          "stop" : 1670185947052,
+          "duration" : 219
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185947052,
+          "stop" : 1670185947052,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185947052,
+          "stop" : 1670185947055,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "assert expected **400** to equal **400**",
+        "time" : {
+          "start" : 1670185947055,
+          "stop" : 1670185947055,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "400"
+        }, {
+          "name" : "expected",
+          "value" : "400"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "assert expected **Vaga não encontrada!** to equal **Vaga não encontrada!**",
+        "time" : {
+          "start" : 1670185947055,
+          "stop" : 1670185947055,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "Vaga não encontrada!"
+        }, {
+          "name" : "expected",
+          "value" : "Vaga não encontrada!"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 5,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Avaliacao - Cenários Negativos"
+  }, {
+    "name" : "epic",
+    "value" : "Testes de endpoint - Avaliacao"
+  }, {
+    "name" : "feature",
+    "value" : "Cenários Negativos"
+  }, {
+    "name" : "story",
+    "value" : "POST - Tenta Adicionar um avaliacao na aplicação com idVaga inexistente"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "d19b19375f646011",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185763074,
+          "stop" : 1670185763182,
+          "duration" : 108
+        }
+      }, {
+        "uid" : "3b1411f4baf581d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185315321,
+          "stop" : 1670185315429,
+          "duration" : 108
+        }
+      }, {
+        "uid" : "3c6ec51fdd11fa1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670177461386,
+          "stop" : 1670177461495,
+          "duration" : 109
+        }
+      }, {
+        "uid" : "7c390dbd9885e266",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670167003901,
+          "stop" : 1670167004018,
+          "duration" : 117
+        }
+      }, {
+        "uid" : "4343b879a17ade31",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670141065276,
+          "stop" : 1670141065372,
+          "duration" : 96
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "2ea4d4b3fa5bf634.json",
+  "parameterValues" : [ ]
+}
