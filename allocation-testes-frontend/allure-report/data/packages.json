@@ -1,0 +1,226 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Validar Administrador cadastrar cliente com sucesso.",
+    "uid" : "f5a853bd6863a8ac",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207348552,
+      "stop" : 1670207365875,
+      "duration" : 17323
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar Administrador tentar cadastrar cliente com dados em branco.",
+    "uid" : "8900dcc16a3b23c6",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207365902,
+      "stop" : 1670207368443,
+      "duration" : 2541
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar fazer login com sucesso.",
+    "uid" : "a7dd7434a032da37",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207382366,
+      "stop" : 1670207384232,
+      "duration" : 1866
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar tentar fazer login com senha inválida.",
+    "uid" : "22f76a362ab1f77f",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207384246,
+      "stop" : 1670207386342,
+      "duration" : 2096
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar tentar fazer login com email e senha em branco.",
+    "uid" : "7b9f76ca3c52b681",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207386353,
+      "stop" : 1670207386682,
+      "duration" : 329
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar Administrador cadastrar programa com sucesso.",
+    "uid" : "58b5cce83ad9e2cc",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207399342,
+      "stop" : 1670207410669,
+      "duration" : 11327
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar Administrador tentar cadastrar programa com dados em branco.",
+    "uid" : "e066c86e802d1c55",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207410698,
+      "stop" : 1670207412675,
+      "duration" : 1977
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar redirecionamento para página de cadastrar usuario com sucesso.",
+    "uid" : "9a3c5d75998ec106",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207427353,
+      "stop" : 1670207428199,
+      "duration" : 846
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar cadastrar usuario com sucesso.",
+    "uid" : "baaa428d094bf2f6",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207428205,
+      "stop" : 1670207431265,
+      "duration" : 3060
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar Administrador cadastrar usuario do tipo Administrador com sucesso.",
+    "uid" : "2c38b5d9fe75c17e",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207431276,
+      "stop" : 1670207441534,
+      "duration" : 10258
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar Administrador cadastrar usuario do tipo Instrutor com sucesso.",
+    "uid" : "282ff2ecbad5af8e",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207441571,
+      "stop" : 1670207451773,
+      "duration" : 10202
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar Administrador cadastrar usuario do tipo Gestão de Pessoas com sucesso.",
+    "uid" : "44ffe1026ad761f9",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207451801,
+      "stop" : 1670207462159,
+      "duration" : 10358
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar Administrador cadastrar usuario do tipo Gestor com sucesso.",
+    "uid" : "b7a8ff77c3352a86",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207462187,
+      "stop" : 1670207471661,
+      "duration" : 9474
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar Administrador editar nome de usuario com sucesso.",
+    "uid" : "6e796d711105c18d",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207471687,
+      "stop" : 1670207481901,
+      "duration" : 10214
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar Administrador editar Tipo de usuario com sucesso.",
+    "uid" : "8b5336bcfded6d79",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207481945,
+      "stop" : 1670207492090,
+      "duration" : 10145
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar Administrador cadastrar vaga com sucesso.",
+    "uid" : "86a76b66b5c7ae79",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207506573,
+      "stop" : 1670207511287,
+      "duration" : 4714
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Validar buscar vaga com sucesso.",
+    "uid" : "c0d5778e479e8dd0",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670207511299,
+      "stop" : 1670207513756,
+      "duration" : 2457
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

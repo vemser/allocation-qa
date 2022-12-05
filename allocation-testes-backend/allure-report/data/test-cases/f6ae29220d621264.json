@@ -1,0 +1,294 @@
+{
+  "uid" : "f6ae29220d621264",
+  "name" : "DELETE - Tentar Remover um programa através do idPrograma Inexistente",
+  "fullName" : "DELETE - Tentar Remover um programa através do idPrograma Inexistente",
+  "historyId" : "8a878ff671665d6e3d41339c19eec64a",
+  "time" : {
+    "start" : 1670185961432,
+    "stop" : 1670185961537,
+    "duration" : 105
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185960583,
+        "stop" : 1670185961085,
+        "duration" : 502
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185960585,
+          "stop" : 1670185961085,
+          "duration" : 500
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185961090,
+        "stop" : 1670185961318,
+        "duration" : 228
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185961091,
+          "stop" : 1670185961318,
+          "duration" : 227
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Tentar Remover um programa através do idPrograma Inexistente",
+      "time" : {
+        "start" : 1670185961439,
+        "stop" : 1670185961537,
+        "duration" : 98
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "DELETE 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/programa/999999",
+        "time" : {
+          "start" : 1670185961440,
+          "stop" : 1670185961533,
+          "duration" : 93
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185961533,
+          "stop" : 1670185961533,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185961533,
+          "stop" : 1670185961537,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "assert expected **400** to equal **400**",
+        "time" : {
+          "start" : 1670185961536,
+          "stop" : 1670185961536,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "400"
+        }, {
+          "name" : "expected",
+          "value" : "400"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "assert expected **Programa não encontrado** to equal **Programa não encontrado**",
+        "time" : {
+          "start" : 1670185961537,
+          "stop" : 1670185961537,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "Programa não encontrado"
+        }, {
+          "name" : "expected",
+          "value" : "Programa não encontrado"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 5,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Programa - Cenários Negativos"
+  }, {
+    "name" : "epic",
+    "value" : "Testes de endpoint - Programa"
+  }, {
+    "name" : "feature",
+    "value" : "Cenários Negativos"
+  }, {
+    "name" : "story",
+    "value" : "DELETE - Tentar Remover um programa através do idPrograma Inexistente"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "4f2db8431fb8315b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185777928,
+          "stop" : 1670185778038,
+          "duration" : 110
+        }
+      }, {
+        "uid" : "530d4794a140602e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185328250,
+          "stop" : 1670185328363,
+          "duration" : 113
+        }
+      }, {
+        "uid" : "8694eb730a7e344c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670177498681,
+          "stop" : 1670177498795,
+          "duration" : 114
+        }
+      }, {
+        "uid" : "1cdf23971e58d568",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670167039626,
+          "stop" : 1670167039727,
+          "duration" : 101
+        }
+      }, {
+        "uid" : "274aecb0446fb2c4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670141081522,
+          "stop" : 1670141081614,
+          "duration" : 92
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f6ae29220d621264.json",
+  "parameterValues" : [ ]
+}

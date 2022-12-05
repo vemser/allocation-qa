@@ -1,0 +1,8 @@
+{
+  "name": "Pedro Thomé",
+  "type": "jenkins",
+  "url": "http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/",
+  "buildOrder": 1,
+  "buildName": "API DBC Allocation Test E2E #1",
+  "buildUrl": "http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/"
+}

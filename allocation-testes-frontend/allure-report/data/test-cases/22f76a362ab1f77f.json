@@ -1,0 +1,418 @@
+{
+  "uid" : "22f76a362ab1f77f",
+  "name" : "Validar tentar fazer login com senha inválida.",
+  "fullName" : "Validar tentar fazer login com senha inválida.",
+  "historyId" : "145b65313de2785c7c46139d8493749b",
+  "time" : {
+    "start" : 1670207384246,
+    "stop" : 1670207386342,
+    "duration" : 2096
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1670207384246,
+        "stop" : 1670207384258,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "clearCookies",
+        "time" : {
+          "start" : 1670207384255,
+          "stop" : 1670207384257,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "clearLocalStorage",
+        "time" : {
+          "start" : 1670207384257,
+          "stop" : 1670207384258,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Given que estou na página inicial",
+      "time" : {
+        "start" : 1670207384263,
+        "stop" : 1670207384485,
+        "duration" : 222
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit https://allocation-front.vercel.app/",
+        "time" : {
+          "start" : 1670207384263,
+          "stop" : 1670207384483,
+          "duration" : 220
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "And preencho o campo de login de Email com um email válido",
+      "time" : {
+        "start" : 1670207384484,
+        "stop" : 1670207384920,
+        "duration" : 436
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get #email",
+        "time" : {
+          "start" : 1670207384485,
+          "stop" : 1670207384489,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "type teste@dbccompany.com.br",
+        "time" : {
+          "start" : 1670207384489,
+          "stop" : 1670207384919,
+          "duration" : 430
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "And preencho o campo de login de Senha com uma senha inválida",
+      "time" : {
+        "start" : 1670207384920,
+        "stop" : 1670207385323,
+        "duration" : 403
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get #senha",
+        "time" : {
+          "start" : 1670207384920,
+          "stop" : 1670207384923,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "type asdhuqiwhuqhwe1231@212",
+        "time" : {
+          "start" : 1670207384923,
+          "stop" : 1670207385322,
+          "duration" : 399
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "When clico no botão Login",
+      "time" : {
+        "start" : 1670207385323,
+        "stop" : 1670207385410,
+        "duration" : 87
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get #button-login",
+        "time" : {
+          "start" : 1670207385323,
+          "stop" : 1670207385325,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "click",
+        "time" : {
+          "start" : 1670207385325,
+          "stop" : 1670207385409,
+          "duration" : 84
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "POST http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670207385409,
+          "stop" : 1670207385409,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "Then devo receber uma mensagem de Usuário ou senha inválidos",
+      "time" : {
+        "start" : 1670207385410,
+        "stop" : 1670207386342,
+        "duration" : 932
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get .Toastify__toast-body > div:nth-child(2)",
+        "time" : {
+          "start" : 1670207385411,
+          "stop" : 1670207385995,
+          "duration" : 584
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "scrollIntoView",
+        "time" : {
+          "start" : 1670207385995,
+          "stop" : 1670207386337,
+          "duration" : 342
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "assert expected **<div>** to be **visible**",
+        "time" : {
+          "start" : 1670207386337,
+          "stop" : 1670207386337,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "get .Toastify__toast-body > div:nth-child(2)",
+        "time" : {
+          "start" : 1670207386337,
+          "stop" : 1670207386341,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "assert expected **<div>** to contain **Usuário ou senha inválidos**",
+        "time" : {
+          "start" : 1670207386341,
+          "stop" : 1670207386341,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : true,
+      "stepsCount" : 5
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 21
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Login"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "eb5bf904aa5a446f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670189538770,
+          "stop" : 1670189541918,
+          "duration" : 3148
+        }
+      }, {
+        "uid" : "69664b521a901d1d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670187072097,
+          "stop" : 1670187073902,
+          "duration" : 1805
+        }
+      }, {
+        "uid" : "1fe7325f651c19b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670135659638,
+          "stop" : 1670135661631,
+          "duration" : 1993
+        }
+      }, {
+        "uid" : "ba8cb70525aa3dc0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670106927699,
+          "stop" : 1670106929556,
+          "duration" : 1857
+        }
+      }, {
+        "uid" : "8269feeefbf91196",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670097595359,
+          "stop" : 1670097597185,
+          "duration" : 1826
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "22f76a362ab1f77f.json",
+  "parameterValues" : [ ]
+}

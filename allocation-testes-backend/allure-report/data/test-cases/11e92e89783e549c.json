@@ -1,0 +1,294 @@
+{
+  "uid" : "11e92e89783e549c",
+  "name" : "POST - Tentar Adicionar um cliente na aplicação sem email",
+  "fullName" : "POST - Tentar Adicionar um cliente na aplicação sem email",
+  "historyId" : "d3d7a5ce4840aae723d030d2984ca6a2",
+  "time" : {
+    "start" : 1670185956669,
+    "stop" : 1670185956771,
+    "duration" : 102
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185955574,
+        "stop" : 1670185956006,
+        "duration" : 432
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185955576,
+          "stop" : 1670185956006,
+          "duration" : 430
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185956011,
+        "stop" : 1670185956221,
+        "duration" : 210
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185956011,
+          "stop" : 1670185956221,
+          "duration" : 210
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Tentar Adicionar um cliente na aplicação sem email",
+      "time" : {
+        "start" : 1670185956676,
+        "stop" : 1670185956771,
+        "duration" : 95
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/cliente",
+        "time" : {
+          "start" : 1670185956677,
+          "stop" : 1670185956767,
+          "duration" : 90
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185956767,
+          "stop" : 1670185956767,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185956767,
+          "stop" : 1670185956770,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "assert expected **400** to equal **400**",
+        "time" : {
+          "start" : 1670185956770,
+          "stop" : 1670185956770,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "400"
+        }, {
+          "name" : "expected",
+          "value" : "400"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "assert expected **email: Email não pode ser vazio ou nulo.** to equal **email: Email não pode ser vazio ou nulo.**",
+        "time" : {
+          "start" : 1670185956770,
+          "stop" : 1670185956770,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "email: Email não pode ser vazio ou nulo."
+        }, {
+          "name" : "expected",
+          "value" : "email: Email não pode ser vazio ou nulo."
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 5,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Cliente - Cenários Negativos"
+  }, {
+    "name" : "epic",
+    "value" : "Testes de endpoint - Cliente"
+  }, {
+    "name" : "feature",
+    "value" : "Cenários Negativos"
+  }, {
+    "name" : "story",
+    "value" : "POST - Tentar Adicionar um cliente na aplicação sem email"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "7e076dd5b64da296",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185771220,
+          "stop" : 1670185771326,
+          "duration" : 106
+        }
+      }, {
+        "uid" : "54da2e8950de5abb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185322967,
+          "stop" : 1670185323071,
+          "duration" : 104
+        }
+      }, {
+        "uid" : "fb4860218d77f6cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670177480634,
+          "stop" : 1670177480780,
+          "duration" : 146
+        }
+      }, {
+        "uid" : "ba0b941fad006bb1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670167022405,
+          "stop" : 1670167022515,
+          "duration" : 110
+        }
+      }, {
+        "uid" : "427f0060c93971b5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670141076319,
+          "stop" : 1670141076559,
+          "duration" : 240
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "11e92e89783e549c.json",
+  "parameterValues" : [ ]
+}

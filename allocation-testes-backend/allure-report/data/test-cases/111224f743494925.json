@@ -1,0 +1,920 @@
+{
+  "uid" : "111224f743494925",
+  "name" : "POST - Adicionar um aluno na aplicação",
+  "fullName" : "POST - Adicionar um aluno na aplicação",
+  "historyId" : "8603028bb16707bec5ddaa83c9fcdae0",
+  "time" : {
+    "start" : 1670185940146,
+    "stop" : 1670185943052,
+    "duration" : 2906
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185935516,
+        "stop" : 1670185937189,
+        "duration" : 1673
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185935518,
+          "stop" : 1670185937189,
+          "duration" : 1671
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185937196,
+        "stop" : 1670185937568,
+        "duration" : 372
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185937197,
+          "stop" : 1670185937568,
+          "duration" : 371
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Cria um Cliente",
+      "time" : {
+        "start" : 1670185940154,
+        "stop" : 1670185940355,
+        "duration" : 201
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/cliente",
+        "time" : {
+          "start" : 1670185940155,
+          "stop" : 1670185940350,
+          "duration" : 195
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185940351,
+          "stop" : 1670185940351,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185940351,
+          "stop" : 1670185940352,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "wrap Object{5}",
+        "time" : {
+          "start" : 1670185940352,
+          "stop" : 1670185940354,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"cliente\")",
+        "time" : {
+          "start" : 1670185940354,
+          "stop" : 1670185940354,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @cliente",
+        "time" : {
+          "start" : 1670185940354,
+          "stop" : 1670185940354,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 6,
+      "hasContent" : true
+    }, {
+      "name" : "Cria um Programa",
+      "time" : {
+        "start" : 1670185940355,
+        "stop" : 1670185940754,
+        "duration" : 399
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/programa",
+        "time" : {
+          "start" : 1670185940356,
+          "stop" : 1670185940751,
+          "duration" : 395
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185940751,
+          "stop" : 1670185940751,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185940751,
+          "stop" : 1670185940752,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "wrap Object{4}",
+        "time" : {
+          "start" : 1670185940752,
+          "stop" : 1670185940753,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"programa\")",
+        "time" : {
+          "start" : 1670185940753,
+          "stop" : 1670185940754,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 5,
+      "hasContent" : true
+    }, {
+      "name" : "Criar uma Vaga",
+      "time" : {
+        "start" : 1670185940754,
+        "stop" : 1670185941783,
+        "duration" : 1029
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get @programa",
+        "time" : {
+          "start" : 1670185940754,
+          "stop" : 1670185940755,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/vaga",
+        "time" : {
+          "start" : 1670185940756,
+          "stop" : 1670185941777,
+          "duration" : 1021
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185941777,
+          "stop" : 1670185941777,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185941777,
+          "stop" : 1670185941780,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "wrap Object{11}",
+        "time" : {
+          "start" : 1670185941781,
+          "stop" : 1670185941782,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"vaga\")",
+        "time" : {
+          "start" : 1670185941782,
+          "stop" : 1670185941783,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 6,
+      "hasContent" : true
+    }, {
+      "name" : "Valida Criar um Aluno",
+      "time" : {
+        "start" : 1670185941783,
+        "stop" : 1670185942237,
+        "duration" : 454
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get @programa",
+        "time" : {
+          "start" : 1670185941783,
+          "stop" : 1670185941785,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/aluno",
+        "time" : {
+          "start" : 1670185941786,
+          "stop" : 1670185942230,
+          "duration" : 444
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185942230,
+          "stop" : 1670185942231,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185942231,
+          "stop" : 1670185942235,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "assert expected **201** to equal **201**",
+        "time" : {
+          "start" : 1670185942235,
+          "stop" : 1670185942235,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "201"
+        }, {
+          "name" : "expected",
+          "value" : "201"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "wrap Object{12}",
+        "time" : {
+          "start" : 1670185942235,
+          "stop" : 1670185942237,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"aluno\")",
+        "time" : {
+          "start" : 1670185942237,
+          "stop" : 1670185942237,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 7,
+      "hasContent" : true
+    }, {
+      "name" : "Deleta aluno criado",
+      "time" : {
+        "start" : 1670185942237,
+        "stop" : 1670185942746,
+        "duration" : 509
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get @aluno",
+        "time" : {
+          "start" : 1670185942237,
+          "stop" : 1670185942238,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "DELETE 204 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/aluno/222",
+        "time" : {
+          "start" : 1670185942239,
+          "stop" : 1670185942744,
+          "duration" : 505
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185942744,
+          "stop" : 1670185942744,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185942744,
+          "stop" : 1670185942746,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "Deleta vaga criado",
+      "time" : {
+        "start" : 1670185942746,
+        "stop" : 1670185942847,
+        "duration" : 101
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get @vaga",
+        "time" : {
+          "start" : 1670185942746,
+          "stop" : 1670185942747,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "DELETE 204 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/vaga/275",
+        "time" : {
+          "start" : 1670185942749,
+          "stop" : 1670185942844,
+          "duration" : 95
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185942844,
+          "stop" : 1670185942844,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185942844,
+          "stop" : 1670185942847,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "Deleta programa criado",
+      "time" : {
+        "start" : 1670185942847,
+        "stop" : 1670185942954,
+        "duration" : 107
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get @vaga",
+        "time" : {
+          "start" : 1670185942847,
+          "stop" : 1670185942850,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "DELETE 204 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/programa/476",
+        "time" : {
+          "start" : 1670185942851,
+          "stop" : 1670185942951,
+          "duration" : 100
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185942951,
+          "stop" : 1670185942951,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185942951,
+          "stop" : 1670185942953,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "Deleta cliente criado",
+      "time" : {
+        "start" : 1670185942954,
+        "stop" : 1670185943052,
+        "duration" : 98
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get @cliente",
+        "time" : {
+          "start" : 1670185942954,
+          "stop" : 1670185942955,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "DELETE 204 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/cliente/289",
+        "time" : {
+          "start" : 1670185942956,
+          "stop" : 1670185943050,
+          "duration" : 94
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185943050,
+          "stop" : 1670185943051,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185943051,
+          "stop" : 1670185943052,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 4,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 48,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Aluno - Cenários Positivos"
+  }, {
+    "name" : "epic",
+    "value" : "Testes de endpoint - Aluno"
+  }, {
+    "name" : "feature",
+    "value" : "Cenários Positivos"
+  }, {
+    "name" : "story",
+    "value" : "POST - Adicionar um aluno na aplicação"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 5,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 13
+      },
+      "items" : [ {
+        "uid" : "2b23f40216b8abcb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185759689,
+          "stop" : 1670185760524,
+          "duration" : 835
+        }
+      }, {
+        "uid" : "2def72556a59d385",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185312444,
+          "stop" : 1670185313309,
+          "duration" : 865
+        }
+      }, {
+        "uid" : "751c65420fcab3e4",
+        "status" : "failed",
+        "statusDetails" : "Timed out retrying after 4000ms: expected 400 to equal 201",
+        "time" : {
+          "start" : 1670177454138,
+          "stop" : 1670177458738,
+          "duration" : 4600
+        }
+      }, {
+        "uid" : "913250fd449f812f",
+        "status" : "failed",
+        "statusDetails" : "Timed out retrying after 4000ms: expected 400 to equal 201",
+        "time" : {
+          "start" : 1670166995724,
+          "stop" : 1670167000384,
+          "duration" : 4660
+        }
+      }, {
+        "uid" : "58e234b6e56d384e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670141062479,
+          "stop" : 1670141063224,
+          "duration" : 745
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "111224f743494925.json",
+  "parameterValues" : [ ]
+}

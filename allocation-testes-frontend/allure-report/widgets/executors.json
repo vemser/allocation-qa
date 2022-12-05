@@ -1,0 +1,8 @@
+[ {
+  "name" : "Pedro Thomé",
+  "type" : "jenkins",
+  "url" : "https://allocation-front.vercel.app/",
+  "buildOrder" : 1,
+  "buildName" : "Allocation App Test E2E",
+  "buildUrl" : "https://allocation-front.vercel.app/"
+} ]

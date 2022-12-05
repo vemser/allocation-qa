@@ -1,0 +1,380 @@
+{
+  "uid" : "b8e63779d6a5343c",
+  "name" : "POST - Adicionar um cliente na aplicação",
+  "fullName" : "POST - Adicionar um cliente na aplicação",
+  "historyId" : "0e3c47b22efba86a2d171e9acb1047cc",
+  "time" : {
+    "start" : 1670185959051,
+    "stop" : 1670185959278,
+    "duration" : 227
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185957861,
+        "stop" : 1670185958131,
+        "duration" : 270
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185957863,
+          "stop" : 1670185958131,
+          "duration" : 268
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185958136,
+        "stop" : 1670185958343,
+        "duration" : 207
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185958136,
+          "stop" : 1670185958343,
+          "duration" : 207
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Cria um cliente",
+      "time" : {
+        "start" : 1670185959061,
+        "stop" : 1670185959181,
+        "duration" : 120
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 201 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/cliente",
+        "time" : {
+          "start" : 1670185959062,
+          "stop" : 1670185959177,
+          "duration" : 115
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185959177,
+          "stop" : 1670185959177,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185959177,
+          "stop" : 1670185959179,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "assert expected **201** to equal **201**",
+        "time" : {
+          "start" : 1670185959179,
+          "stop" : 1670185959179,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "201"
+        }, {
+          "name" : "expected",
+          "value" : "201"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "wrap Object{5}",
+        "time" : {
+          "start" : 1670185959180,
+          "stop" : 1670185959180,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"cliente\")",
+        "time" : {
+          "start" : 1670185959180,
+          "stop" : 1670185959180,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 6,
+      "hasContent" : true
+    }, {
+      "name" : "Deleta cliente criado",
+      "time" : {
+        "start" : 1670185959181,
+        "stop" : 1670185959278,
+        "duration" : 97
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get @cliente",
+        "time" : {
+          "start" : 1670185959181,
+          "stop" : 1670185959181,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "DELETE 204 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/cliente/295",
+        "time" : {
+          "start" : 1670185959182,
+          "stop" : 1670185959277,
+          "duration" : 95
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185959277,
+          "stop" : 1670185959277,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185959277,
+          "stop" : 1670185959278,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 4,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 12,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Cliente - Cenários Positivos"
+  }, {
+    "name" : "epic",
+    "value" : "Testes de endpoint - Cliente"
+  }, {
+    "name" : "feature",
+    "value" : "Cenários Positivos"
+  }, {
+    "name" : "story",
+    "value" : "POST - Adicionar um cliente na aplicação"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 5,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 15
+      },
+      "items" : [ {
+        "uid" : "500c607bca48f2d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185774135,
+          "stop" : 1670185774354,
+          "duration" : 219
+        }
+      }, {
+        "uid" : "45932ba56dffe86d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185325960,
+          "stop" : 1670185326178,
+          "duration" : 218
+        }
+      }, {
+        "uid" : "f5a9ca10812065a3",
+        "status" : "failed",
+        "statusDetails" : "Timed out retrying after 4000ms: expected 400 to equal 201",
+        "time" : {
+          "start" : 1670177492118,
+          "stop" : 1670177496379,
+          "duration" : 4261
+        }
+      }, {
+        "uid" : "4caad2e1c5e16e2d",
+        "status" : "failed",
+        "statusDetails" : "Timed out retrying after 4000ms: expected 400 to equal 201",
+        "time" : {
+          "start" : 1670167033237,
+          "stop" : 1670167037421,
+          "duration" : 4184
+        }
+      }, {
+        "uid" : "c5c924eb1776e0ea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670141079779,
+          "stop" : 1670141079972,
+          "duration" : 193
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b8e63779d6a5343c.json",
+  "parameterValues" : [ ]
+}

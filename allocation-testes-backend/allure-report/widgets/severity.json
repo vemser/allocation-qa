@@ -1,0 +1,551 @@
+[ {
+  "uid" : "c393f0069f5d5037",
+  "name" : "POST - Adicionar um usuario na aplicação",
+  "time" : {
+    "start" : 1670185966927,
+    "stop" : 1670185967502,
+    "duration" : 575
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "6cbcde48844faaf2",
+  "name" : "DELETE - Remover um usuario através do id",
+  "time" : {
+    "start" : 1670185966467,
+    "stop" : 1670185966785,
+    "duration" : 318
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "f5be2ff357908ca2",
+  "name" : "PUT - Editar aluno por id",
+  "time" : {
+    "start" : 1670185937575,
+    "stop" : 1670185938815,
+    "duration" : 1240
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "fd8f2066a2f544cd",
+  "name" : "DELETE - Tentar Remover um aluno através do id inexistente",
+  "time" : {
+    "start" : 1670185933794,
+    "stop" : 1670185933904,
+    "duration" : 110
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d1dbdee175c20e58",
+  "name" : "PUT - Tentar Editar aluno por id inexistente",
+  "time" : {
+    "start" : 1670185933669,
+    "stop" : 1670185933789,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef16943dea2e8a3b",
+  "name" : "POST - Adicionar um vaga na aplicação",
+  "time" : {
+    "start" : 1670185972154,
+    "stop" : 1670185972951,
+    "duration" : 797
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "dc442f585adb758a",
+  "name" : "Usuario - Validar contrato Usuario por Email",
+  "time" : {
+    "start" : 1670185976281,
+    "stop" : 1670185976407,
+    "duration" : 126
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "11e92e89783e549c",
+  "name" : "POST - Tentar Adicionar um cliente na aplicação sem email",
+  "time" : {
+    "start" : 1670185956669,
+    "stop" : 1670185956771,
+    "duration" : 102
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "107fe054b6c381c2",
+  "name" : "PUT - Editar usuario",
+  "time" : {
+    "start" : 1670185965870,
+    "stop" : 1670185966462,
+    "duration" : 592
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "9e3c084290c59c72",
+  "name" : "DELETE - Remover um cliente através do id",
+  "time" : {
+    "start" : 1670185958813,
+    "stop" : 1670185959049,
+    "duration" : 236
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b7add707bbabf7f4",
+  "name" : "Aluno - Validar contrato Aluno",
+  "time" : {
+    "start" : 1670185976976,
+    "stop" : 1670185977101,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b2aafebc6a5c2c9a",
+  "name" : "PUT - Tentar Editar avaliacao com emailAluno inexistente",
+  "time" : {
+    "start" : 1670185946138,
+    "stop" : 1670185946628,
+    "duration" : 490
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8f766ceba27652b6",
+  "name" : "POST - Adicionar um avaliacao na aplicação",
+  "time" : {
+    "start" : 1670185952802,
+    "stop" : 1670185953963,
+    "duration" : 1161
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "4785eecdc7fa4d08",
+  "name" : "DELETE - Remover um programa através do id",
+  "time" : {
+    "start" : 1670185963939,
+    "stop" : 1670185964154,
+    "duration" : 215
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "d76c6861fd1c38dc",
+  "name" : "Tecnologia - Validar contrato Tecnologia",
+  "time" : {
+    "start" : 1670185977465,
+    "stop" : 1670185977578,
+    "duration" : 113
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "6ee0c7aeff566f2e",
+  "name" : "PUT - Editar cliente",
+  "time" : {
+    "start" : 1670185958347,
+    "stop" : 1670185958703,
+    "duration" : 356
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "86110aef645d5157",
+  "name" : "Programa - Validar contrato Programa",
+  "time" : {
+    "start" : 1670185976410,
+    "stop" : 1670185976542,
+    "duration" : 132
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "9bc37780bf45a831",
+  "name" : "PUT - Tentar Editar cliente sem email",
+  "time" : {
+    "start" : 1670185956225,
+    "stop" : 1670185956333,
+    "duration" : 108
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6ae29220d621264",
+  "name" : "DELETE - Tentar Remover um programa através do idPrograma Inexistente",
+  "time" : {
+    "start" : 1670185961432,
+    "stop" : 1670185961537,
+    "duration" : 105
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "2ea4d4b3fa5bf634",
+  "name" : "POST - Tenta Adicionar um avaliacao na aplicação com idVaga inexistente",
+  "time" : {
+    "start" : 1670185946824,
+    "stop" : 1670185947055,
+    "duration" : 231
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6fcfa74d5d4d6d74",
+  "name" : "PUT - Tentar Editar avaliacao com idAvaliacao inexistente",
+  "time" : {
+    "start" : 1670185945771,
+    "stop" : 1670185945997,
+    "duration" : 226
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f79a692601c4b59b",
+  "name" : "PUT - Tentar Editar cliente sem nome",
+  "time" : {
+    "start" : 1670185956341,
+    "stop" : 1670185956450,
+    "duration" : 109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "815c67e8e90e234",
+  "name" : "POST - Adicionar um programa na aplicação",
+  "time" : {
+    "start" : 1670185964157,
+    "stop" : 1670185964375,
+    "duration" : 218
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "14c0c58aa031b585",
+  "name" : "GET - Listar todos programas cadastrados",
+  "time" : {
+    "start" : 1670185963827,
+    "stop" : 1670185963936,
+    "duration" : 109
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "7841c244775e7ddd",
+  "name" : "Aluno - Validar contrato Alunos por email",
+  "time" : {
+    "start" : 1670185977351,
+    "stop" : 1670185977462,
+    "duration" : 111
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b8e63779d6a5343c",
+  "name" : "POST - Adicionar um cliente na aplicação",
+  "time" : {
+    "start" : 1670185959051,
+    "stop" : 1670185959278,
+    "duration" : 227
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "dd8a0c84350ac7ba",
+  "name" : "Aluno - Validar contrato Alunos por nome",
+  "time" : {
+    "start" : 1670185977233,
+    "stop" : 1670185977349,
+    "duration" : 116
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "f80e0fef8cc7ef3c",
+  "name" : "GET - Listar todos vagas cadastrados",
+  "time" : {
+    "start" : 1670185970604,
+    "stop" : 1670185970716,
+    "duration" : 112
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "abca58707942eb85",
+  "name" : "GET - Listar vagas cadastradas por idVaga",
+  "time" : {
+    "start" : 1670185970718,
+    "stop" : 1670185971520,
+    "duration" : 802
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "4d37f4924465998e",
+  "name" : "Vaga - Validar contrato Vaga por idVaga",
+  "time" : {
+    "start" : 1670185975857,
+    "stop" : 1670185975966,
+    "duration" : 109
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c008074e10b5168b",
+  "name" : "Usuario - Validar contrato Usuario",
+  "time" : {
+    "start" : 1670185975972,
+    "stop" : 1670185976115,
+    "duration" : 143
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "89fc4d073921efaf",
+  "name" : "DELETE - Remover um avaliacao através do id",
+  "time" : {
+    "start" : 1670185951639,
+    "stop" : 1670185952799,
+    "duration" : 1160
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "fe98f5cfec73968b",
+  "name" : "Aluno - Validar contrato Alunos disponiveis",
+  "time" : {
+    "start" : 1670185977103,
+    "stop" : 1670185977230,
+    "duration" : 127
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "34a0bb8dff9de1a",
+  "name" : "Cliente - Validar contrato Cliente",
+  "time" : {
+    "start" : 1670185976545,
+    "stop" : 1670185976731,
+    "duration" : 186
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "90a62c4ef5222113",
+  "name" : "DELETE - Tentar Remover um cliente através do id inexistente",
+  "time" : {
+    "start" : 1670185956453,
+    "stop" : 1670185956556,
+    "duration" : 103
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4c92744610557152",
+  "name" : "DELETE - Tentar Remover um avaliacao através do idAvaliacao inexistente",
+  "time" : {
+    "start" : 1670185946631,
+    "stop" : 1670185946822,
+    "duration" : 191
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cb0113cafa27b7e2",
+  "name" : "GET - Listar todos avaliacaos cadastrados",
+  "time" : {
+    "start" : 1670185951516,
+    "stop" : 1670185951636,
+    "duration" : 120
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "6b91ed63544c4ecc",
+  "name" : "Avaliacao - Validar contrato Avaliacao por IdAvaliação",
+  "time" : {
+    "start" : 1670185976859,
+    "stop" : 1670185976974,
+    "duration" : 115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc7a4fa243b909a7",
+  "name" : "POST - Tentar Adicionar um aluno na aplicação sem nome",
+  "time" : {
+    "start" : 1670185934110,
+    "stop" : 1670185934282,
+    "duration" : 172
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7351b807d1d0b2ac",
+  "name" : "Avaliacao - Validar contrato Avaliacao",
+  "time" : {
+    "start" : 1670185976735,
+    "stop" : 1670185976857,
+    "duration" : 122
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "cfd079c1bfdab1e2",
+  "name" : "PUT - Editar avaliacao",
+  "time" : {
+    "start" : 1670185950141,
+    "stop" : 1670185951501,
+    "duration" : 1360
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "409d2394e3e8f201",
+  "name" : "PUT - Tentar Editar avaliacao com idVaga inexistente",
+  "time" : {
+    "start" : 1670185946000,
+    "stop" : 1670185946134,
+    "duration" : 134
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "63a9a2518d2374a8",
+  "name" : "GET - Listar todos clientes cadastrados",
+  "time" : {
+    "start" : 1670185958707,
+    "stop" : 1670185958810,
+    "duration" : 103
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "78960e0fa947211",
+  "name" : "PUT - Editar vaga por id",
+  "time" : {
+    "start" : 1670185969341,
+    "stop" : 1670185970599,
+    "duration" : 1258
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a86d7612a787c858",
+  "name" : "Vaga - Validar contrato Vaga",
+  "time" : {
+    "start" : 1670185975687,
+    "stop" : 1670185975854,
+    "duration" : 167
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "111224f743494925",
+  "name" : "POST - Adicionar um aluno na aplicação",
+  "time" : {
+    "start" : 1670185940146,
+    "stop" : 1670185943052,
+    "duration" : 2906
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "17463bc23c595267",
+  "name" : "GET - Listar todos alunos cadastrados",
+  "time" : {
+    "start" : 1670185938828,
+    "stop" : 1670185938965,
+    "duration" : 137
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "3ee535e82f331e68",
+  "name" : "DELETE - Remover um vaga através do id",
+  "time" : {
+    "start" : 1670185971523,
+    "stop" : 1670185972151,
+    "duration" : 628
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "a1fceab73cc0027c",
+  "name" : "GET - Listar todos usuarios cadastrados",
+  "time" : {
+    "start" : 1670185966790,
+    "stop" : 1670185966925,
+    "duration" : 135
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "532ec64aabdb039b",
+  "name" : "Usuario - Validar contrato Usuario por Nome",
+  "time" : {
+    "start" : 1670185976118,
+    "stop" : 1670185976279,
+    "duration" : 161
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e4be95b9732ad171",
+  "name" : "DELETE - Remover um aluno através do id",
+  "time" : {
+    "start" : 1670185938969,
+    "stop" : 1670185940144,
+    "duration" : 1175
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "181e2848cf35382b",
+  "name" : "POST - Tentar Adicionar um cliente na aplicação sem nome",
+  "time" : {
+    "start" : 1670185956561,
+    "stop" : 1670185956667,
+    "duration" : 106
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17e89968c4edc6cf",
+  "name" : "POST - Tentar Adicionar um aluno na aplicação com idPrograma inexistente",
+  "time" : {
+    "start" : 1670185933907,
+    "stop" : 1670185934108,
+    "duration" : 201
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "baf24f1eacb10d1d",
+  "name" : "PUT - Editar programa",
+  "time" : {
+    "start" : 1670185963418,
+    "stop" : 1670185963824,
+    "duration" : 406
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "ef052108084aacb1",
+  "name" : "PUT - Tentar Editar programa com idPrograma inexistente",
+  "time" : {
+    "start" : 1670185961322,
+    "stop" : 1670185961428,
+    "duration" : 106
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]

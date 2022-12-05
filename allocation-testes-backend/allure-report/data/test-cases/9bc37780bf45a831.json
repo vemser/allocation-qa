@@ -1,0 +1,294 @@
+{
+  "uid" : "9bc37780bf45a831",
+  "name" : "PUT - Tentar Editar cliente sem email",
+  "fullName" : "PUT - Tentar Editar cliente sem email",
+  "historyId" : "6bd85223caf2934740681543fa38ebc5",
+  "time" : {
+    "start" : 1670185956225,
+    "stop" : 1670185956333,
+    "duration" : 108
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185955574,
+        "stop" : 1670185956006,
+        "duration" : 432
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185955576,
+          "stop" : 1670185956006,
+          "duration" : 430
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185956011,
+        "stop" : 1670185956221,
+        "duration" : 210
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185956011,
+          "stop" : 1670185956221,
+          "duration" : 210
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Tentar Editar cliente sem email",
+      "time" : {
+        "start" : 1670185956231,
+        "stop" : 1670185956333,
+        "duration" : 102
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "PUT 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/cliente/157",
+        "time" : {
+          "start" : 1670185956232,
+          "stop" : 1670185956326,
+          "duration" : 94
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185956326,
+          "stop" : 1670185956327,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185956327,
+          "stop" : 1670185956333,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "assert expected **400** to equal **400**",
+        "time" : {
+          "start" : 1670185956332,
+          "stop" : 1670185956332,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "400"
+        }, {
+          "name" : "expected",
+          "value" : "400"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "assert expected **email: Email não pode ser vazio ou nulo.** to equal **email: Email não pode ser vazio ou nulo.**",
+        "time" : {
+          "start" : 1670185956333,
+          "stop" : 1670185956333,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "email: Email não pode ser vazio ou nulo."
+        }, {
+          "name" : "expected",
+          "value" : "email: Email não pode ser vazio ou nulo."
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 5,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Cliente - Cenários Negativos"
+  }, {
+    "name" : "epic",
+    "value" : "Testes de endpoint - Cliente"
+  }, {
+    "name" : "feature",
+    "value" : "Cenários Negativos"
+  }, {
+    "name" : "story",
+    "value" : "PUT - Tentar Editar cliente sem email"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "5ec765dc84df935c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185770756,
+          "stop" : 1670185770867,
+          "duration" : 111
+        }
+      }, {
+        "uid" : "d773e347bce4c4a8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185322533,
+          "stop" : 1670185322640,
+          "duration" : 107
+        }
+      }, {
+        "uid" : "aeefc8ccf90359b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670177480002,
+          "stop" : 1670177480137,
+          "duration" : 135
+        }
+      }, {
+        "uid" : "c3d4092b28db960b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670167021965,
+          "stop" : 1670167022063,
+          "duration" : 98
+        }
+      }, {
+        "uid" : "f1be3c00557c713c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670141072187,
+          "stop" : 1670141072335,
+          "duration" : 148
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "9bc37780bf45a831.json",
+  "parameterValues" : [ ]
+}

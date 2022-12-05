@@ -1,0 +1,294 @@
+{
+  "uid" : "ef052108084aacb1",
+  "name" : "PUT - Tentar Editar programa com idPrograma inexistente",
+  "fullName" : "PUT - Tentar Editar programa com idPrograma inexistente",
+  "historyId" : "d97b96a058226a9818cefa066e1758e6",
+  "time" : {
+    "start" : 1670185961322,
+    "stop" : 1670185961428,
+    "duration" : 106
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185960583,
+        "stop" : 1670185961085,
+        "duration" : 502
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185960585,
+          "stop" : 1670185961085,
+          "duration" : 500
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "login",
+      "time" : {
+        "start" : 1670185961090,
+        "stop" : 1670185961318,
+        "duration" : 228
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "POST 200 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth",
+        "time" : {
+          "start" : 1670185961091,
+          "stop" : 1670185961318,
+          "duration" : 227
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 2,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Tentar Editar programa com idPrograma inexistente",
+      "time" : {
+        "start" : 1670185961327,
+        "stop" : 1670185961428,
+        "duration" : 101
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "PUT 400 http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/programa/999999",
+        "time" : {
+          "start" : 1670185961328,
+          "stop" : 1670185961422,
+          "duration" : 94
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "as (\"response\")",
+        "time" : {
+          "start" : 1670185961422,
+          "stop" : 1670185961422,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "get @response",
+        "time" : {
+          "start" : 1670185961423,
+          "stop" : 1670185961428,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "assert expected **400** to equal **400**",
+        "time" : {
+          "start" : 1670185961427,
+          "stop" : 1670185961427,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "400"
+        }, {
+          "name" : "expected",
+          "value" : "400"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "assert expected **Programa não encontrado** to equal **Programa não encontrado**",
+        "time" : {
+          "start" : 1670185961427,
+          "stop" : 1670185961427,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "actual",
+          "value" : "Programa não encontrado"
+        }, {
+          "name" : "expected",
+          "value" : "Programa não encontrado"
+        } ],
+        "shouldDisplayMessage" : false,
+        "attachmentsCount" : 0,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 5,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Programa - Cenários Negativos"
+  }, {
+    "name" : "epic",
+    "value" : "Testes de endpoint - Programa"
+  }, {
+    "name" : "feature",
+    "value" : "Cenários Negativos"
+  }, {
+    "name" : "story",
+    "value" : "PUT - Tentar Editar programa com idPrograma inexistente"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 6,
+        "unknown" : 0,
+        "total" : 6
+      },
+      "items" : [ {
+        "uid" : "53dc9a28c73c726f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185777594,
+          "stop" : 1670185777913,
+          "duration" : 319
+        }
+      }, {
+        "uid" : "99302f871d795296",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670185328136,
+          "stop" : 1670185328245,
+          "duration" : 109
+        }
+      }, {
+        "uid" : "710e9ade0af858c9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670177498569,
+          "stop" : 1670177498677,
+          "duration" : 108
+        }
+      }, {
+        "uid" : "92209ea806130015",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670167039470,
+          "stop" : 1670167039623,
+          "duration" : 153
+        }
+      }, {
+        "uid" : "946b4e1f1f661a22",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670141081408,
+          "stop" : 1670141081518,
+          "duration" : 110
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ef052108084aacb1.json",
+  "parameterValues" : [ ]
+}

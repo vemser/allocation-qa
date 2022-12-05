@@ -1,0 +1,720 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "PUT - Tentar Editar aluno por id inexistente",
+    "uid" : "d1dbdee175c20e58",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185933669,
+      "stop" : 1670185933789,
+      "duration" : 120
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Tentar Remover um aluno através do id inexistente",
+    "uid" : "fd8f2066a2f544cd",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185933794,
+      "stop" : 1670185933904,
+      "duration" : 110
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Tentar Adicionar um aluno na aplicação com idPrograma inexistente",
+    "uid" : "17e89968c4edc6cf",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185933907,
+      "stop" : 1670185934108,
+      "duration" : 201
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Tentar Adicionar um aluno na aplicação sem nome",
+    "uid" : "bc7a4fa243b909a7",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185934110,
+      "stop" : 1670185934282,
+      "duration" : 172
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Editar aluno por id",
+    "uid" : "f5be2ff357908ca2",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185937575,
+      "stop" : 1670185938815,
+      "duration" : 1240
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar todos alunos cadastrados",
+    "uid" : "17463bc23c595267",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185938828,
+      "stop" : 1670185938965,
+      "duration" : 137
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Remover um aluno através do id",
+    "uid" : "e4be95b9732ad171",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185938969,
+      "stop" : 1670185940144,
+      "duration" : 1175
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Adicionar um aluno na aplicação",
+    "uid" : "111224f743494925",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185940146,
+      "stop" : 1670185943052,
+      "duration" : 2906
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Tentar Editar avaliacao com idAvaliacao inexistente",
+    "uid" : "6fcfa74d5d4d6d74",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185945771,
+      "stop" : 1670185945997,
+      "duration" : 226
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Tentar Editar avaliacao com idVaga inexistente",
+    "uid" : "409d2394e3e8f201",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185946000,
+      "stop" : 1670185946134,
+      "duration" : 134
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Tentar Editar avaliacao com emailAluno inexistente",
+    "uid" : "b2aafebc6a5c2c9a",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185946138,
+      "stop" : 1670185946628,
+      "duration" : 490
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Tentar Remover um avaliacao através do idAvaliacao inexistente",
+    "uid" : "4c92744610557152",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185946631,
+      "stop" : 1670185946822,
+      "duration" : 191
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Tenta Adicionar um avaliacao na aplicação com idVaga inexistente",
+    "uid" : "2ea4d4b3fa5bf634",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185946824,
+      "stop" : 1670185947055,
+      "duration" : 231
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Editar avaliacao",
+    "uid" : "cfd079c1bfdab1e2",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185950141,
+      "stop" : 1670185951501,
+      "duration" : 1360
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar todos avaliacaos cadastrados",
+    "uid" : "cb0113cafa27b7e2",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185951516,
+      "stop" : 1670185951636,
+      "duration" : 120
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Remover um avaliacao através do id",
+    "uid" : "89fc4d073921efaf",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185951639,
+      "stop" : 1670185952799,
+      "duration" : 1160
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Adicionar um avaliacao na aplicação",
+    "uid" : "8f766ceba27652b6",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185952802,
+      "stop" : 1670185953963,
+      "duration" : 1161
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Tentar Editar cliente sem email",
+    "uid" : "9bc37780bf45a831",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185956225,
+      "stop" : 1670185956333,
+      "duration" : 108
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Tentar Editar cliente sem nome",
+    "uid" : "f79a692601c4b59b",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185956341,
+      "stop" : 1670185956450,
+      "duration" : 109
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Tentar Remover um cliente através do id inexistente",
+    "uid" : "90a62c4ef5222113",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185956453,
+      "stop" : 1670185956556,
+      "duration" : 103
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Tentar Adicionar um cliente na aplicação sem nome",
+    "uid" : "181e2848cf35382b",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185956561,
+      "stop" : 1670185956667,
+      "duration" : 106
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Tentar Adicionar um cliente na aplicação sem email",
+    "uid" : "11e92e89783e549c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185956669,
+      "stop" : 1670185956771,
+      "duration" : 102
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Editar cliente",
+    "uid" : "6ee0c7aeff566f2e",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185958347,
+      "stop" : 1670185958703,
+      "duration" : 356
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar todos clientes cadastrados",
+    "uid" : "63a9a2518d2374a8",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185958707,
+      "stop" : 1670185958810,
+      "duration" : 103
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Remover um cliente através do id",
+    "uid" : "9e3c084290c59c72",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185958813,
+      "stop" : 1670185959049,
+      "duration" : 236
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Adicionar um cliente na aplicação",
+    "uid" : "b8e63779d6a5343c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185959051,
+      "stop" : 1670185959278,
+      "duration" : 227
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Tentar Editar programa com idPrograma inexistente",
+    "uid" : "ef052108084aacb1",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185961322,
+      "stop" : 1670185961428,
+      "duration" : 106
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Tentar Remover um programa através do idPrograma Inexistente",
+    "uid" : "f6ae29220d621264",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185961432,
+      "stop" : 1670185961537,
+      "duration" : 105
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Editar programa",
+    "uid" : "baf24f1eacb10d1d",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185963418,
+      "stop" : 1670185963824,
+      "duration" : 406
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar todos programas cadastrados",
+    "uid" : "14c0c58aa031b585",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185963827,
+      "stop" : 1670185963936,
+      "duration" : 109
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Remover um programa através do id",
+    "uid" : "4785eecdc7fa4d08",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185963939,
+      "stop" : 1670185964154,
+      "duration" : 215
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Adicionar um programa na aplicação",
+    "uid" : "815c67e8e90e234",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185964157,
+      "stop" : 1670185964375,
+      "duration" : 218
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Editar usuario",
+    "uid" : "107fe054b6c381c2",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185965870,
+      "stop" : 1670185966462,
+      "duration" : 592
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Remover um usuario através do id",
+    "uid" : "6cbcde48844faaf2",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185966467,
+      "stop" : 1670185966785,
+      "duration" : 318
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar todos usuarios cadastrados",
+    "uid" : "a1fceab73cc0027c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185966790,
+      "stop" : 1670185966925,
+      "duration" : 135
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Adicionar um usuario na aplicação",
+    "uid" : "c393f0069f5d5037",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185966927,
+      "stop" : 1670185967502,
+      "duration" : 575
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "PUT - Editar vaga por id",
+    "uid" : "78960e0fa947211",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185969341,
+      "stop" : 1670185970599,
+      "duration" : 1258
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar todos vagas cadastrados",
+    "uid" : "f80e0fef8cc7ef3c",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185970604,
+      "stop" : 1670185970716,
+      "duration" : 112
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "GET - Listar vagas cadastradas por idVaga",
+    "uid" : "abca58707942eb85",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185970718,
+      "stop" : 1670185971520,
+      "duration" : 802
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "DELETE - Remover um vaga através do id",
+    "uid" : "3ee535e82f331e68",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185971523,
+      "stop" : 1670185972151,
+      "duration" : 628
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "POST - Adicionar um vaga na aplicação",
+    "uid" : "ef16943dea2e8a3b",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185972154,
+      "stop" : 1670185972951,
+      "duration" : 797
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Vaga - Validar contrato Vaga",
+    "uid" : "a86d7612a787c858",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185975687,
+      "stop" : 1670185975854,
+      "duration" : 167
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Vaga - Validar contrato Vaga por idVaga",
+    "uid" : "4d37f4924465998e",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185975857,
+      "stop" : 1670185975966,
+      "duration" : 109
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Usuario - Validar contrato Usuario",
+    "uid" : "c008074e10b5168b",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185975972,
+      "stop" : 1670185976115,
+      "duration" : 143
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Usuario - Validar contrato Usuario por Nome",
+    "uid" : "532ec64aabdb039b",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185976118,
+      "stop" : 1670185976279,
+      "duration" : 161
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Usuario - Validar contrato Usuario por Email",
+    "uid" : "dc442f585adb758a",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185976281,
+      "stop" : 1670185976407,
+      "duration" : 126
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Programa - Validar contrato Programa",
+    "uid" : "86110aef645d5157",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185976410,
+      "stop" : 1670185976542,
+      "duration" : 132
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Cliente - Validar contrato Cliente",
+    "uid" : "34a0bb8dff9de1a",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185976545,
+      "stop" : 1670185976731,
+      "duration" : 186
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Avaliacao - Validar contrato Avaliacao",
+    "uid" : "7351b807d1d0b2ac",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185976735,
+      "stop" : 1670185976857,
+      "duration" : 122
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Avaliacao - Validar contrato Avaliacao por IdAvaliação",
+    "uid" : "6b91ed63544c4ecc",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185976859,
+      "stop" : 1670185976974,
+      "duration" : 115
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Aluno - Validar contrato Aluno",
+    "uid" : "b7add707bbabf7f4",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185976976,
+      "stop" : 1670185977101,
+      "duration" : 125
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Aluno - Validar contrato Alunos disponiveis",
+    "uid" : "fe98f5cfec73968b",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185977103,
+      "stop" : 1670185977230,
+      "duration" : 127
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Aluno - Validar contrato Alunos por nome",
+    "uid" : "dd8a0c84350ac7ba",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185977233,
+      "stop" : 1670185977349,
+      "duration" : 116
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Aluno - Validar contrato Alunos por email",
+    "uid" : "7841c244775e7ddd",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185977351,
+      "stop" : 1670185977462,
+      "duration" : 111
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Tecnologia - Validar contrato Tecnologia",
+    "uid" : "d76c6861fd1c38dc",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1670185977465,
+      "stop" : 1670185977578,
+      "duration" : 113
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}
