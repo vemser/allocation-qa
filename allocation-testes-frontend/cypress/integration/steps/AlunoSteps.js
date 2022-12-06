@@ -46,7 +46,7 @@ const randomEstado = faker.address.state();
 ///////////////////////////////
 
 Given(/^que estou na página inicial$/, () => {
-	cy.visit("https://allocation-front.vercel.app/")
+	cy.visit("http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-front/")
 });
 
 And(/^que estou logado como Administrador$/, () => {
@@ -109,6 +109,7 @@ And(/^devo buscar o aluno criado e deletar para limpar o banco$/, () => {
 	alunosPage.clicarBtnBuscar();
 	basePage.tempo(2000)
 	alunosPage.clicarDeletarAluno()
+	basePage.tempo(2000)
 });
 
 ////////////////////////////////////////////

@@ -9,7 +9,7 @@ Feature: Apresentacao
       And busco pelo aluno Green Nienow
       And clico em reservar
       And preencho o campo Codigo da Avaliação com o número 87
-      And preencho o campo Codigo da Vaga com o número 285
+      And preencho o campo Codigo da Vaga com o número 283
       And preencho o campo Data de Reserva com uma data Valida
       And preencho o campo Descrição com uma descrição Valida
       When clico em salvar

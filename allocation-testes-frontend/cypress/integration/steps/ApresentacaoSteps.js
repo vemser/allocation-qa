@@ -52,7 +52,7 @@ let btnSalvarReserva = "#form > div.MuiBox-root.css-7eri5g > button"
 /////////////////////////////
 
 Given(/^que estou na página inicial$/, () => {
-	cy.visit("https://allocation-front.vercel.app/")
+	cy.visit("http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-front/")
 });
 
 And(/^que estou logado como Administrador$/, () => {
@@ -88,8 +88,8 @@ And(/^preencho o campo Codigo da Avaliação com o número 87$/, () => {
 	basePage.preencherCampo(campoCodigoAvaliacao, 87)
 });
 
-And(/^preencho o campo Codigo da Vaga com o número 285$/, () => {
-	basePage.preencherCampo(campoCodigoDaVaga, 285)
+And(/^preencho o campo Codigo da Vaga com o número 283$/, () => {
+	basePage.preencherCampo(campoCodigoDaVaga, 283)
 });
 
 When(/^preencho o campo Data de Reserva com uma data Valida$/, () => {

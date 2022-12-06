@@ -22,7 +22,7 @@ context('Contratos - Cenários Positivos', () => {
     .story('GET - Validar contrato GET/vaga/{idVaga}')
     .severity('critical')
     .step('Valida o contrato')
-    contratoService.contratoVagaPorIdVagaRequest("26","vaga.get.contrato")
+    contratoService.contratoVagaPorIdVagaRequest("283","vaga.get.contrato")
   });
   
 
