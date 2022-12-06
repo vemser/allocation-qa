@@ -1,0 +1,583 @@
+{
+  "uid" : "be31b1d04d8a83bb",
+  "name" : "Validar cadastrar usuario com sucesso.",
+  "fullName" : "Validar cadastrar usuario com sucesso.",
+  "historyId" : "3bbf7416bd5351c18904201c54866d9f",
+  "time" : {
+    "start" : 1670226221793,
+    "stop" : 1670226224863,
+    "duration" : 3070
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "\"before each\" hook",
+      "time" : {
+        "start" : 1670226221793,
+        "stop" : 1670226221818,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "clearCookies",
+        "time" : {
+          "start" : 1670226221809,
+          "stop" : 1670226221816,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "clearLocalStorage",
+        "time" : {
+          "start" : 1670226221816,
+          "stop" : 1670226221817,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Given que estou na página inicial",
+      "time" : {
+        "start" : 1670226221827,
+        "stop" : 1670226222027,
+        "duration" : 200
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "visit https://allocation-front.vercel.app/",
+        "time" : {
+          "start" : 1670226221828,
+          "stop" : 1670226222026,
+          "duration" : 198
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And clico no link \"Crie uma conta\"",
+      "time" : {
+        "start" : 1670226222027,
+        "stop" : 1670226222179,
+        "duration" : 152
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get #form > div > div:nth-child(5) > a > p",
+        "time" : {
+          "start" : 1670226222027,
+          "stop" : 1670226222073,
+          "duration" : 46
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click",
+        "time" : {
+          "start" : 1670226222073,
+          "stop" : 1670226222178,
+          "duration" : 105
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "new url https://allocation-front.vercel.app/cadastro-usuario",
+        "time" : {
+          "start" : 1670226222178,
+          "stop" : 1670226222178,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And preencho o campo \"Nome completo\" com um nome válido",
+      "time" : {
+        "start" : 1670226222179,
+        "stop" : 1670226222524,
+        "duration" : 345
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get #nomeCompleto",
+        "time" : {
+          "start" : 1670226222179,
+          "stop" : 1670226222183,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "type Jaydon Ruecker",
+        "time" : {
+          "start" : 1670226222183,
+          "stop" : 1670226222523,
+          "duration" : 340
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And preencho o campo \"Email\" com um email válido",
+      "time" : {
+        "start" : 1670226222524,
+        "stop" : 1670226223109,
+        "duration" : 585
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get #email",
+        "time" : {
+          "start" : 1670226222525,
+          "stop" : 1670226222529,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "type Jaydon.Ruecker@dbccompany.com.br",
+        "time" : {
+          "start" : 1670226222529,
+          "stop" : 1670226223108,
+          "duration" : 579
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And preencho o campo \"Senha\" com uma senha válida",
+      "time" : {
+        "start" : 1670226223109,
+        "stop" : 1670226223526,
+        "duration" : 417
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get #senha",
+        "time" : {
+          "start" : 1670226223109,
+          "stop" : 1670226223112,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "type @!18tesulabubiqicoyu",
+        "time" : {
+          "start" : 1670226223112,
+          "stop" : 1670226223525,
+          "duration" : 413
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And preencho o campo \"Confirme a senha\" com a mesma senha do campo anterior",
+      "time" : {
+        "start" : 1670226223526,
+        "stop" : 1670226223929,
+        "duration" : 403
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get #senhaIgual",
+        "time" : {
+          "start" : 1670226223526,
+          "stop" : 1670226223530,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "type @!18tesulabubiqicoyu",
+        "time" : {
+          "start" : 1670226223530,
+          "stop" : 1670226223927,
+          "duration" : 397
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 2,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When clico em salvar",
+      "time" : {
+        "start" : 1670226223929,
+        "stop" : 1670226224020,
+        "duration" : 91
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get #form > div.MuiBox-root.css-7eri5g > button",
+        "time" : {
+          "start" : 1670226223930,
+          "stop" : 1670226223934,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "click",
+        "time" : {
+          "start" : 1670226223934,
+          "stop" : 1670226224019,
+          "duration" : 85
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "POST http://vemser-dbc.dbccompany.com.br:39000/vemser/allocation-back/auth/register",
+        "time" : {
+          "start" : 1670226224019,
+          "stop" : 1670226224019,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then devo receber uma confirmação de que o novo usuário foi criado com sucesso",
+      "time" : {
+        "start" : 1670226224020,
+        "stop" : 1670226224863,
+        "duration" : 843
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "get .Toastify__toast-body > :nth-child(2)",
+        "time" : {
+          "start" : 1670226224021,
+          "stop" : 1670226224513,
+          "duration" : 492
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "new url https://allocation-front.vercel.app/",
+        "time" : {
+          "start" : 1670226224513,
+          "stop" : 1670226224513,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "scrollIntoView",
+        "time" : {
+          "start" : 1670226224513,
+          "stop" : 1670226224858,
+          "duration" : 345
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "assert expected **<div>** to be **visible**",
+        "time" : {
+          "start" : 1670226224858,
+          "stop" : 1670226224858,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "get .Toastify__toast-body > :nth-child(2)",
+        "time" : {
+          "start" : 1670226224858,
+          "stop" : 1670226224862,
+          "duration" : 4
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "assert expected **<div>** to contain **Usuário cadastrado com sucesso!**",
+        "time" : {
+          "start" : 1670226224862,
+          "stop" : 1670226224862,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 32,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Usuarios"
+  }, {
+    "name" : "feature",
+    "value" : "Usuarios"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Teste executado com sucesso",
+      "matchedStatuses" : [ "passed" ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "897ca84044ecc598",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670217946712,
+          "stop" : 1670217949758,
+          "duration" : 3046
+        }
+      }, {
+        "uid" : "e27d09bfab5bfc7f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670217173552,
+          "stop" : 1670217176556,
+          "duration" : 3004
+        }
+      }, {
+        "uid" : "baaa428d094bf2f6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670207428205,
+          "stop" : 1670207431265,
+          "duration" : 3060
+        }
+      }, {
+        "uid" : "c059f10f3f14af42",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670189584890,
+          "stop" : 1670189587567,
+          "duration" : 2677
+        }
+      }, {
+        "uid" : "dc7235946a7a51c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1670135719582,
+          "stop" : 1670135722793,
+          "duration" : 3211
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "be31b1d04d8a83bb.json",
+  "parameterValues" : [ ]
+}

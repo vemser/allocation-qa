@@ -23,7 +23,6 @@ const cadastroProgramaPage = new CadastroProgramaPage;
 const programasPage = new ProgramasPage;
 const cadastroVagaPage = new CadastroVagaPage;
 
-
 const randomFirstName = faker.name.firstName();
 const randomLastName = faker.name.lastName();
 const randomNomeCompleto = randomFirstName+" "+randomLastName;
@@ -32,8 +31,6 @@ const randomPassword = faker.internet.password(20, true, /[A-Z]/, '@!18');
 const randomTelefone = "123456789"
 const randomDescricao = "Descrição do programa aqui"
 const randomNomePrograma = faker.company.catchPhrase();
-
-
 const randomFirstName2 = faker.name.firstName();
 const randomLastName2 = faker.name.lastName();
 const randomNomeCompleto2 = randomFirstName2+" "+randomLastName2;
@@ -41,9 +38,9 @@ const randomEmail2 = randomFirstName2 + "." + randomLastName2 + "@dbccompany.com
 const randomPassword2 = faker.internet.password(20, true, /[A-Z]/, '@!18');
 
 
-
-/// TESTES - Cadastro Programa //
-
+  //////////////////////////////
+ /// TESTES - Endpoint Vaga ///
+//////////////////////////////
 
 Given(/^que estou na página inicial$/, () => {
 	cy.visit("https://allocation-front.vercel.app/")

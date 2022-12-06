@@ -1,5 +1,5 @@
 {
-  "total" : 5,
+  "total" : 7,
   "items" : [ {
     "uid" : "ce2f04f10264d7d7465f968446f95ff0",
     "name" : "Usuarios",
@@ -21,6 +21,17 @@
       "passed" : 3,
       "unknown" : 0,
       "total" : 3
+    }
+  }, {
+    "uid" : "dce487fd19daec0edad9bfe3715f605b",
+    "name" : "Alunos",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
     }
   }, {
     "uid" : "56255d622cb32086518baafb00c8e52a",
@@ -54,6 +65,17 @@
       "passed" : 2,
       "unknown" : 0,
       "total" : 2
+    }
+  }, {
+    "uid" : "a335dabe24f01b2ac67b55556a06f68c",
+    "name" : "Apresentacao",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
     }
   } ]
 }
